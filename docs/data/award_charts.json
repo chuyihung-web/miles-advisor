@@ -4,48 +4,126 @@
       "name": "亞洲萬里通",
       "airline": "國泰航空",
       "alliance": "寰宇一家",
+      "iata": "CX",
+      "booking_url": "https://www.cathaypacific.com/cx/zh_TW/flying-with-us/asia-miles.html",
       "currency": "哩",
       "note": "以台灣/香港為出發點的單程哩程數（不含稅費）",
       "zones": {
         "chart": [
           {
             "zone": "Z1", "label": "台灣 ↔ 香港/澳門",
-            "eco": 7500, "prem_eco": 12500, "biz": 20000, "first": 40000
+            "eco": 7500, "prem_eco": 12500, "biz": 20000, "first": 40000,
+            "airlines": [
+              {"code":"CX","name":"國泰航空","direct":true,"routes":["TPE-HKG"]},
+              {"code":"AE","name":"華信航空","direct":true,"routes":["TPE-HKG"]}
+            ],
+            "connections": [],
+            "booking_tip": "可直接在亞洲萬里通網站或國泰App兌換，座位充足"
           },
           {
             "zone": "Z2", "label": "台灣 ↔ 日本/韓國/中國",
-            "eco": 15000, "prem_eco": 25000, "biz": 40000, "first": 80000
+            "eco": 15000, "prem_eco": 25000, "biz": 40000, "first": 80000,
+            "airlines": [
+              {"code":"JL","name":"日本航空","direct":true,"routes":["TPE-NRT","TPE-HND","TPE-KIX","TPE-FUK","TPE-OKA","TPE-NGO"]},
+              {"code":"CX","name":"國泰航空","direct":false,"routes":["TPE-HKG-NRT","TPE-HKG-ICN"]},
+              {"code":"BA","name":"英國航空","direct":false,"routes":["TPE-HKG-NRT"]},
+              {"code":"AY","name":"芬蘭航空","direct":false,"routes":["TPE-HKG-NRT"]}
+            ],
+            "connections": [
+              {"via":"HKG","tip":"國泰航空 TPE→HKG→NRT，轉機約1.5-2小時"}
+            ],
+            "booking_tip": "日航直飛各大城市首選；轉香港可用國泰商務套艙"
           },
           {
             "zone": "Z3", "label": "台灣 ↔ 東南亞（泰/越/菲/馬/新/印尼）",
-            "eco": 17500, "prem_eco": 30000, "biz": 50000, "first": 100000
+            "eco": 17500, "prem_eco": 30000, "biz": 50000, "first": 100000,
+            "airlines": [
+              {"code":"CX","name":"國泰航空","direct":false,"routes":["TPE-HKG-BKK","TPE-HKG-SIN","TPE-HKG-KUL"]},
+              {"code":"MH","name":"馬來西亞航空","direct":false,"routes":["TPE-HKG-KUL"]},
+              {"code":"PR","name":"菲律賓航空","direct":true,"routes":["TPE-MNL"]},
+              {"code":"BI","name":"皇家汶萊航空","direct":false,"routes":["TPE-HKG-BKK"]}
+            ],
+            "connections": [
+              {"via":"HKG","tip":"多數航線需經香港轉機，轉機時間建議留2小時以上"}
+            ],
+            "booking_tip": "東南亞建議在CX官網或電話開票，注意停留航班可能有限"
           },
           {
             "zone": "Z4", "label": "台灣 ↔ 南亞/澳洲/紐西蘭/中東",
-            "eco": 25000, "prem_eco": 45000, "biz": 65000, "first": 130000
+            "eco": 25000, "prem_eco": 45000, "biz": 65000, "first": 130000,
+            "airlines": [
+              {"code":"CX","name":"國泰航空","direct":false,"routes":["TPE-HKG-SYD","TPE-HKG-MEL","TPE-HKG-PER","TPE-HKG-AKL","TPE-HKG-DEL","TPE-HKG-BOM","TPE-HKG-DXB","TPE-HKG-DOH"]},
+              {"code":"QR","name":"卡達航空","direct":false,"routes":["TPE-HKG-DOH","TPE-HKG-DXB"]},
+              {"code":"MH","name":"馬來西亞航空","direct":false,"routes":["TPE-KUL-SYD","TPE-KUL-MEL"]}
+            ],
+            "connections": [
+              {"via":"HKG","tip":"國泰 TPE→HKG→SYD，全程約12小時"},
+              {"via":"KUL","tip":"馬航 TPE→KUL→SYD，需在吉隆坡轉機"}
+            ],
+            "booking_tip": "澳洲/NZ建議用國泰轉香港；頭等艙稀缺，提早6-11個月查詢"
           },
           {
-            "zone": "Z5", "label": "台灣 ↔ 歐洲/非洲",
-            "eco": 35000, "prem_eco": 60000, "biz": 85000, "first": 170000
+            "zone": "Z5", "label": "台灣 ↔ 歐洲",
+            "eco": 35000, "prem_eco": 60000, "biz": 85000, "first": 170000,
+            "airlines": [
+              {"code":"CX","name":"國泰航空","direct":false,"routes":["TPE-HKG-LHR"]},
+              {"code":"BA","name":"英國航空","direct":false,"routes":["TPE-HKG-LHR","TPE-HKG-CDG","TPE-HKG-MAD"]},
+              {"code":"IB","name":"伊比利亞航空","direct":false,"routes":["TPE-HKG-MAD","TPE-HKG-BCN"]},
+              {"code":"AY","name":"芬蘭航空","direct":false,"routes":["TPE-HKG-HEL-CDG","TPE-HKG-HEL-FRA"]},
+              {"code":"JL","name":"日本航空","direct":false,"routes":["TPE-NRT-LHR","TPE-NRT-FRA","TPE-NRT-CDG"]}
+            ],
+            "connections": [
+              {"via":"HKG","tip":"國泰 TPE→HKG→LHR，全程約15-16小時，HKG轉機2h"},
+              {"via":"NRT","tip":"日航 TPE→NRT→LHR/FRA，轉機時間較長約3-4小時"}
+            ],
+            "booking_tip": "倫敦首選國泰CX轉香港；其他歐洲城市可考慮日航轉東京或英航"
           },
           {
             "zone": "Z6", "label": "台灣 ↔ 北美洲西岸",
-            "eco": 35000, "prem_eco": 60000, "biz": 85000, "first": 170000
+            "eco": 35000, "prem_eco": 60000, "biz": 85000, "first": 170000,
+            "airlines": [
+              {"code":"CX","name":"國泰航空","direct":false,"routes":["TPE-HKG-LAX","TPE-HKG-SFO","TPE-HKG-YVR"]},
+              {"code":"AA","name":"美國航空","direct":false,"routes":["TPE-HKG-LAX","TPE-NRT-LAX"]},
+              {"code":"JL","name":"日本航空","direct":false,"routes":["TPE-NRT-LAX","TPE-NRT-SFO","TPE-HND-LAX"]}
+            ],
+            "connections": [
+              {"via":"HKG","tip":"國泰 TPE→HKG→LAX，全程約16小時，HKG轉機1.5-3h"},
+              {"via":"NRT","tip":"日航 TPE→NRT→LAX/SFO，轉機約3小時"}
+            ],
+            "booking_tip": "北美西岸首選國泰轉香港；注意西岸與東岸哩程數相同但距離更近"
           },
           {
-            "zone": "Z7", "label": "台灣 ↔ 北美洲東岸/中美洲",
-            "eco": 40000, "prem_eco": 70000, "biz": 100000, "first": 200000
+            "zone": "Z7", "label": "台灣 ↔ 北美洲東岸",
+            "eco": 40000, "prem_eco": 70000, "biz": 100000, "first": 200000,
+            "airlines": [
+              {"code":"AA","name":"美國航空","direct":false,"routes":["TPE-NRT-JFK","TPE-NRT-BOS","TPE-NRT-ORD","TPE-HKG-JFK"]},
+              {"code":"BA","name":"英國航空","direct":false,"routes":["TPE-HKG-LHR-JFK","TPE-NRT-LHR-JFK"]},
+              {"code":"JL","name":"日本航空","direct":false,"routes":["TPE-NRT-JFK","TPE-HND-ORD"]}
+            ],
+            "connections": [
+              {"via":"NRT+美國轉","tip":"美航 TPE→NRT→JFK，全程約18-20小時"},
+              {"via":"HKG+LHR","tip":"英航可過境倫敦，停留優惠需額外哩程"}
+            ],
+            "booking_tip": "東岸比西岸貴15,000哩商務艙；可考慮日航日本出發段省哩程"
           },
           {
             "zone": "Z8", "label": "台灣 ↔ 南美洲",
-            "eco": 50000, "prem_eco": 90000, "biz": 120000, "first": 240000
+            "eco": 50000, "prem_eco": 90000, "biz": 120000, "first": 240000,
+            "airlines": [
+              {"code":"AA","name":"美國航空","direct":false,"routes":["TPE-HKG-LAX-GRU","TPE-NRT-JFK-GRU"]},
+              {"code":"IB","name":"伊比利亞航空","direct":false,"routes":["TPE-HKG-MAD-BOG"]}
+            ],
+            "connections": [
+              {"via":"LAX或JFK","tip":"美航需先飛美國西/東岸再接南美，至少需兩次轉機"}
+            ],
+            "booking_tip": "南美洲需多段轉機，建議用電話開票，提早1年查詢"
           }
         ]
       },
       "transfer_partners": ["OPENPOINT", "HappyGo", "LINE Points", "中信點數", "玉山e-point"],
       "sweet_spots": [
-        "日本/韓國商務艙 40,000哩（性價比高）",
-        "歐洲商務艙 85,000哩（國泰直飛）",
+        "日本/韓國商務艙 40,000哩（日航直飛，性價比高）",
+        "歐洲商務艙 85,000哩（國泰轉香港，A350商務套艙）",
         "香港經濟艙 7,500哩（短途最划算）"
       ]
     },
@@ -54,41 +132,100 @@
       "name": "長榮無限萬哩遊",
       "airline": "長榮航空",
       "alliance": "星空聯盟",
+      "iata": "BR",
+      "booking_url": "https://www.evaair.com/zh-tw/index.html",
       "currency": "哩",
       "note": "以台灣為出發點的單程哩程數",
       "zones": {
         "chart": [
           {
             "zone": "Z1", "label": "台灣 ↔ 日本/韓國",
-            "eco": 12500, "prem_eco": 20000, "biz": 27500, "first": null
+            "eco": 12500, "prem_eco": 20000, "biz": 27500, "first": null,
+            "airlines": [
+              {"code":"BR","name":"長榮航空","direct":true,"routes":["TPE-NRT","TPE-HND","TPE-KIX","TPE-FUK","TPE-OKA","TPE-CTS","TPE-NGO","TPE-ICN"]},
+              {"code":"NH","name":"全日空ANA","direct":true,"routes":["TPE-NRT","TPE-HND"]}
+            ],
+            "connections": [],
+            "booking_tip": "長榮直飛日本航點最多，在長榮官網或電話以哩程開票"
           },
           {
             "zone": "Z2", "label": "台灣 ↔ 東南亞/香港/中國",
-            "eco": 15000, "prem_eco": 25000, "biz": 35000, "first": null
+            "eco": 15000, "prem_eco": 25000, "biz": 35000, "first": null,
+            "airlines": [
+              {"code":"BR","name":"長榮航空","direct":true,"routes":["TPE-BKK","TPE-SIN","TPE-KUL","TPE-SGN","TPE-HAN","TPE-MNL","TPE-HKG"]},
+              {"code":"TG","name":"泰國國際航空","direct":true,"routes":["TPE-BKK"]},
+              {"code":"SQ","name":"新加坡航空","direct":true,"routes":["TPE-SIN"]},
+              {"code":"MI","name":"勝安航空","direct":true,"routes":["TPE-SIN"]},
+              {"code":"CA","name":"中國國際航空","direct":true,"routes":["TPE-PEK","TPE-PVG"]}
+            ],
+            "connections": [],
+            "booking_tip": "長榮直飛東南亞多數航點；新航/泰航也在星空聯盟可開票"
           },
           {
             "zone": "Z3", "label": "台灣 ↔ 澳洲/南亞",
-            "eco": 20000, "prem_eco": 35000, "biz": 55000, "first": null
+            "eco": 20000, "prem_eco": 35000, "biz": 55000, "first": null,
+            "airlines": [
+              {"code":"BR","name":"長榮航空","direct":false,"routes":["TPE-BKK-SYD","TPE-SIN-SYD","TPE-SIN-MEL"]},
+              {"code":"TG","name":"泰國國際航空","direct":false,"routes":["TPE-BKK-SYD","TPE-BKK-MEL","TPE-BKK-DEL"]},
+              {"code":"SQ","name":"新加坡航空","direct":false,"routes":["TPE-SIN-SYD","TPE-SIN-MEL","TPE-SIN-BNE","TPE-SIN-PER"]},
+              {"code":"NZ","name":"紐西蘭航空","direct":false,"routes":["TPE-SIN-AKL"]}
+            ],
+            "connections": [
+              {"via":"BKK","tip":"長榮或泰航 TPE→BKK→SYD，在曼谷轉機約2小時"},
+              {"via":"SIN","tip":"新航 TPE→SIN→SYD/MEL，轉機約2-3小時，座位較多"}
+            ],
+            "booking_tip": "澳洲建議用新航SQ轉新加坡，座位可用性較佳；長榮轉曼谷也可"
           },
           {
             "zone": "Z4", "label": "台灣 ↔ 歐洲",
-            "eco": 35000, "prem_eco": 55000, "biz": 75000, "first": null
+            "eco": 35000, "prem_eco": 55000, "biz": 75000, "first": null,
+            "airlines": [
+              {"code":"BR","name":"長榮航空","direct":true,"routes":["TPE-AMS","TPE-LHR","TPE-VIE"]},
+              {"code":"LH","name":"漢莎航空","direct":false,"routes":["TPE-AMS-FRA","TPE-SIN-MUC"]},
+              {"code":"LX","name":"瑞士航空","direct":false,"routes":["TPE-AMS-ZRH"]},
+              {"code":"OS","name":"奧地利航空","direct":false,"routes":["TPE-VIE-FRA"]},
+              {"code":"SK","name":"北歐航空","direct":false,"routes":["TPE-HKG-CPH","TPE-BKK-ARN"]},
+              {"code":"TK","name":"土耳其航空","direct":false,"routes":["TPE-SIN-IST-CDG"]}
+            ],
+            "connections": [
+              {"via":"直飛","tip":"長榮直飛阿姆斯特丹(AMS)、倫敦希斯羅(LHR)、維也納(VIE)，約13-14小時"},
+              {"via":"FRA","tip":"漢莎 TPE→AMS→FRA，短途轉機"}
+            ],
+            "booking_tip": "長榮直飛AMS/LHR是歐洲最快選擇；皇璽桂冠商務艙需提早6個月以上開票"
           },
           {
             "zone": "Z5", "label": "台灣 ↔ 北美洲",
-            "eco": 35000, "prem_eco": 55000, "biz": 75000, "first": null
+            "eco": 35000, "prem_eco": 55000, "biz": 75000, "first": null,
+            "airlines": [
+              {"code":"BR","name":"長榮航空","direct":true,"routes":["TPE-LAX","TPE-SFO","TPE-SEA","TPE-JFK","TPE-ORD","TPE-YVR"]},
+              {"code":"UA","name":"聯合航空","direct":false,"routes":["TPE-NRT-SFO","TPE-NRT-LAX","TPE-NRT-ORD","TPE-NRT-IAD"]},
+              {"code":"AC","name":"加拿大航空","direct":false,"routes":["TPE-NRT-YVR","TPE-NRT-YYZ"]}
+            ],
+            "connections": [
+              {"via":"直飛","tip":"長榮直飛LAX/SFO/SEA/JFK/ORD/YVR，約13-16小時"},
+              {"via":"NRT","tip":"聯合航空 TPE→NRT→SFO/ORD，轉機約3小時"}
+            ],
+            "booking_tip": "長榮直飛北美航點最多；皇璽桂冠艙哩程比商務艙少但幾乎不開放"
           },
           {
             "zone": "Z6", "label": "台灣 ↔ 中東/非洲",
-            "eco": 30000, "prem_eco": 50000, "biz": 70000, "first": null
+            "eco": 30000, "prem_eco": 50000, "biz": 70000, "first": null,
+            "airlines": [
+              {"code":"TK","name":"土耳其航空","direct":false,"routes":["TPE-SIN-IST","TPE-BKK-IST"]},
+              {"code":"ET","name":"衣索比亞航空","direct":false,"routes":["TPE-BKK-ADD"]}
+            ],
+            "connections": [
+              {"via":"IST","tip":"土耳其航空轉伊斯坦堡可接歐洲或中東各城市"}
+            ],
+            "booking_tip": "中東/非洲航線選擇有限，建議提早以電話確認夥伴航班可用性"
           }
         ]
       },
       "transfer_partners": ["OPENPOINT", "玉山e-point", "HappyGo"],
       "sweet_spots": [
-        "日本商務艙 27,500哩（星空聯盟夥伴可開）",
-        "北美商務艙 75,000哩（長榮直飛洛杉磯/紐約）",
-        "歐洲商務艙 75,000哩（長榮直飛阿姆斯特丹/倫敦）"
+        "日本商務艙 27,500哩（長榮/全日空直飛，星空聯盟最划算之一）",
+        "北美商務艙 75,000哩（長榮直飛洛杉磯/紐約，比亞洲萬里通省10,000哩）",
+        "歐洲商務艙 75,000哩（長榮直飛阿姆斯特丹/倫敦希斯羅）"
       ]
     },
 
@@ -96,37 +233,82 @@
       "name": "華航獎勵哩程",
       "airline": "中華航空",
       "alliance": "天合聯盟",
+      "iata": "CI",
+      "booking_url": "https://www.china-airlines.com/tw/zh/fly/mileage-plan/redeem-miles",
       "currency": "哩",
       "note": "以台灣為出發點的單程哩程數",
       "zones": {
         "chart": [
           {
             "zone": "Z1", "label": "台灣 ↔ 日本/韓國/香港",
-            "eco": 12000, "prem_eco": 20000, "biz": 30000, "first": 60000
+            "eco": 12000, "prem_eco": 20000, "biz": 30000, "first": 60000,
+            "airlines": [
+              {"code":"CI","name":"中華航空","direct":true,"routes":["TPE-NRT","TPE-HND","TPE-KIX","TPE-FUK","TPE-OKA","TPE-CTS","TPE-NGO","TPE-ICN","TPE-PUS","TPE-HKG"]},
+              {"code":"DL","name":"達美航空","direct":false,"routes":["TPE-NRT-HND（夥伴）"]}
+            ],
+            "connections": [],
+            "booking_tip": "華航直飛日本韓國航點齊全；可在華航官網直接用哩程兌換"
           },
           {
             "zone": "Z2", "label": "台灣 ↔ 東南亞/中國",
-            "eco": 15000, "prem_eco": 25000, "biz": 35000, "first": 70000
+            "eco": 15000, "prem_eco": 25000, "biz": 35000, "first": 70000,
+            "airlines": [
+              {"code":"CI","name":"中華航空","direct":true,"routes":["TPE-BKK","TPE-SIN","TPE-MNL","TPE-SGN","TPE-HAN","TPE-KUL","TPE-CGK","TPE-DPS","TPE-CAN","TPE-PVG","TPE-PEK"]},
+              {"code":"VN","name":"越南航空","direct":true,"routes":["TPE-SGN","TPE-HAN"]},
+              {"code":"MF","name":"廈門航空","direct":true,"routes":["TPE-XMN"]}
+            ],
+            "connections": [],
+            "booking_tip": "東南亞以華航直飛為主；越南航空是天合聯盟夥伴亦可開票"
           },
           {
             "zone": "Z3", "label": "台灣 ↔ 澳洲/南亞/中東",
-            "eco": 25000, "prem_eco": 40000, "biz": 60000, "first": 120000
+            "eco": 25000, "prem_eco": 40000, "biz": 60000, "first": 120000,
+            "airlines": [
+              {"code":"CI","name":"中華航空","direct":false,"routes":["TPE-BKK-SYD","TPE-BKK-MEL","TPE-SIN-SYD"]},
+              {"code":"DL","name":"達美航空","direct":false,"routes":["TPE-NRT-HNL（中東需多轉）"]},
+              {"code":"KQ","name":"肯尼亞航空","direct":false,"routes":["TPE-BKK-DEL（天合夥伴）"]}
+            ],
+            "connections": [
+              {"via":"BKK","tip":"華航 TPE→BKK→SYD/MEL，在曼谷轉機"},
+              {"via":"SIN","tip":"天合夥伴轉新加坡可接澳洲航班"}
+            ],
+            "booking_tip": "澳洲路線建議華航轉曼谷；中東需確認天合夥伴班次可用性"
           },
           {
             "zone": "Z4", "label": "台灣 ↔ 歐洲",
-            "eco": 35000, "prem_eco": 55000, "biz": 80000, "first": 160000
+            "eco": 35000, "prem_eco": 55000, "biz": 80000, "first": 160000,
+            "airlines": [
+              {"code":"CI","name":"中華航空","direct":true,"routes":["TPE-FRA","TPE-AMS"]},
+              {"code":"AF","name":"法國航空","direct":false,"routes":["TPE-SIN-CDG","TPE-HKG-CDG"]},
+              {"code":"KL","name":"荷蘭皇家航空","direct":false,"routes":["TPE-HKG-AMS","TPE-SIN-AMS"]},
+              {"code":"AZ","name":"ITA航空","direct":false,"routes":["TPE-AMS-FCO","TPE-FRA-FCO"]}
+            ],
+            "connections": [
+              {"via":"直飛","tip":"華航直飛法蘭克福(FRA)和阿姆斯特丹(AMS)，約13小時"},
+              {"via":"CDG","tip":"法航轉巴黎可接大量歐洲城市"}
+            ],
+            "booking_tip": "華航直飛FRA/AMS哩程最直接；天合聯盟歐洲夥伴多，可串聯城市"
           },
           {
             "zone": "Z5", "label": "台灣 ↔ 北美洲",
-            "eco": 35000, "prem_eco": 55000, "biz": 80000, "first": 160000
+            "eco": 35000, "prem_eco": 55000, "biz": 80000, "first": 160000,
+            "airlines": [
+              {"code":"CI","name":"中華航空","direct":true,"routes":["TPE-LAX","TPE-SFO","TPE-JFK","TPE-ORD","TPE-SEA"]},
+              {"code":"DL","name":"達美航空","direct":false,"routes":["TPE-NRT-LAX","TPE-NRT-SEA","TPE-NRT-JFK","TPE-NRT-BOS","TPE-NRT-ORD"]}
+            ],
+            "connections": [
+              {"via":"直飛","tip":"華航直飛LAX/SFO/JFK/ORD/SEA，約13-15小時"},
+              {"via":"NRT","tip":"達美航空 TPE→NRT→各美國城市，轉機約3小時"}
+            ],
+            "booking_tip": "華航直飛北美主要城市；達美夥伴可轉更多美國內陸城市"
           }
         ]
       },
       "transfer_partners": ["中信點數", "國泰小樹點"],
       "sweet_spots": [
-        "日本商務艙 30,000哩（天合聯盟夥伴）",
+        "日本商務艙 30,000哩（華航直飛NRT/HND/KIX/FUK/OKA，班次密集）",
         "歐洲商務艙 80,000哩（華航直飛法蘭克福/阿姆斯特丹）",
-        "北美商務艙 80,000哩（華航直飛洛杉磯/紐約）"
+        "北美商務艙 80,000哩（華航直飛LAX/SFO/JFK/ORD）"
       ]
     },
 
@@ -134,41 +316,95 @@
       "name": "ANA 哩程俱樂部",
       "airline": "全日空",
       "alliance": "星空聯盟",
+      "iata": "NH",
+      "booking_url": "https://www.ana.co.jp/zh/tw/",
       "currency": "哩",
-      "note": "從台灣/日本出發，含夥伴航空開票，以單程計",
+      "note": "從台灣出發以長榮/全日空夥伴開票，含夥伴航空，以單程計",
       "zones": {
         "chart": [
           {
             "zone": "Z1", "label": "台灣 ↔ 日本",
-            "eco": 10000, "prem_eco": 15000, "biz": 21000, "first": 35000
+            "eco": 10000, "prem_eco": 15000, "biz": 21000, "first": 35000,
+            "airlines": [
+              {"code":"BR","name":"長榮航空","direct":true,"routes":["TPE-NRT","TPE-HND","TPE-KIX","TPE-FUK","TPE-OKA","TPE-CTS","TPE-NGO"]},
+              {"code":"NH","name":"全日空ANA","direct":true,"routes":["TPE-NRT","TPE-HND"]}
+            ],
+            "connections": [],
+            "booking_tip": "ANA哩程台日段超划算！長榮/全日空均可，在ANA官網電話開票"
           },
           {
             "zone": "Z2", "label": "台灣 ↔ 韓國/中國/香港",
-            "eco": 12000, "prem_eco": 17000, "biz": 23000, "first": 40000
+            "eco": 12000, "prem_eco": 17000, "biz": 23000, "first": 40000,
+            "airlines": [
+              {"code":"BR","name":"長榮航空","direct":true,"routes":["TPE-ICN","TPE-HKG"]},
+              {"code":"NH","name":"全日空ANA","direct":false,"routes":["TPE-NRT-ICN"]},
+              {"code":"CA","name":"中國國際航空","direct":true,"routes":["TPE-PEK","TPE-PVG"]}
+            ],
+            "connections": [
+              {"via":"NRT","tip":"全日空 TPE→NRT→ICN，轉機約3小時"}
+            ],
+            "booking_tip": "韓國以長榮直飛首爾為佳；香港可用長榮直飛"
           },
           {
             "zone": "Z3", "label": "台灣 ↔ 東南亞",
-            "eco": 17000, "prem_eco": 25000, "biz": 37000, "first": 60000
+            "eco": 17000, "prem_eco": 25000, "biz": 37000, "first": 60000,
+            "airlines": [
+              {"code":"BR","name":"長榮航空","direct":true,"routes":["TPE-BKK","TPE-SIN","TPE-KUL","TPE-SGN","TPE-HAN","TPE-MNL"]},
+              {"code":"TG","name":"泰國國際航空","direct":true,"routes":["TPE-BKK"]},
+              {"code":"SQ","name":"新加坡航空","direct":true,"routes":["TPE-SIN"]},
+              {"code":"NH","name":"全日空ANA","direct":false,"routes":["TPE-NRT-BKK","TPE-NRT-SIN"]}
+            ],
+            "connections": [
+              {"via":"NRT","tip":"全日空轉東京可接東南亞，但較費時"}
+            ],
+            "booking_tip": "長榮直飛東南亞最方便；也可用泰航TG或新航SQ（星空聯盟）開票"
           },
           {
             "zone": "Z4", "label": "台灣/日本 ↔ 澳洲/南亞",
-            "eco": 25000, "prem_eco": 40000, "biz": 55000, "first": 75000
+            "eco": 25000, "prem_eco": 40000, "biz": 55000, "first": 75000,
+            "airlines": [
+              {"code":"NH","name":"全日空ANA","direct":false,"routes":["TPE-NRT-SYD","TPE-NRT-MEL","TPE-NRT-BNE"]},
+              {"code":"SQ","name":"新加坡航空","direct":false,"routes":["TPE-SIN-SYD","TPE-SIN-MEL","TPE-SIN-PER"]},
+              {"code":"TG","name":"泰國國際航空","direct":false,"routes":["TPE-BKK-SYD","TPE-BKK-DEL"]}
+            ],
+            "connections": [
+              {"via":"NRT","tip":"全日空 TPE→NRT→SYD，全程約16小時"},
+              {"via":"SIN","tip":"新航 TPE→SIN→SYD，轉機時間約2-3小時"}
+            ],
+            "booking_tip": "澳洲建議新航轉新加坡，座位較充足；頭等艙限全日空自營班機"
           },
           {
-            "zone": "Z5", "label": "日本 ↔ 北美（星空聯盟夥伴）",
-            "eco": 35000, "prem_eco": null, "biz": 45000, "first": 60000
+            "zone": "Z5", "label": "日本 ↔ 北美（需先到日本）",
+            "eco": 35000, "prem_eco": null, "biz": 45000, "first": 60000,
+            "airlines": [
+              {"code":"NH","name":"全日空ANA","direct":true,"routes":["NRT-LAX","NRT-SFO","NRT-SEA","HND-LAX","HND-SFO","NRT-JFK","HND-JFK","NRT-ORD","NRT-IAD"]},
+              {"code":"UA","name":"聯合航空","direct":false,"routes":["NRT-SFO","NRT-ORD","NRT-IAD","NRT-JFK","NRT-LAX"]}
+            ],
+            "connections": [
+              {"via":"NRT/HND","tip":"⚠️ 台灣出發需另加TPE→日本段哩程；日本出發直接兌換最划算"}
+            ],
+            "booking_tip": "⚠️ 此Zone需從日本出發。台灣旅客可TPE→NRT(Z1=21000)+NRT→北美(Z5=45000)，總計66000哩商務艙，仍比其他計畫划算"
           },
           {
-            "zone": "Z6", "label": "日本 ↔ 歐洲（星空聯盟夥伴）",
-            "eco": 45000, "prem_eco": null, "biz": 55000, "first": 80000
+            "zone": "Z6", "label": "日本 ↔ 歐洲（需先到日本）",
+            "eco": 45000, "prem_eco": null, "biz": 55000, "first": 80000,
+            "airlines": [
+              {"code":"NH","name":"全日空ANA","direct":true,"routes":["NRT-LHR","NRT-FRA","NRT-CDG","NRT-MUC","NRT-BRU"]},
+              {"code":"LH","name":"漢莎航空","direct":false,"routes":["NRT-FRA","NRT-MUC"]},
+              {"code":"LX","name":"瑞士航空","direct":false,"routes":["NRT-ZRH"]}
+            ],
+            "connections": [
+              {"via":"NRT","tip":"⚠️ 台灣旅客需加計TPE→NRT段，全日空直飛歐洲約12-13小時"}
+            ],
+            "booking_tip": "⚠️ 此Zone需從日本出發。台灣→日本→歐洲商務艙合計76,000哩，仍為市場最划算之一"
           }
         ]
       },
       "transfer_partners": ["Hami Point"],
       "sweet_spots": [
-        "日本↔北美商務艙 45,000哩（全球最划算之一）",
-        "日本↔歐洲商務艙 55,000哩",
-        "台灣↔日本商務艙 21,000哩（長榮/全日空開票）"
+        "台灣↔日本商務艙僅21,000哩（全聯盟最低，長榮/全日空直飛）",
+        "日本↔北美商務艙45,000哩（全球最划算之一，全日空直飛）",
+        "日本↔歐洲商務艙55,000哩（全日空直飛LHR/FRA/CDG）"
       ]
     },
 
@@ -176,37 +412,85 @@
       "name": "新航 KrisFlyer",
       "airline": "新加坡航空",
       "alliance": "星空聯盟",
+      "iata": "SQ",
+      "booking_url": "https://www.singaporeair.com/zh_TW/us/home/",
       "currency": "哩",
-      "note": "以新加坡為出發點的單程哩程（夥伴航空可從台灣出發）",
+      "note": "以台灣/新加坡為起點的單程哩程（夥伴航空可從台灣出發）",
       "zones": {
         "chart": [
           {
-            "zone": "Z1", "label": "台灣/新加坡 ↔ 東南亞",
-            "eco": 15000, "prem_eco": 25000, "biz": 35000, "first": null
+            "zone": "Z1", "label": "台灣 ↔ 東南亞（泰/越/馬/印/菲/新）",
+            "eco": 15000, "prem_eco": 25000, "biz": 35000, "first": null,
+            "airlines": [
+              {"code":"SQ","name":"新加坡航空","direct":false,"routes":["TPE-SIN-BKK","TPE-SIN-KUL","TPE-SIN-CGK"]},
+              {"code":"MI","name":"勝安航空","direct":false,"routes":["TPE-SIN-BKK","TPE-SIN-KUL"]},
+              {"code":"BR","name":"長榮航空","direct":true,"routes":["TPE-BKK","TPE-SIN","TPE-KUL","TPE-SGN","TPE-HAN","TPE-MNL"]},
+              {"code":"TG","name":"泰國國際航空","direct":true,"routes":["TPE-BKK"]},
+              {"code":"SQ","name":"新加坡航空直飛","direct":true,"routes":["TPE-SIN"]}
+            ],
+            "connections": [
+              {"via":"SIN","tip":"新航 TPE→SIN 直飛，再接東南亞各城市，轉機2-3小時"}
+            ],
+            "booking_tip": "新航KrisFlyer兌換東南亞可用星空聯盟夥伴（長榮/泰航）直飛，不一定需經新加坡"
           },
           {
-            "zone": "Z2", "label": "台灣/新加坡 ↔ 日本/韓國",
-            "eco": 17500, "prem_eco": 30000, "biz": 42000, "first": null
+            "zone": "Z2", "label": "台灣 ↔ 日本/韓國",
+            "eco": 17500, "prem_eco": 30000, "biz": 42000, "first": null,
+            "airlines": [
+              {"code":"SQ","name":"新加坡航空","direct":false,"routes":["TPE-SIN-NRT","TPE-SIN-ICN"]},
+              {"code":"BR","name":"長榮航空","direct":true,"routes":["TPE-NRT","TPE-HND","TPE-KIX","TPE-FUK","TPE-ICN"]},
+              {"code":"NH","name":"全日空ANA","direct":true,"routes":["TPE-NRT"]}
+            ],
+            "connections": [
+              {"via":"SIN","tip":"新航 TPE→SIN→NRT，繞遠但座位較易取得"},
+              {"via":"直飛","tip":"長榮或全日空直飛日本，以KrisFlyer哩程開票"}
+            ],
+            "booking_tip": "KrisFlyer兌換日本建議用長榮BR直飛，不需繞新加坡；哩程比ANA計畫多但方便開票"
           },
           {
-            "zone": "Z3", "label": "新加坡 ↔ 澳洲",
-            "eco": 25000, "prem_eco": 40000, "biz": 55000, "first": 75000
+            "zone": "Z3", "label": "新加坡 ↔ 澳洲/紐西蘭",
+            "eco": 25000, "prem_eco": 40000, "biz": 55000, "first": 75000,
+            "airlines": [
+              {"code":"SQ","name":"新加坡航空","direct":true,"routes":["SIN-SYD","SIN-MEL","SIN-BNE","SIN-PER","SIN-AKL"]},
+              {"code":"MI","name":"勝安航空","direct":true,"routes":["SIN-SYD"]}
+            ],
+            "connections": [
+              {"via":"SIN","tip":"⚠️ 台灣旅客需加計TPE→SIN段，新航直飛澳洲約7-8小時"}
+            ],
+            "booking_tip": "⚠️ 此Zone以新加坡出發計算。台灣出發需再加TPE→SIN段（Z1=35000哩商務）。新航A350/A380商務艙體驗頂級"
           },
           {
             "zone": "Z4", "label": "新加坡 ↔ 歐洲",
-            "eco": 40000, "prem_eco": 60000, "biz": 88000, "first": 114000
+            "eco": 40000, "prem_eco": 60000, "biz": 88000, "first": 114000,
+            "airlines": [
+              {"code":"SQ","name":"新加坡航空","direct":true,"routes":["SIN-LHR","SIN-CDG","SIN-FRA","SIN-AMS","SIN-ZRH","SIN-MUC","SIN-BCN","SIN-CPH","SIN-MXP"]},
+              {"code":"LH","name":"漢莎航空","direct":false,"routes":["SIN-FRA","SIN-MUC"]},
+              {"code":"LX","name":"瑞士航空","direct":false,"routes":["SIN-ZRH"]}
+            ],
+            "connections": [
+              {"via":"SIN","tip":"⚠️ 台灣旅客需加計TPE→SIN段，新航直飛歐洲約13-14小時"}
+            ],
+            "booking_tip": "⚠️ 此Zone以新加坡出發計算。新航A380商務套艙（Book the Cook）是業界頂級體驗，但台灣出發需含TPE→SIN段哩程"
           },
           {
             "zone": "Z5", "label": "新加坡 ↔ 北美洲",
-            "eco": 50000, "prem_eco": 75000, "biz": 99000, "first": null
+            "eco": 50000, "prem_eco": 75000, "biz": 99000, "first": null,
+            "airlines": [
+              {"code":"SQ","name":"新加坡航空","direct":true,"routes":["SIN-LAX","SIN-SFO","SIN-JFK","SIN-EWR","SIN-SEA"]},
+              {"code":"UA","name":"聯合航空","direct":false,"routes":["SIN-NRT-SFO","SIN-NRT-ORD"]}
+            ],
+            "connections": [
+              {"via":"SIN","tip":"⚠️ 台灣旅客需加計TPE→SIN段；新航SIN-LAX全球最長直飛之一(約18.5小時)"}
+            ],
+            "booking_tip": "⚠️ 此Zone以新加坡出發計算。SIN→LAX/JFK超長途商務艙體驗極佳，但台灣出發總哩程較高"
           }
         ]
       },
       "transfer_partners": [],
       "sweet_spots": [
-        "新加坡↔歐洲商務艙 88,000哩（新航A380商務套艙）",
-        "台灣↔日本商務艙 42,000哩（長榮/全日空）",
-        "頭等艙開票難度高，需直接查詢新航官網"
+        "新加坡↔歐洲商務艙88,000哩（新航A380套艙，頂級體驗）",
+        "台灣↔日本商務艙42,000哩（長榮/全日空直飛，可用KrisFlyer開票）",
+        "新加坡↔澳洲商務艙55,000哩，頭等艙75,000哩（稀缺甜蜜點）"
       ]
     }
   },

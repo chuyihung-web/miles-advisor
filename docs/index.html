@@ -77,6 +77,22 @@ main{max-width:1100px;margin:0 auto;padding:0 40px 40px}
 .route-chip{background:#161b22;border:1px solid #30363d;border-radius:8px;padding:6px 12px;font-size:13px;color:#c9d1d9}
 .route-chip.highlight{border-color:#3b82f6;color:#93c5fd;background:#0a1520}
 
+/* Airlines & connections in results */
+.airlines-section{margin-top:12px;padding-top:12px;border-top:1px solid #21262d}
+.section-label{font-size:11px;font-weight:600;color:#6e7681;letter-spacing:.06em;margin-bottom:8px;display:flex;align-items:center;gap:6px}
+.airline-list{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px}
+.airline-chip{display:flex;align-items:center;gap:5px;background:#1c2128;border:1px solid #30363d;border-radius:6px;padding:4px 10px;font-size:12px;color:#c9d1d9}
+.airline-chip.direct{border-color:#22c55e44;background:#0a1f0a}
+.airline-chip .iata{font-size:10px;color:#6e7681;font-weight:600}
+.airline-chip .direct-badge{font-size:10px;color:#4ade80}
+.connection-list{display:flex;flex-direction:column;gap:4px;margin-bottom:10px}
+.connection-item{font-size:12px;color:#6e7681;display:flex;gap:6px;align-items:flex-start}
+.connection-item::before{content:'🔀';flex-shrink:0;font-size:11px;margin-top:1px}
+.booking-tip-box{background:#0d1117;border:1px solid #30363d;border-radius:8px;padding:10px 12px;font-size:12px;color:#8b949e;display:flex;gap:8px;align-items:flex-start}
+.booking-tip-box::before{content:'💡';flex-shrink:0}
+.booking-link{display:inline-flex;align-items:center;gap:4px;background:linear-gradient(135deg,#1d4ed8,#7c3aed);color:#fff;border:none;border-radius:6px;padding:6px 14px;font-size:12px;font-weight:600;cursor:pointer;text-decoration:none;margin-top:10px}
+.booking-link:hover{opacity:.85}
+
 /* Program cards overview */
 .programs-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px;margin-top:8px}
 .prog-card{background:#0d1117;border:1px solid #30363d;border-radius:12px;padding:18px}
@@ -355,22 +371,73 @@ function calcRoute(){
     var saveVsBest=i>0?Math.round((r.miles-results[0].miles)/results[0].miles*100):'';
     var valueMark=saveVsBest?'<span class="badge" style="background:#1f2937;color:#9ca3af">多 '+saveVsBest+'%</span>':'';
 
-    // 哩程價值估算
-    var mileValues={asia_miles:0.45,eva_mileage:0.5,dynasty_flyer:0.4,ana_mileage:0.6,krisflyer:0.5};
-    var valuePerMile=mileValues[r.pid]||0.4;
+    // ── 可搭乘航空 ──
+    var airlinesHtml='';
+    if(r.zoneData.airlines&&r.zoneData.airlines.length){
+      var directList=r.zoneData.airlines.filter(function(a){return a.direct;});
+      var connectList=r.zoneData.airlines.filter(function(a){return !a.direct;});
+      var chips='';
+      if(directList.length){
+        chips+=directList.map(function(a){
+          return '<span class="airline-chip direct"><span class="iata">'+a.code+'</span>'+a.name+'<span class="direct-badge">直飛</span></span>';
+        }).join('');
+      }
+      if(connectList.length){
+        chips+=connectList.map(function(a){
+          return '<span class="airline-chip"><span class="iata">'+a.code+'</span>'+a.name+'</span>';
+        }).join('');
+      }
+      airlinesHtml='<div class="airlines-section">'
+        +'<div class="section-label">✈️ 可搭乘航空'
+          +(directList.length?'　<span style="font-size:10px;color:#4ade80;font-weight:400">● 直飛</span>':'')
+          +(connectList.length?'　<span style="font-size:10px;color:#6e7681;font-weight:400">○ 需轉機</span>':'')
+        +'</div>'
+        +'<div class="airline-list">'+chips+'</div>';
 
-    var sweetHtml='';
-    if(r.prog.sweet_spots&&i===0){
-      sweetHtml='<div class="sweet-spots">'+
-        r.prog.sweet_spots.slice(0,2).map(function(s){return '<div class="sweet-spot-item">'+s+'</div>';}).join('')+
-      '</div>';
+      // 轉機路線
+      if(r.zoneData.connections&&r.zoneData.connections.length){
+        airlinesHtml+='<div class="section-label" style="margin-top:6px">🔀 轉機路線</div>'
+          +'<div class="connection-list">'
+          +r.zoneData.connections.map(function(c){
+            return '<div class="connection-item">'+c.tip+'</div>';
+          }).join('')
+          +'</div>';
+      }
+
+      // 常見航班路線示例
+      var routeExamples=[];
+      r.zoneData.airlines.slice(0,3).forEach(function(a){
+        if(a.routes&&a.routes.length){
+          routeExamples.push(a.code+': '+a.routes.slice(0,2).join('、'));
+        }
+      });
+      if(routeExamples.length){
+        airlinesHtml+='<div class="section-label" style="margin-top:6px">📍 典型航班</div>'
+          +'<div style="font-size:12px;color:#6e7681;display:flex;flex-wrap:wrap;gap:6px">'
+          +routeExamples.map(function(t){return '<span style="background:#1c2128;border:1px solid #30363d;border-radius:4px;padding:2px 8px">'+t+'</span>';}).join('')
+          +'</div>';
+      }
+
+      // 開票建議
+      if(r.zoneData.booking_tip){
+        airlinesHtml+='<div class="booking-tip-box" style="margin-top:10px">'+r.zoneData.booking_tip+'</div>';
+      }
+
+      // 開票連結
+      if(r.prog.booking_url){
+        airlinesHtml+='<a class="booking-link" href="'+r.prog.booking_url+'" target="_blank" rel="noopener">前往開票 →</a>';
+      }
+
+      airlinesHtml+='</div>';
     }
 
+    // 點數轉入夥伴
     var partnerHtml='';
     if(r.prog.transfer_partners&&r.prog.transfer_partners.length){
-      partnerHtml='<div style="margin-top:8px;font-size:11px;color:#6e7681">可轉入點數：'+
-        r.prog.transfer_partners.map(function(p){return '<span class="partner-chip">'+p+'</span>';}).join('')+
-      '</div>';
+      partnerHtml='<div style="margin-top:8px;font-size:11px;color:#6e7681;display:flex;flex-wrap:wrap;gap:4px;align-items:center">'
+        +'<span style="color:#4b5563">💳 可轉入：</span>'
+        +r.prog.transfer_partners.map(function(p){return '<span class="partner-chip">'+p+'</span>';}).join('')
+      +'</div>';
     }
 
     html+='<div class="result-card '+rankClass[i]+'">'
@@ -382,9 +449,9 @@ function calcRoute(){
           +bestMark+valueMark
         +'</div>'
         +'<div class="result-miles">'+r.miles.toLocaleString()+'<span>哩（單程）</span></div>'
-        +'<div class="result-route" style="color:#6e7681;font-size:13px">'+r.zoneData.label+'</div>'
+        +'<div style="color:#6e7681;font-size:13px;margin-bottom:6px">'+r.zoneData.label+'</div>'
+        +airlinesHtml
         +partnerHtml
-        +sweetHtml
       +'</div>'
     +'</div>';
   });
