@@ -88,6 +88,15 @@ main{max-width:1100px;margin:0 auto;padding:0 40px 40px}
 .connection-list{display:flex;flex-direction:column;gap:4px;margin-bottom:10px}
 .connection-item{font-size:12px;color:#6e7681;display:flex;gap:6px;align-items:flex-start}
 .connection-item::before{content:'🔀';flex-shrink:0;font-size:11px;margin-top:1px}
+.offorigin-box{background:#1a1200;border:1px solid #92400e;border-radius:8px;padding:10px 14px;margin-top:10px;}
+.offorigin-box .offorigin-header{display:flex;align-items:center;gap:8px;margin-bottom:8px;font-size:12px;font-weight:600;color:#fbbf24;}
+.offorigin-tip{border-top:1px solid #292100;padding-top:8px;margin-top:8px;}
+.offorigin-tip:first-child{border-top:none;padding-top:0;margin-top:0;}
+.offorigin-via{display:inline-flex;align-items:center;gap:4px;background:#292100;border:1px solid #78350f;border-radius:12px;padding:2px 10px;font-size:11px;font-weight:600;color:#fcd34d;margin-bottom:4px;}
+.benefit-badge{display:inline-block;border-radius:10px;padding:1px 8px;font-size:10px;font-weight:600;margin-left:4px;}
+.benefit-cheaper{background:#052e16;color:#4ade80;border:1px solid #166534;}
+.benefit-upgrade{background:#1e1b4b;color:#a5b4fc;border:1px solid #3730a3;}
+.benefit-availability{background:#1c1917;color:#a8a29e;border:1px solid #44403c;}
 .alliance-tip-box{background:#0d1b2a;border:1px solid #1d4ed8;border-radius:8px;padding:10px 14px;margin-top:10px;}
 .alliance-tip-box .section-label{color:#93c5fd;}
 .booking-tip-box{background:#0d1117;border:1px solid #30363d;border-radius:8px;padding:10px 12px;font-size:12px;color:#8b949e;display:flex;gap:8px;align-items:flex-start}
@@ -539,6 +548,33 @@ function calcRoute(){
       }
     }
 
+    // ── 外站開票建議 ──
+    var offoriginHtml='';
+    if(r.prog.offorigin_tips&&r.prog.offorigin_tips.length){
+      var matchTips=r.prog.offorigin_tips.filter(function(t){
+        return t.apply_zones&&t.apply_zones.indexOf(r.zone)>=0;
+      });
+      if(matchTips.length){
+        var benefitLabel={cheaper:'省哩程',upgrade:'升等機會',availability:'更易取位'};
+        var benefitClass={cheaper:'benefit-cheaper',upgrade:'benefit-upgrade',availability:'benefit-availability'};
+        offoriginHtml='<div class="offorigin-box">'
+          +'<div class="offorigin-header">🌏 外站開票建議 <span style="font-weight:400;color:#78350f;font-size:11px">（先飛定位城市，再開長程票）</span></div>'
+          +matchTips.map(function(t){
+            var saveTxt=t.miles_delta&&t.miles_delta<0?'<b style="color:#4ade80">省約 '+Math.abs(t.miles_delta/1000).toFixed(0)+',000 哩</b>':'';
+            return '<div class="offorigin-tip">'
+              +'<div style="display:flex;align-items:center;flex-wrap:wrap;gap:6px;margin-bottom:6px">'
+                +'<span class="offorigin-via">'+t.flag+' 定位至 '+t.via_name+'（'+t.via+'）</span>'
+                +'<span class="benefit-badge '+benefitClass[t.benefit]+'">'+benefitLabel[t.benefit]+'</span>'
+                +(saveTxt?' '+saveTxt:'')
+              +'</div>'
+              +'<div style="font-size:12px;color:#d97706;margin-bottom:4px">✈️ 定位成本：'+t.positioning_est+'</div>'
+              +'<div style="font-size:12px;color:#c9d1d9;line-height:1.6">'+t.tip+'</div>'
+            +'</div>';
+          }).join('')
+          +'</div>';
+      }
+    }
+
     html+='<div class="result-card '+rankClass[i]+'">'
       +'<div class="result-rank">'+rankEmoji[i]+'</div>'
       +'<div class="result-body">'
@@ -553,6 +589,7 @@ function calcRoute(){
         +airlinesHtml
         +partnerHtml
         +allianceHtml
+        +offoriginHtml
       +'</div>'
     +'</div>';
   });

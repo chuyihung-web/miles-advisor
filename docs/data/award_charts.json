@@ -442,6 +442,36 @@
         "日本/韓國商務艙 40,000哩（日航直飛，性價比高）",
         "歐洲商務艙 85,000哩（國泰轉香港，A350商務套艙）",
         "香港經濟艙 7,500哩（短途最划算）"
+      ],
+      "offorigin_tips": [
+        {
+          "via": "HKG",
+          "via_name": "香港",
+          "flag": "🇭🇰",
+          "apply_zones": [
+            "Z5",
+            "Z6",
+            "Z7"
+          ],
+          "positioning_est": "廉航約 NT$1,500–3,500 / 或 1,500–3,000 哩",
+          "benefit": "availability",
+          "miles_delta": null,
+          "tip": "CX 以香港為母港，HKG 出發的商務艙比 TPE 出發更容易取位（尤其旺季）。哩程費率相同，但座位供應更充足，並可在啟德機場貴賓室體驗 CX 頭等專屬設施。"
+        },
+        {
+          "via": "NRT",
+          "via_name": "東京成田",
+          "flag": "🇯🇵",
+          "apply_zones": [
+            "Z5",
+            "Z6",
+            "Z7"
+          ],
+          "positioning_est": "廉航約 NT$2,000–5,000 / 或 5,000–8,000 哩",
+          "benefit": "availability",
+          "miles_delta": null,
+          "tip": "國泰 TPE→NRT→LHR 路線，在東京登機的商務艙有時比台灣出發更容易取位，且可享受更長的機上服務時間。需注意行李需直掛目的地。"
+        }
       ]
     },
     "eva_mileage": {
@@ -1181,6 +1211,21 @@
         "日本商務艙 30,000哩（華航直飛NRT/HND/KIX/FUK/OKA，班次密集）",
         "歐洲商務艙 80,000哩（華航直飛法蘭克福/阿姆斯特丹）",
         "北美商務艙 80,000哩（華航直飛LAX/SFO/JFK/ORD）"
+      ],
+      "offorigin_tips": [
+        {
+          "via": "ICN",
+          "via_name": "首爾仁川",
+          "flag": "🇰🇷",
+          "apply_zones": [
+            "Z5",
+            "Z6"
+          ],
+          "positioning_est": "廉航約 NT$2,000–4,000 / 或 3,000–6,000 哩",
+          "benefit": "availability",
+          "miles_delta": null,
+          "tip": "大韓航空 KE（天合聯盟）從 ICN 出發的歐洲商務艙取位比 TPE 出發容易，且 ICN 是天合聯盟在東北亞最大樞紐。華航 Dynasty 哩程可開 KE 班機，從首爾出發歐洲是可行策略。"
+        }
       ]
     },
     "ana_mileage": {
@@ -1568,6 +1613,38 @@
         "台灣↔日本商務艙僅21,000哩（全聯盟最低，長榮/全日空直飛）",
         "日本↔北美商務艙45,000哩（全球最划算之一，全日空直飛）",
         "日本↔歐洲商務艙55,000哩（全日空直飛LHR/FRA/CDG）"
+      ],
+      "offorigin_tips": [
+        {
+          "via": "NRT",
+          "via_name": "東京成田",
+          "flag": "🇯🇵",
+          "apply_zones": [
+            "Z5",
+            "Z6",
+            "Z7",
+            "Z8"
+          ],
+          "positioning_est": "廉航約 NT$2,000–5,000 / 或 5,000–8,000 哩",
+          "benefit": "availability",
+          "miles_delta": null,
+          "tip": "ANA 以成田/羽田為母港，NRT/HND 出發的長程商務艙座位比 TPE 出發多很多（ANA 保留大量機位給母港出發旅客）。哩程費率相同，但取位成功率高出 3–5 倍，尤其飛歐洲和北美。"
+        },
+        {
+          "via": "HND",
+          "via_name": "東京羽田",
+          "flag": "🇯🇵",
+          "apply_zones": [
+            "Z5",
+            "Z6",
+            "Z7",
+            "Z8"
+          ],
+          "positioning_est": "廉航約 NT$2,000–5,000 / 或 5,000–8,000 哩",
+          "benefit": "availability",
+          "miles_delta": null,
+          "tip": "ANA 羽田出發的歐洲/北美航班（HND-LHR/HND-LAX）同樣是母港出發，座位取位比 TPE 容易。羽田距市區更近，轉機更方便。"
+        }
       ]
     },
     "krisflyer": {
@@ -1935,6 +2012,35 @@
         "新加坡↔歐洲商務艙88,000哩（新航A380套艙，頂級體驗）",
         "台灣↔日本商務艙42,000哩（長榮/全日空直飛，可用KrisFlyer開票）",
         "新加坡↔澳洲商務艙55,000哩，頭等艙75,000哩（稀缺甜蜜點）"
+      ],
+      "offorigin_tips": [
+        {
+          "via": "SIN",
+          "via_name": "新加坡",
+          "flag": "🇸🇬",
+          "apply_zones": [
+            "Z5",
+            "Z6",
+            "Z7",
+            "Z8"
+          ],
+          "positioning_est": "廉航約 NT$3,000–7,000 / 或 8,000–15,000 哩",
+          "benefit": "availability",
+          "miles_delta": null,
+          "tip": "新航以樟宜機場為母港，SIN 出發的商務艙（特別是 A380 商務套艙）比台灣出發容易取位得多，且可在第一貴賓室（The Private Room）享用候機服務。定位後可接 SIN→LHR/FRA/LAX 等長程直飛。"
+        },
+        {
+          "via": "SIN",
+          "via_name": "新加坡",
+          "flag": "🇸🇬",
+          "apply_zones": [
+            "Z4"
+          ],
+          "positioning_est": "廉航約 NT$3,000–7,000 / 或 8,000–15,000 哩",
+          "benefit": "cheaper",
+          "miles_delta": -8000,
+          "tip": "SIN→SYD/MEL 的新航哩程比 TPE 出發少約 5,000–8,000 哩（因 SIN 比 TPE 更靠近澳洲，分區費率不同）。若手上有 KrisFlyer 哩程，從新加坡出發澳洲商務艙更划算。"
+        }
       ]
     },
     "starlux": {
@@ -2450,6 +2556,36 @@
         "日本商務艙35,000哩（⚠️2025/6後費率，JAL直飛）",
         "北美西岸商務艙65,000哩（轉東京，比AA更便宜）",
         "歐洲商務艙75,000哩（JAL直飛LHR/FRA/CDG）"
+      ],
+      "offorigin_tips": [
+        {
+          "via": "NRT",
+          "via_name": "東京成田",
+          "flag": "🇯🇵",
+          "apply_zones": [
+            "Z4",
+            "Z5",
+            "Z6"
+          ],
+          "positioning_est": "廉航約 NT$2,000–5,000 / 或 5,000–8,000 哩",
+          "benefit": "availability",
+          "miles_delta": null,
+          "tip": "JAL 母港為成田/羽田，NRT 出發的商務艙（特別是 JAL Sky Suite）座位取位比 TPE 容易 3–5 倍。⚠️ 注意 2025/6/10 後費率已調漲，建議提早規劃。"
+        },
+        {
+          "via": "HND",
+          "via_name": "東京羽田",
+          "flag": "🇯🇵",
+          "apply_zones": [
+            "Z4",
+            "Z5",
+            "Z6"
+          ],
+          "positioning_est": "廉航約 NT$2,000–5,000 / 或 5,000–8,000 哩",
+          "benefit": "availability",
+          "miles_delta": null,
+          "tip": "JAL 羽田出發的歐洲直飛（HND-LHR/HND-FRA/HND-CDG）母港座位充足。羽田機場交通更便利，是東京定位首選。"
+        }
       ]
     },
     "ba_avios": {
@@ -2851,6 +2987,33 @@
         "台日商務艙20,000 Avios（日航JL直飛，寰宇一家最低之一）",
         "台英商務艙60,000 Avios（CX轉HKG，比Asia Miles省25,000）",
         "Avios可1:1兌換Iberia/Aer Lingus/Finnair哩程，靈活性高"
+      ],
+      "offorigin_tips": [
+        {
+          "via": "NRT",
+          "via_name": "東京成田",
+          "flag": "🇯🇵",
+          "apply_zones": [
+            "Z6",
+            "Z7"
+          ],
+          "positioning_est": "廉航約 NT$2,000–5,000 / 或 5,000–8,000 哩",
+          "benefit": "cheaper",
+          "miles_delta": -20000,
+          "tip": "⭐ BA Avios 距離制計費！NRT→LAX ≈ 8,760km（Z6）vs TPE→LAX ≈ 10,880km（Z7）。改從東京出發，商務艙從 80,000 降至 60,000 Avios，省 20,000 Avios！同理 NRT→JFK 也會比 TPE→JFK 更划算。定位成本遠低於省下的哩程價值。"
+        },
+        {
+          "via": "HKG",
+          "via_name": "香港",
+          "flag": "🇭🇰",
+          "apply_zones": [
+            "Z6"
+          ],
+          "positioning_est": "廉航約 NT$1,500–3,500 / 或 1,500–3,000 哩",
+          "benefit": "availability",
+          "miles_delta": null,
+          "tip": "CX 從 HKG 出發的 LHR 商務艙座位充足，且 HKG 是亞洲 Avios 開票最容易取位的出發地之一。費率與 TPE 出發相同，但座位供應好很多。"
+        }
       ]
     },
     "flying_blue": {
@@ -3266,6 +3429,33 @@
         "每月Promo Rewards歐洲商務艙低至24,000哩（極划算）",
         "法荷航動態定價，淡季可找到超低哩程兌換",
         "天合聯盟覆蓋廣，含華航CI直飛歐美的票"
+      ],
+      "offorigin_tips": [
+        {
+          "via": "ICN",
+          "via_name": "首爾仁川",
+          "flag": "🇰🇷",
+          "apply_zones": [
+            "Z5",
+            "Z6"
+          ],
+          "positioning_est": "廉航約 NT$2,000–4,000 / 或 3,000–6,000 哩",
+          "benefit": "availability",
+          "miles_delta": null,
+          "tip": "大韓航空 KE 以仁川為母港，ICN 出發的歐洲商務艙（KE A380）取位比 TPE 出發容易。Flying Blue 可開 KE 班機，且 ICN 轉機約 1.5–2 小時，效率佳。"
+        },
+        {
+          "via": "CDG",
+          "via_name": "巴黎戴高樂",
+          "flag": "🇫🇷",
+          "apply_zones": [
+            "Z6"
+          ],
+          "positioning_est": "需先到歐洲（高成本，適合已在歐洲者）",
+          "benefit": "cheaper",
+          "miles_delta": -15000,
+          "tip": "Flying Blue Promo Rewards 每月特價以法國/荷蘭出發的歐洲/北美航線最多。若已身處歐洲，可找到低至 12,000 哩的商務艙特價（比台灣出發低 20,000–30,000 哩）。"
+        }
       ]
     },
     "korean_skypass": {
@@ -3642,6 +3832,21 @@
         "大韓A380頭等艙110,000哩（ICN-LAX/JFK，體驗頂級）",
         "台韓商務艙25,000哩（直飛最方便）",
         "歐洲商務艙75,000哩（轉首爾，ICN直飛多城市）"
+      ],
+      "offorigin_tips": [
+        {
+          "via": "ICN",
+          "via_name": "首爾仁川",
+          "flag": "🇰🇷",
+          "apply_zones": [
+            "Z6",
+            "Z7"
+          ],
+          "positioning_est": "廉航約 NT$2,000–4,000 / 或 3,000–6,000 哩",
+          "benefit": "availability",
+          "miles_delta": null,
+          "tip": "大韓 KE 以仁川為母港，ICN 出發的歐洲/北美商務艙（A380）比任何外站都容易取位。且仁川機場轉機服務頂尖（免費市區觀光/淋浴間）。費率相同，但座位可用性大幅提升。"
+        }
       ]
     },
     "emirates_skywards": {
@@ -3921,6 +4126,22 @@
         "⭐杜拜→歐洲頭等艙80,000哩（A380頭等套艙，業界最佳體驗）",
         "⭐杜拜→澳洲頭等艙80,000哩（A380直飛）",
         "⚠️阿聯酋不飛台灣，需先至杜拜中轉"
+      ],
+      "offorigin_tips": [
+        {
+          "via": "DXB",
+          "via_name": "杜拜",
+          "flag": "🇦🇪",
+          "apply_zones": [
+            "Z4",
+            "Z5",
+            "Z6"
+          ],
+          "positioning_est": "其他哩程開票 TPE→DXB（約 30,000–40,000 哩商務），或購票約 NT$15,000–30,000",
+          "benefit": "upgrade",
+          "miles_delta": null,
+          "tip": "⚠️ 阿聯酋不飛台灣，DXB 本來就是必要中轉點。建議策略：用長榮/ANA/CX 哩程開 TPE→DXB 商務艙（約 25,000–35,000 哩），到 DXB 後再用 Skywards 開 DXB→LHR/SYD/JFK 頭等艙。可體驗全球最頂級的 A380 頭等套艙，合計哩程比直接買票划算很多。"
+        }
       ]
     },
     "united_mileageplus": {
@@ -4398,6 +4619,34 @@
         "⭐歐洲商務55,000哩（長榮直飛AMS/LHR/VIE，比ANA省16,000哩）",
         "北美西岸商務65,000哩（長榮直飛）",
         "Chase UR直接1:1轉入，美國最易累積"
+      ],
+      "offorigin_tips": [
+        {
+          "via": "NRT",
+          "via_name": "東京成田",
+          "flag": "🇯🇵",
+          "apply_zones": [
+            "Z5",
+            "Z6",
+            "Z7"
+          ],
+          "positioning_est": "廉航約 NT$2,000–5,000 / 或 5,000–8,000 哩",
+          "benefit": "availability",
+          "miles_delta": null,
+          "tip": "ANA（星空聯盟）以 NRT 為母港，用 MileagePlus 開 ANA 班機時，NRT 出發的座位比 TPE 容易取位 3–5 倍。適合計畫飛 ANA 全日空商務艙的旅客，從東京出發是最佳策略。"
+        },
+        {
+          "via": "LAX",
+          "via_name": "洛杉磯",
+          "flag": "🇺🇸",
+          "apply_zones": [
+            "Z7"
+          ],
+          "positioning_est": "需先飛美西（長程定位，適合已在美國者）",
+          "benefit": "cheaper",
+          "miles_delta": -10000,
+          "tip": "UA 自家班機從美國出發的歐洲票（LAX/SFO→LHR/FRA）有時比亞洲出發哩程少 5,000–10,000 哩，且商務艙 Polaris 座位從美國出發取位容易很多。適合安排美國轉機或已在美的旅客。"
+        }
       ]
     },
     "miles_more": {
@@ -4841,6 +5090,33 @@
         "⭐東歐全境最強：長榮VIE直飛+奧航OS接巴爾幹/東歐各城",
         "歐洲商務65,000哩（漢莎集團內短途接駁最完整）",
         "漢莎頭等艙95,000哩（法蘭克福出發，全球頂級體驗）"
+      ],
+      "offorigin_tips": [
+        {
+          "via": "FRA",
+          "via_name": "法蘭克福",
+          "flag": "🇩🇪",
+          "apply_zones": [
+            "Z5",
+            "Z6"
+          ],
+          "positioning_est": "需先到歐洲（適合已在歐洲或歐洲中轉者）",
+          "benefit": "availability",
+          "miles_delta": null,
+          "tip": "漢莎以 FRA/MUC 為母港，FRA 出發的商務艙（特別是 747-8 頭等艙）是全球最容易取位的豪華艙之一。若安排歐洲旅程，可在 FRA 出發開跨大西洋票。"
+        },
+        {
+          "via": "VIE",
+          "via_name": "維也納",
+          "flag": "🇦🇹",
+          "apply_zones": [
+            "Z5"
+          ],
+          "positioning_est": "長榮直飛 TPE-VIE，無需額外定位費",
+          "benefit": "upgrade",
+          "miles_delta": null,
+          "tip": "⭐ 免額外定位：長榮直飛 TPE→VIE 後，奧地利航空（OS）從 VIE 出發覆蓋整個東歐（WAW/PRG/BUD/ZAG/BEG/LJU 等）。Miles & More 開 VIE→東歐的短途票哩程極低（約 10,000–15,000 哩商務艙），是最省東歐商務艙方案。"
+        }
       ]
     },
     "thai_rop": {
@@ -5170,6 +5446,21 @@
         "台灣→曼谷商務艙25,000哩（泰航直飛，最低哩程）",
         "歐洲商務65,000哩（泰航轉BKK，航點多）",
         "非洲奈洛比/約翰尼斯堡可經曼谷一站轉機"
+      ],
+      "offorigin_tips": [
+        {
+          "via": "BKK",
+          "via_name": "曼谷素萬那普",
+          "flag": "🇹🇭",
+          "apply_zones": [
+            "Z4",
+            "Z5"
+          ],
+          "positioning_est": "廉航約 NT$2,000–5,000 / 或 3,000–6,000 哩",
+          "benefit": "availability",
+          "miles_delta": null,
+          "tip": "泰航以曼谷為母港，BKK 出發的歐洲/澳洲商務艙比 TPE 出發容易取位。且曼谷本身是著名旅遊目的地，可安排 BKK 短遊後再開長程票，行程更靈活。"
+        }
       ]
     },
     "turkish_miles": {
@@ -5534,6 +5825,21 @@
         "⭐東歐全境最強：IST是歐洲30+城市最佳轉機點（巴爾幹/波羅的海全覆蓋）",
         "歐洲商務55,000哩（比多數計畫便宜）",
         "中東40,000哩商務，IST中轉中東全境"
+      ],
+      "offorigin_tips": [
+        {
+          "via": "IST",
+          "via_name": "伊斯坦堡",
+          "flag": "🇹🇷",
+          "apply_zones": [
+            "Z5",
+            "Z6"
+          ],
+          "positioning_est": "土耳其航空/廉航約 NT$8,000–18,000（長程定位）或 30,000–40,000 哩",
+          "benefit": "upgrade",
+          "miles_delta": null,
+          "tip": "⭐ IST 是土耳其航空母港，覆蓋全球 300+ 目的地。從 IST 出發幾乎可到任何東歐、中東、非洲城市，且商務艙取位極容易。若有機會安排土耳其旅遊，可同時開長程商務票，一票兩用。"
+        }
       ]
     },
     "malaysia_enrich": {
@@ -5883,6 +6189,21 @@
         "台灣→吉隆坡商務20,000哩（直飛最方便）",
         "澳洲商務50,000哩（馬航轉KUL，PER/SYD/MEL直飛）",
         "馬航Enrich較難在台灣累積，建議以購票方式"
+      ],
+      "offorigin_tips": [
+        {
+          "via": "KUL",
+          "via_name": "吉隆坡",
+          "flag": "🇲🇾",
+          "apply_zones": [
+            "Z4",
+            "Z5"
+          ],
+          "positioning_est": "馬航直飛 TPE→KUL，無需額外費用（KUL 本就是必要中轉點）",
+          "benefit": "availability",
+          "miles_delta": null,
+          "tip": "馬航以吉隆坡為母港，KUL 出發的澳洲（SYD/MEL/PER）和歐洲（LHR/FRA/AMS/CDG）商務艙取位比任何外站都容易。TPE→KUL 本身就是直飛，KUL 根本不算額外定位，是最天然的中轉策略。"
+        }
       ]
     },
     "qantas_ff": {
@@ -6264,6 +6585,33 @@
         "⭐澳洲商務艙54,000點（自家QF班機最划算）",
         "日本商務30,000點（日航JL直飛）",
         "Qantas點在台灣較難大量累積，建議透過Amex MR轉入"
+      ],
+      "offorigin_tips": [
+        {
+          "via": "NRT",
+          "via_name": "東京成田",
+          "flag": "🇯🇵",
+          "apply_zones": [
+            "Z4"
+          ],
+          "positioning_est": "廉航約 NT$2,000–5,000 / 或 5,000–8,000 哩",
+          "benefit": "cheaper",
+          "miles_delta": -9000,
+          "tip": "澳航在亞洲以 NRT→SYD/MEL 有直飛，且 NRT 出發的 QF 商務艙比 TPE 轉機取位容易（台灣沒有 QF 直飛）。Qantas Points 開 NRT→SYD 商務艙約 45,000 點，比多段轉機省約 9,000 點。"
+        },
+        {
+          "via": "HKG",
+          "via_name": "香港",
+          "flag": "🇭🇰",
+          "apply_zones": [
+            "Z4",
+            "Z5"
+          ],
+          "positioning_est": "廉航約 NT$1,500–3,500 / 或 1,500–3,000 哩",
+          "benefit": "availability",
+          "miles_delta": null,
+          "tip": "國泰 CX 從 HKG 出發的澳洲/歐洲商務艙取位充足，用 Qantas Points 開 CX 班機（寰宇一家夥伴）比直接開 QF 更容易找到位置。HKG→SYD/MEL 直飛是最佳選項。"
+        }
       ]
     }
   },
