@@ -296,29 +296,65 @@ Promise.all([
 });
 
 function init(){
-  // 填充機場選單：台灣優先，其餘按國家字母排序
+  // 國家 → 地區對照表（用於 optgroup 分組）
+  var regionMap={
+    '台灣':'🇹🇼 台灣',
+    '日本':'🇯🇵 日本',
+    '韓國':'🇰🇷 韓國',
+    '香港':'🇭🇰 港澳','澳門':'🇭🇰 港澳',
+    '中國':'🇨🇳 中國大陸',
+    '泰國':'🌏 東南亞','越南':'🌏 東南亞','菲律賓':'🌏 東南亞',
+    '馬來西亞':'🌏 東南亞','新加坡':'🌏 東南亞','印尼':'🌏 東南亞',
+    '柬埔寨':'🌏 東南亞','緬甸':'🌏 東南亞','關島':'🌏 東南亞',
+    '印度':'🌏 南亞','斯里蘭卡':'🌏 南亞','尼泊爾':'🌏 南亞','馬爾地夫':'🌏 南亞',
+    '阿拉伯聯合大公國':'🌍 中東','卡達':'🌍 中東','沙烏地阿拉伯':'🌍 中東',
+    '科威特':'🌍 中東','巴林':'🌍 中東','阿曼':'🌍 中東','約旦':'🌍 中東',
+    '以色列':'🌍 中東','埃及':'🌍 中東','土耳其':'🌍 中東',
+    '英國':'🌍 西歐','德國':'🌍 西歐','法國':'🌍 西歐','荷蘭':'🌍 西歐',
+    '瑞士':'🌍 西歐','奧地利':'🌍 西歐','義大利':'🌍 西歐','西班牙':'🌍 西歐',
+    '比利時':'🌍 西歐','挪威':'🌍 西歐','瑞典':'🌍 西歐','丹麥':'🌍 西歐',
+    '芬蘭':'🌍 西歐','葡萄牙':'🌍 西歐','愛爾蘭':'🌍 西歐',
+    '波蘭':'🌍 東歐','捷克':'🌍 東歐','匈牙利':'🌍 東歐','希臘':'🌍 東歐',
+    '羅馬尼亞':'🌍 東歐','保加利亞':'🌍 東歐','塞爾維亞':'🌍 東歐',
+    '克羅埃西亞':'🌍 東歐','斯洛維尼亞':'🌍 東歐','烏克蘭':'🌍 東歐',
+    '立陶宛':'🌍 東歐','拉脫維亞':'🌍 東歐','愛沙尼亞':'🌍 東歐',
+    '北馬其頓':'🌍 東歐','阿爾巴尼亞':'🌍 東歐',
+    '肯亞':'🌍 非洲','南非':'🌍 非洲','摩洛哥':'🌍 非洲','衣索比亞':'🌍 非洲',
+    '哈薩克':'🌏 中亞',
+    '澳洲':'🌏 大洋洲','紐西蘭':'🌏 大洋洲','斐濟':'🌏 大洋洲',
+    '美國':'🌎 北美洲','美國（夏威夷）':'🌎 北美洲','加拿大':'🌎 北美洲',
+    '巴西':'🌎 南美洲','哥倫比亞':'🌎 南美洲','智利':'🌎 南美洲'
+  };
+  // 地區顯示順序
+  var regionOrder=['🇹🇼 台灣','🇯🇵 日本','🇰🇷 韓國','🇭🇰 港澳','🇨🇳 中國大陸',
+    '🌏 東南亞','🌏 南亞','🌍 中東','🌍 西歐','🌍 東歐','🌍 非洲',
+    '🌏 中亞','🌏 大洋洲','🌎 北美洲','🌎 南美洲'];
+
   var airports = Object.entries(AIRPORTS).sort(function(a,b){
-    var aTW = a[1].country==='台灣' ? 0 : 1;
-    var bTW = b[1].country==='台灣' ? 0 : 1;
-    if(aTW!==bTW) return aTW-bTW;
+    var ra=regionMap[a[1].country]||'🌍 其他';
+    var rb=regionMap[b[1].country]||'🌍 其他';
+    var oa=regionOrder.indexOf(ra); if(oa<0) oa=99;
+    var ob=regionOrder.indexOf(rb); if(ob<0) ob=99;
+    if(oa!==ob) return oa-ob;
     return a[1].country.localeCompare(b[1].country,'zh-TW') || a[1].city.localeCompare(b[1].city,'zh-TW');
   });
 
-  // 按國家分組（台灣包含 origin 機場）
+  // 按地區分組
   var groups = {};
+  var groupOrder = [];
   airports.forEach(function(e){
     var code=e[0], info=e[1];
-    var c=info.country;
-    if(!groups[c]) groups[c]=[];
-    groups[c].push({code,info});
+    var region=regionMap[info.country]||'🌍 其他';
+    if(!groups[region]){ groups[region]=[]; groupOrder.push(region); }
+    groups[region].push({code,info});
   });
 
   ['from-airport','to-airport','rev-from'].forEach(function(id){
     var sel=document.getElementById(id);
-    Object.keys(groups).forEach(function(country){
+    groupOrder.forEach(function(region){
       var og=document.createElement('optgroup');
-      og.label=country;
-      groups[country].forEach(function(a){
+      og.label=region;
+      groups[region].forEach(function(a){
         var opt=new Option(a.info.city+' ('+a.code+')',a.code);
         og.appendChild(opt);
       });
