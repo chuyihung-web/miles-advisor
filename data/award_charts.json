@@ -1936,6 +1936,106 @@
         "台灣↔日本商務艙42,000哩（長榮/全日空直飛，可用KrisFlyer開票）",
         "新加坡↔澳洲商務艙55,000哩，頭等艙75,000哩（稀缺甜蜜點）"
       ]
+    },
+    "starlux": {
+      "name": "星宇 COSMILE",
+      "airline": "星宇航空",
+      "alliance": "獨立（無聯盟）",
+      "iata": "JX",
+      "booking_url": "https://cosmile.starlux-airlines.com",
+      "currency": "哩",
+      "note": "星宇自家航班兌換，不含聯盟夥伴；僅限星宇JX航班開票",
+      "zones": {
+        "chart": [
+          {
+            "zone": "Z1",
+            "label": "台灣 ↔ 日本/韓國/香港",
+            "eco": 8000,
+            "prem_eco": 14000,
+            "biz": 18000,
+            "first": null,
+            "airlines": [
+              {
+                "code": "JX",
+                "name": "星宇航空",
+                "direct": true,
+                "routes": [
+                  "TPE-NRT",
+                  "TPE-HND",
+                  "TPE-KIX",
+                  "TPE-CTS",
+                  "TPE-OKA",
+                  "TPE-FUK",
+                  "TPE-NGO",
+                  "TPE-ICN",
+                  "TPE-HKG"
+                ]
+              }
+            ],
+            "connections": [],
+            "booking_tip": "日本各城市直飛，商務艙18,000哩為台日航線最低哩程之一（含商務）。COSMILE官網或App直接兌換"
+          },
+          {
+            "zone": "Z2",
+            "label": "台灣 ↔ 東南亞（泰/新/馬/越/菲/印尼）",
+            "eco": 12000,
+            "prem_eco": 20000,
+            "biz": 28000,
+            "first": null,
+            "airlines": [
+              {
+                "code": "JX",
+                "name": "星宇航空",
+                "direct": true,
+                "routes": [
+                  "TPE-BKK",
+                  "TPE-SIN",
+                  "TPE-KUL",
+                  "TPE-MNL",
+                  "TPE-SGN",
+                  "TPE-HAN",
+                  "TPE-DAD",
+                  "TPE-CGK",
+                  "TPE-DPS"
+                ]
+              }
+            ],
+            "connections": [],
+            "booking_tip": "東南亞直飛各主要城市，豪華經濟艙頗受好評。注意：僅限星宇自家班機，無法開夥伴航班"
+          },
+          {
+            "zone": "Z3",
+            "label": "台灣 ↔ 美國西岸（洛杉磯/西雅圖）",
+            "eco": 35000,
+            "prem_eco": 55000,
+            "biz": 70000,
+            "first": null,
+            "airlines": [
+              {
+                "code": "JX",
+                "name": "星宇航空",
+                "direct": true,
+                "routes": [
+                  "TPE-LAX",
+                  "TPE-SEA"
+                ]
+              }
+            ],
+            "connections": [],
+            "booking_tip": "2024年新開長程線，搭載A350商務艙。COSMILE哩程兌換美線座位稀缺，建議提早6個月查詢"
+          }
+        ]
+      },
+      "transfer_partners": [
+        "JCB卡友",
+        "台新Richart哩",
+        "永豐幣倍卡（部分）"
+      ],
+      "sweet_spots": [
+        "日本商務艙僅18,000哩（台日航線商務艙最低哩程之一）",
+        "東南亞商務艙28,000哩（星宇自家豪華商務，長榮之外的好選擇）",
+        "美西直飛LAX/SEA，A350商務艙體驗（2024年新開航）"
+      ]
     }
   },
   "cabins": {

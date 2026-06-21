@@ -165,6 +165,7 @@ main{max-width:1100px;margin:0 auto;padding:0 40px 40px}
             <option value="dynasty_flyer">華航獎勵哩程</option>
             <option value="ana_mileage">ANA 哩程俱樂部</option>
             <option value="krisflyer">新航 KrisFlyer</option>
+        <option value="starlux">星宇 COSMILE</option>
           </select>
         </div>
         <button class="calc-btn" onclick="calcRoute()">試算 →</button>
@@ -193,6 +194,7 @@ main{max-width:1100px;margin:0 auto;padding:0 40px 40px}
             <option value="dynasty_flyer">華航獎勵哩程</option>
             <option value="ana_mileage">ANA 哩程俱樂部</option>
             <option value="krisflyer">新航 KrisFlyer</option>
+        <option value="starlux">星宇 COSMILE</option>
           </select>
         </div>
         <div class="field">
@@ -319,8 +321,8 @@ function calcRoute(){
 
   var cabinLabels={eco:'經濟艙',prem_eco:'豪華經濟艙',biz:'商務艙',first:'頭等艙'};
   var cabinIcons={eco:'🪑',prem_eco:'🛋️',biz:'💺',first:'👑'};
-  var progIcons={asia_miles:'🐉',eva_mileage:'🟢',dynasty_flyer:'🔴',ana_mileage:'⭕',krisflyer:'🦁'};
-  var allianceColors={寰宇一家:'#dc7f27',星空聯盟:'#1a3a6b',天合聯盟:'#9b1c1c'};
+  var progIcons={asia_miles:'🐉',eva_mileage:'🟢',dynasty_flyer:'🔴',ana_mileage:'⭕',krisflyer:'🦁',starlux:'⭐'};
+  var allianceColors={寰宇一家:'#dc7f27',星空聯盟:'#1a3a6b',天合聯盟:'#9b1c1c','獨立（無聯盟）':'#0891b2'};
 
   // 找每個計畫的哩程需求
   var results=[];
@@ -329,7 +331,7 @@ function calcRoute(){
     if(filterProg!=='all'&&filterProg!==pid) return;
 
     // zone 對應表（含 krisflyer 獨立 zone）
-    var zoneMap={asia_miles:'zone_asia_miles',eva_mileage:'zone_eva',dynasty_flyer:'zone_dynasty',ana_mileage:'zone_ana',krisflyer:'zone_krisflyer'};
+    var zoneMap={asia_miles:'zone_asia_miles',eva_mileage:'zone_eva',dynasty_flyer:'zone_dynasty',ana_mileage:'zone_ana',krisflyer:'zone_krisflyer',starlux:'zone_starlux'};
     var zk=zoneMap[pid];
     // 判斷哪個是非台灣端（有實際 zone）
     var fromIsOrigin=(fromInfo[zk]==='origin');
@@ -446,6 +448,7 @@ function calcRoute(){
         +'<div class="result-header">'
           +'<span class="result-program">'+progIcons[r.pid]+' '+r.prog.name+'</span>'
           +'<span class="result-alliance" style="background:'+(allianceColors[r.prog.alliance]||'#30363d')+'22;color:'+(allianceColors[r.prog.alliance]||'#6e7681')+'">'+r.prog.alliance+'</span>'
+          +(r.prog.alliance==='獨立（無聯盟）'?'<span class="badge" style="background:#0c4a6e22;color:#38bdf8;border:1px solid #0891b2">台灣本土</span>':'')
           +bestMark+valueMark
         +'</div>'
         +'<div class="result-miles">'+r.miles.toLocaleString()+'<span>哩（單程）</span></div>'
@@ -530,8 +533,8 @@ function calcReverse(){
 // ── Tab3: 計畫總覽 ────────────────────────────────────────────────
 function renderPrograms(){
   if(!CHARTS) return;
-  var progIcons={asia_miles:'🐉',eva_mileage:'🟢',dynasty_flyer:'🔴',ana_mileage:'⭕',krisflyer:'🦁'};
-  var progColors={asia_miles:'#dc7f27',eva_mileage:'#16a34a',dynasty_flyer:'#dc2626',ana_mileage:'#6366f1',krisflyer:'#f59e0b'};
+  var progIcons={asia_miles:'🐉',eva_mileage:'🟢',dynasty_flyer:'🔴',ana_mileage:'⭕',krisflyer:'🦁',starlux:'⭐'};
+  var progColors={asia_miles:'#dc7f27',eva_mileage:'#16a34a',dynasty_flyer:'#dc2626',ana_mileage:'#6366f1',krisflyer:'#f59e0b',starlux:'#0891b2'};
   var html='';
   Object.entries(CHARTS.programs).forEach(function(entry){
     var pid=entry[0], prog=entry[1];

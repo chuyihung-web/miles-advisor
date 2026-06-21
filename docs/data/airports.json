@@ -8,7 +8,8 @@
       "zone_eva": "origin",
       "zone_dynasty": "origin",
       "zone_ana": "origin",
-      "zone_krisflyer": "origin"
+      "zone_krisflyer": "origin",
+      "zone_starlux": "origin"
     },
     "TSA": {
       "name": "台北松山",
@@ -18,7 +19,8 @@
       "zone_eva": "origin",
       "zone_dynasty": "origin",
       "zone_ana": "origin",
-      "zone_krisflyer": "origin"
+      "zone_krisflyer": "origin",
+      "zone_starlux": "origin"
     },
     "KHH": {
       "name": "高雄小港",
@@ -28,7 +30,8 @@
       "zone_eva": "origin",
       "zone_dynasty": "origin",
       "zone_ana": "origin",
-      "zone_krisflyer": "origin"
+      "zone_krisflyer": "origin",
+      "zone_starlux": "origin"
     },
     "RMQ": {
       "name": "台中清泉崗",
@@ -38,7 +41,8 @@
       "zone_eva": "origin",
       "zone_dynasty": "origin",
       "zone_ana": "origin",
-      "zone_krisflyer": "origin"
+      "zone_krisflyer": "origin",
+      "zone_starlux": "origin"
     },
     "HKG": {
       "name": "香港",
@@ -48,7 +52,8 @@
       "zone_eva": "Z2",
       "zone_dynasty": "Z1",
       "zone_ana": "Z2",
-      "zone_krisflyer": "Z1"
+      "zone_krisflyer": "Z1",
+      "zone_starlux": "Z1"
     },
     "MFM": {
       "name": "澳門",
@@ -58,7 +63,8 @@
       "zone_eva": "Z2",
       "zone_dynasty": "Z1",
       "zone_ana": "Z2",
-      "zone_krisflyer": "Z1"
+      "zone_krisflyer": "Z1",
+      "zone_starlux": "Z1"
     },
     "NRT": {
       "name": "東京成田",
@@ -68,7 +74,8 @@
       "zone_eva": "Z1",
       "zone_dynasty": "Z1",
       "zone_ana": "Z1",
-      "zone_krisflyer": "Z2"
+      "zone_krisflyer": "Z2",
+      "zone_starlux": "Z1"
     },
     "HND": {
       "name": "東京羽田",
@@ -78,7 +85,8 @@
       "zone_eva": "Z1",
       "zone_dynasty": "Z1",
       "zone_ana": "Z1",
-      "zone_krisflyer": "Z2"
+      "zone_krisflyer": "Z2",
+      "zone_starlux": "Z1"
     },
     "KIX": {
       "name": "大阪關西",
@@ -88,7 +96,8 @@
       "zone_eva": "Z1",
       "zone_dynasty": "Z1",
       "zone_ana": "Z1",
-      "zone_krisflyer": "Z2"
+      "zone_krisflyer": "Z2",
+      "zone_starlux": "Z1"
     },
     "CTS": {
       "name": "札幌新千歲",
@@ -98,7 +107,8 @@
       "zone_eva": "Z1",
       "zone_dynasty": "Z1",
       "zone_ana": "Z1",
-      "zone_krisflyer": "Z2"
+      "zone_krisflyer": "Z2",
+      "zone_starlux": "Z1"
     },
     "OKA": {
       "name": "沖繩那霸",
@@ -108,7 +118,8 @@
       "zone_eva": "Z1",
       "zone_dynasty": "Z1",
       "zone_ana": "Z1",
-      "zone_krisflyer": "Z2"
+      "zone_krisflyer": "Z2",
+      "zone_starlux": "Z1"
     },
     "FUK": {
       "name": "福岡",
@@ -118,7 +129,8 @@
       "zone_eva": "Z1",
       "zone_dynasty": "Z1",
       "zone_ana": "Z1",
-      "zone_krisflyer": "Z2"
+      "zone_krisflyer": "Z2",
+      "zone_starlux": "Z1"
     },
     "NGO": {
       "name": "名古屋中部",
@@ -128,7 +140,8 @@
       "zone_eva": "Z1",
       "zone_dynasty": "Z1",
       "zone_ana": "Z1",
-      "zone_krisflyer": "Z2"
+      "zone_krisflyer": "Z2",
+      "zone_starlux": "Z1"
     },
     "ICN": {
       "name": "首爾仁川",
@@ -138,7 +151,8 @@
       "zone_eva": "Z1",
       "zone_dynasty": "Z1",
       "zone_ana": "Z2",
-      "zone_krisflyer": "Z2"
+      "zone_krisflyer": "Z2",
+      "zone_starlux": "Z1"
     },
     "PUS": {
       "name": "釜山金海",
@@ -148,7 +162,8 @@
       "zone_eva": "Z1",
       "zone_dynasty": "Z1",
       "zone_ana": "Z2",
-      "zone_krisflyer": "Z2"
+      "zone_krisflyer": "Z2",
+      "zone_starlux": "Z1"
     },
     "PEK": {
       "name": "北京首都",
@@ -158,7 +173,8 @@
       "zone_eva": "Z2",
       "zone_dynasty": "Z2",
       "zone_ana": "Z2",
-      "zone_krisflyer": "Z2"
+      "zone_krisflyer": "Z2",
+      "zone_starlux": "Z1"
     },
     "PVG": {
       "name": "上海浦東",
@@ -168,7 +184,8 @@
       "zone_eva": "Z2",
       "zone_dynasty": "Z2",
       "zone_ana": "Z2",
-      "zone_krisflyer": "Z2"
+      "zone_krisflyer": "Z2",
+      "zone_starlux": "Z1"
     },
     "CAN": {
       "name": "廣州白雲",
@@ -178,7 +195,8 @@
       "zone_eva": "Z2",
       "zone_dynasty": "Z2",
       "zone_ana": "Z2",
-      "zone_krisflyer": "Z2"
+      "zone_krisflyer": "Z2",
+      "zone_starlux": "Z1"
     },
     "CTU": {
       "name": "成都天府",
@@ -188,7 +206,8 @@
       "zone_eva": "Z2",
       "zone_dynasty": "Z2",
       "zone_ana": "Z2",
-      "zone_krisflyer": "Z2"
+      "zone_krisflyer": "Z2",
+      "zone_starlux": null
     },
     "BKK": {
       "name": "曼谷素萬那普",
@@ -198,7 +217,8 @@
       "zone_eva": "Z2",
       "zone_dynasty": "Z2",
       "zone_ana": "Z3",
-      "zone_krisflyer": "Z1"
+      "zone_krisflyer": "Z1",
+      "zone_starlux": "Z2"
     },
     "DMK": {
       "name": "曼谷廊曼",
@@ -208,7 +228,8 @@
       "zone_eva": "Z2",
       "zone_dynasty": "Z2",
       "zone_ana": "Z3",
-      "zone_krisflyer": "Z1"
+      "zone_krisflyer": "Z1",
+      "zone_starlux": "Z2"
     },
     "CNX": {
       "name": "清邁",
@@ -218,7 +239,8 @@
       "zone_eva": "Z2",
       "zone_dynasty": "Z2",
       "zone_ana": "Z3",
-      "zone_krisflyer": "Z1"
+      "zone_krisflyer": "Z1",
+      "zone_starlux": "Z2"
     },
     "HKT": {
       "name": "普吉島",
@@ -228,7 +250,8 @@
       "zone_eva": "Z2",
       "zone_dynasty": "Z2",
       "zone_ana": "Z3",
-      "zone_krisflyer": "Z1"
+      "zone_krisflyer": "Z1",
+      "zone_starlux": "Z2"
     },
     "SGN": {
       "name": "胡志明市",
@@ -238,7 +261,8 @@
       "zone_eva": "Z2",
       "zone_dynasty": "Z2",
       "zone_ana": "Z3",
-      "zone_krisflyer": "Z1"
+      "zone_krisflyer": "Z1",
+      "zone_starlux": "Z2"
     },
     "HAN": {
       "name": "河內",
@@ -248,7 +272,8 @@
       "zone_eva": "Z2",
       "zone_dynasty": "Z2",
       "zone_ana": "Z3",
-      "zone_krisflyer": "Z1"
+      "zone_krisflyer": "Z1",
+      "zone_starlux": "Z2"
     },
     "DAD": {
       "name": "峴港",
@@ -258,7 +283,8 @@
       "zone_eva": "Z2",
       "zone_dynasty": "Z2",
       "zone_ana": "Z3",
-      "zone_krisflyer": "Z1"
+      "zone_krisflyer": "Z1",
+      "zone_starlux": "Z2"
     },
     "MNL": {
       "name": "馬尼拉",
@@ -268,7 +294,8 @@
       "zone_eva": "Z2",
       "zone_dynasty": "Z2",
       "zone_ana": "Z3",
-      "zone_krisflyer": "Z1"
+      "zone_krisflyer": "Z1",
+      "zone_starlux": "Z2"
     },
     "CEB": {
       "name": "宿霧",
@@ -278,7 +305,8 @@
       "zone_eva": "Z2",
       "zone_dynasty": "Z2",
       "zone_ana": "Z3",
-      "zone_krisflyer": "Z1"
+      "zone_krisflyer": "Z1",
+      "zone_starlux": "Z2"
     },
     "KUL": {
       "name": "吉隆坡",
@@ -288,7 +316,8 @@
       "zone_eva": "Z2",
       "zone_dynasty": "Z2",
       "zone_ana": "Z3",
-      "zone_krisflyer": "Z1"
+      "zone_krisflyer": "Z1",
+      "zone_starlux": "Z2"
     },
     "PEN": {
       "name": "檳城",
@@ -298,7 +327,8 @@
       "zone_eva": "Z2",
       "zone_dynasty": "Z2",
       "zone_ana": "Z3",
-      "zone_krisflyer": "Z1"
+      "zone_krisflyer": "Z1",
+      "zone_starlux": "Z2"
     },
     "SIN": {
       "name": "新加坡樟宜",
@@ -308,7 +338,8 @@
       "zone_eva": "Z2",
       "zone_dynasty": "Z2",
       "zone_ana": "Z3",
-      "zone_krisflyer": "Z1"
+      "zone_krisflyer": "Z1",
+      "zone_starlux": "Z2"
     },
     "CGK": {
       "name": "雅加達蘇卡諾-哈達",
@@ -318,7 +349,8 @@
       "zone_eva": "Z2",
       "zone_dynasty": "Z2",
       "zone_ana": "Z3",
-      "zone_krisflyer": "Z1"
+      "zone_krisflyer": "Z1",
+      "zone_starlux": "Z2"
     },
     "DPS": {
       "name": "峇里島恩古拉·賴",
@@ -328,7 +360,8 @@
       "zone_eva": "Z2",
       "zone_dynasty": "Z2",
       "zone_ana": "Z3",
-      "zone_krisflyer": "Z1"
+      "zone_krisflyer": "Z1",
+      "zone_starlux": "Z2"
     },
     "SYD": {
       "name": "雪梨",
@@ -338,7 +371,8 @@
       "zone_eva": "Z3",
       "zone_dynasty": "Z3",
       "zone_ana": "Z4",
-      "zone_krisflyer": "Z3"
+      "zone_krisflyer": "Z3",
+      "zone_starlux": null
     },
     "MEL": {
       "name": "墨爾本",
@@ -348,7 +382,8 @@
       "zone_eva": "Z3",
       "zone_dynasty": "Z3",
       "zone_ana": "Z4",
-      "zone_krisflyer": "Z3"
+      "zone_krisflyer": "Z3",
+      "zone_starlux": null
     },
     "BNE": {
       "name": "布里斯本",
@@ -358,7 +393,8 @@
       "zone_eva": "Z3",
       "zone_dynasty": "Z3",
       "zone_ana": "Z4",
-      "zone_krisflyer": "Z3"
+      "zone_krisflyer": "Z3",
+      "zone_starlux": null
     },
     "PER": {
       "name": "伯斯",
@@ -368,7 +404,8 @@
       "zone_eva": "Z3",
       "zone_dynasty": "Z3",
       "zone_ana": "Z4",
-      "zone_krisflyer": "Z3"
+      "zone_krisflyer": "Z3",
+      "zone_starlux": null
     },
     "AKL": {
       "name": "奧克蘭",
@@ -378,7 +415,8 @@
       "zone_eva": "Z3",
       "zone_dynasty": "Z3",
       "zone_ana": "Z4",
-      "zone_krisflyer": "Z3"
+      "zone_krisflyer": "Z3",
+      "zone_starlux": null
     },
     "DEL": {
       "name": "德里英迪拉·甘地",
@@ -388,7 +426,8 @@
       "zone_eva": "Z3",
       "zone_dynasty": "Z3",
       "zone_ana": "Z4",
-      "zone_krisflyer": "Z1"
+      "zone_krisflyer": "Z1",
+      "zone_starlux": null
     },
     "BOM": {
       "name": "孟買賈特拉帕蒂",
@@ -398,7 +437,8 @@
       "zone_eva": "Z3",
       "zone_dynasty": "Z3",
       "zone_ana": "Z4",
-      "zone_krisflyer": "Z1"
+      "zone_krisflyer": "Z1",
+      "zone_starlux": null
     },
     "DXB": {
       "name": "杜拜",
@@ -408,7 +448,8 @@
       "zone_eva": "Z4",
       "zone_dynasty": "Z3",
       "zone_ana": "Z4",
-      "zone_krisflyer": "Z4"
+      "zone_krisflyer": "Z4",
+      "zone_starlux": null
     },
     "AUH": {
       "name": "阿布達比",
@@ -418,7 +459,8 @@
       "zone_eva": "Z4",
       "zone_dynasty": "Z3",
       "zone_ana": "Z4",
-      "zone_krisflyer": "Z4"
+      "zone_krisflyer": "Z4",
+      "zone_starlux": null
     },
     "DOH": {
       "name": "多哈哈馬德",
@@ -428,7 +470,8 @@
       "zone_eva": "Z4",
       "zone_dynasty": "Z3",
       "zone_ana": "Z4",
-      "zone_krisflyer": "Z4"
+      "zone_krisflyer": "Z4",
+      "zone_starlux": null
     },
     "LHR": {
       "name": "倫敦希斯羅",
@@ -438,7 +481,8 @@
       "zone_eva": "Z4",
       "zone_dynasty": "Z4",
       "zone_ana": "Z6",
-      "zone_krisflyer": "Z4"
+      "zone_krisflyer": "Z4",
+      "zone_starlux": null
     },
     "LGW": {
       "name": "倫敦蓋威克",
@@ -448,7 +492,8 @@
       "zone_eva": "Z4",
       "zone_dynasty": "Z4",
       "zone_ana": "Z6",
-      "zone_krisflyer": "Z4"
+      "zone_krisflyer": "Z4",
+      "zone_starlux": null
     },
     "CDG": {
       "name": "巴黎戴高樂",
@@ -458,7 +503,8 @@
       "zone_eva": "Z4",
       "zone_dynasty": "Z4",
       "zone_ana": "Z6",
-      "zone_krisflyer": "Z4"
+      "zone_krisflyer": "Z4",
+      "zone_starlux": null
     },
     "FRA": {
       "name": "法蘭克福",
@@ -468,7 +514,8 @@
       "zone_eva": "Z4",
       "zone_dynasty": "Z4",
       "zone_ana": "Z6",
-      "zone_krisflyer": "Z4"
+      "zone_krisflyer": "Z4",
+      "zone_starlux": null
     },
     "MUC": {
       "name": "慕尼黑",
@@ -478,7 +525,8 @@
       "zone_eva": "Z4",
       "zone_dynasty": "Z4",
       "zone_ana": "Z6",
-      "zone_krisflyer": "Z4"
+      "zone_krisflyer": "Z4",
+      "zone_starlux": null
     },
     "AMS": {
       "name": "阿姆斯特丹史基浦",
@@ -488,7 +536,8 @@
       "zone_eva": "Z4",
       "zone_dynasty": "Z4",
       "zone_ana": "Z6",
-      "zone_krisflyer": "Z4"
+      "zone_krisflyer": "Z4",
+      "zone_starlux": null
     },
     "VIE": {
       "name": "維也納",
@@ -498,7 +547,8 @@
       "zone_eva": "Z4",
       "zone_dynasty": "Z4",
       "zone_ana": "Z6",
-      "zone_krisflyer": "Z4"
+      "zone_krisflyer": "Z4",
+      "zone_starlux": null
     },
     "FCO": {
       "name": "羅馬費米西諾",
@@ -508,7 +558,8 @@
       "zone_eva": "Z4",
       "zone_dynasty": "Z4",
       "zone_ana": "Z6",
-      "zone_krisflyer": "Z4"
+      "zone_krisflyer": "Z4",
+      "zone_starlux": null
     },
     "MXP": {
       "name": "米蘭馬爾本薩",
@@ -518,7 +569,8 @@
       "zone_eva": "Z4",
       "zone_dynasty": "Z4",
       "zone_ana": "Z6",
-      "zone_krisflyer": "Z4"
+      "zone_krisflyer": "Z4",
+      "zone_starlux": null
     },
     "ZRH": {
       "name": "蘇黎世",
@@ -528,7 +580,8 @@
       "zone_eva": "Z4",
       "zone_dynasty": "Z4",
       "zone_ana": "Z6",
-      "zone_krisflyer": "Z4"
+      "zone_krisflyer": "Z4",
+      "zone_starlux": null
     },
     "MAD": {
       "name": "馬德里巴拉哈斯",
@@ -538,7 +591,8 @@
       "zone_eva": "Z4",
       "zone_dynasty": "Z4",
       "zone_ana": "Z6",
-      "zone_krisflyer": "Z4"
+      "zone_krisflyer": "Z4",
+      "zone_starlux": null
     },
     "BCN": {
       "name": "巴塞隆納",
@@ -548,7 +602,8 @@
       "zone_eva": "Z4",
       "zone_dynasty": "Z4",
       "zone_ana": "Z6",
-      "zone_krisflyer": "Z4"
+      "zone_krisflyer": "Z4",
+      "zone_starlux": null
     },
     "ARN": {
       "name": "斯德哥爾摩阿蘭達",
@@ -558,7 +613,8 @@
       "zone_eva": "Z4",
       "zone_dynasty": "Z4",
       "zone_ana": "Z6",
-      "zone_krisflyer": "Z4"
+      "zone_krisflyer": "Z4",
+      "zone_starlux": null
     },
     "CPH": {
       "name": "哥本哈根",
@@ -568,7 +624,8 @@
       "zone_eva": "Z4",
       "zone_dynasty": "Z4",
       "zone_ana": "Z6",
-      "zone_krisflyer": "Z4"
+      "zone_krisflyer": "Z4",
+      "zone_starlux": null
     },
     "HEL": {
       "name": "赫爾辛基萬塔",
@@ -578,7 +635,8 @@
       "zone_eva": "Z4",
       "zone_dynasty": "Z4",
       "zone_ana": "Z6",
-      "zone_krisflyer": "Z4"
+      "zone_krisflyer": "Z4",
+      "zone_starlux": null
     },
     "IST": {
       "name": "伊斯坦堡",
@@ -588,7 +646,8 @@
       "zone_eva": "Z4",
       "zone_dynasty": "Z4",
       "zone_ana": "Z6",
-      "zone_krisflyer": "Z4"
+      "zone_krisflyer": "Z4",
+      "zone_starlux": null
     },
     "LAX": {
       "name": "洛杉磯",
@@ -598,7 +657,8 @@
       "zone_eva": "Z5",
       "zone_dynasty": "Z5",
       "zone_ana": "Z5",
-      "zone_krisflyer": "Z5"
+      "zone_krisflyer": "Z5",
+      "zone_starlux": "Z3"
     },
     "SFO": {
       "name": "舊金山",
@@ -608,7 +668,8 @@
       "zone_eva": "Z5",
       "zone_dynasty": "Z5",
       "zone_ana": "Z5",
-      "zone_krisflyer": "Z5"
+      "zone_krisflyer": "Z5",
+      "zone_starlux": null
     },
     "SEA": {
       "name": "西雅圖塔科馬",
@@ -618,7 +679,8 @@
       "zone_eva": "Z5",
       "zone_dynasty": "Z5",
       "zone_ana": "Z5",
-      "zone_krisflyer": "Z5"
+      "zone_krisflyer": "Z5",
+      "zone_starlux": "Z3"
     },
     "LAS": {
       "name": "拉斯維加斯麥卡倫",
@@ -628,7 +690,8 @@
       "zone_eva": "Z5",
       "zone_dynasty": "Z5",
       "zone_ana": "Z5",
-      "zone_krisflyer": "Z5"
+      "zone_krisflyer": "Z5",
+      "zone_starlux": null
     },
     "JFK": {
       "name": "紐約甘迺迪",
@@ -638,7 +701,8 @@
       "zone_eva": "Z5",
       "zone_dynasty": "Z5",
       "zone_ana": "Z5",
-      "zone_krisflyer": "Z5"
+      "zone_krisflyer": "Z5",
+      "zone_starlux": null
     },
     "EWR": {
       "name": "紐約紐瓦克",
@@ -648,7 +712,8 @@
       "zone_eva": "Z5",
       "zone_dynasty": "Z5",
       "zone_ana": "Z5",
-      "zone_krisflyer": "Z5"
+      "zone_krisflyer": "Z5",
+      "zone_starlux": null
     },
     "ORD": {
       "name": "芝加哥奧黑爾",
@@ -658,7 +723,8 @@
       "zone_eva": "Z5",
       "zone_dynasty": "Z5",
       "zone_ana": "Z5",
-      "zone_krisflyer": "Z5"
+      "zone_krisflyer": "Z5",
+      "zone_starlux": null
     },
     "BOS": {
       "name": "波士頓洛根",
@@ -668,7 +734,8 @@
       "zone_eva": "Z5",
       "zone_dynasty": "Z5",
       "zone_ana": "Z5",
-      "zone_krisflyer": "Z5"
+      "zone_krisflyer": "Z5",
+      "zone_starlux": null
     },
     "IAD": {
       "name": "華盛頓杜勒斯",
@@ -678,7 +745,8 @@
       "zone_eva": "Z5",
       "zone_dynasty": "Z5",
       "zone_ana": "Z5",
-      "zone_krisflyer": "Z5"
+      "zone_krisflyer": "Z5",
+      "zone_starlux": null
     },
     "YVR": {
       "name": "溫哥華",
@@ -688,7 +756,8 @@
       "zone_eva": "Z5",
       "zone_dynasty": "Z5",
       "zone_ana": "Z5",
-      "zone_krisflyer": "Z5"
+      "zone_krisflyer": "Z5",
+      "zone_starlux": null
     },
     "YYZ": {
       "name": "多倫多皮爾遜",
@@ -698,7 +767,8 @@
       "zone_eva": "Z5",
       "zone_dynasty": "Z5",
       "zone_ana": "Z5",
-      "zone_krisflyer": "Z5"
+      "zone_krisflyer": "Z5",
+      "zone_starlux": null
     },
     "NAN": {
       "name": "斐濟楠迪",
@@ -708,7 +778,8 @@
       "zone_eva": "Z3",
       "zone_dynasty": "Z3",
       "zone_ana": "Z4",
-      "zone_krisflyer": "Z3"
+      "zone_krisflyer": "Z3",
+      "zone_starlux": null
     },
     "GUM": {
       "name": "關島",
@@ -718,7 +789,8 @@
       "zone_eva": "Z2",
       "zone_dynasty": "Z2",
       "zone_ana": "Z3",
-      "zone_krisflyer": "Z1"
+      "zone_krisflyer": "Z1",
+      "zone_starlux": null
     },
     "WAW": {
       "name": "華沙蕭邦",
@@ -728,7 +800,8 @@
       "zone_eva": "Z4",
       "zone_dynasty": "Z4",
       "zone_ana": "Z6",
-      "zone_krisflyer": "Z4"
+      "zone_krisflyer": "Z4",
+      "zone_starlux": null
     },
     "PRG": {
       "name": "布拉格瓦茨拉夫·哈維爾",
@@ -738,7 +811,8 @@
       "zone_eva": "Z4",
       "zone_dynasty": "Z4",
       "zone_ana": "Z6",
-      "zone_krisflyer": "Z4"
+      "zone_krisflyer": "Z4",
+      "zone_starlux": null
     },
     "BUD": {
       "name": "布達佩斯費倫茨·利斯特",
@@ -748,7 +822,8 @@
       "zone_eva": "Z4",
       "zone_dynasty": "Z4",
       "zone_ana": "Z6",
-      "zone_krisflyer": "Z4"
+      "zone_krisflyer": "Z4",
+      "zone_starlux": null
     },
     "ATH": {
       "name": "雅典埃萊夫塞里奧斯·韋尼澤洛斯",
@@ -758,7 +833,8 @@
       "zone_eva": "Z4",
       "zone_dynasty": "Z4",
       "zone_ana": "Z6",
-      "zone_krisflyer": "Z4"
+      "zone_krisflyer": "Z4",
+      "zone_starlux": null
     },
     "OTP": {
       "name": "布加勒斯特亨利·科安德",
@@ -768,7 +844,8 @@
       "zone_eva": "Z4",
       "zone_dynasty": "Z4",
       "zone_ana": "Z6",
-      "zone_krisflyer": "Z4"
+      "zone_krisflyer": "Z4",
+      "zone_starlux": null
     },
     "SOF": {
       "name": "索菲亞",
@@ -778,7 +855,8 @@
       "zone_eva": "Z4",
       "zone_dynasty": "Z4",
       "zone_ana": "Z6",
-      "zone_krisflyer": "Z4"
+      "zone_krisflyer": "Z4",
+      "zone_starlux": null
     },
     "BEG": {
       "name": "貝爾格勒尼古拉·特斯拉",
@@ -788,7 +866,8 @@
       "zone_eva": "Z4",
       "zone_dynasty": "Z4",
       "zone_ana": "Z6",
-      "zone_krisflyer": "Z4"
+      "zone_krisflyer": "Z4",
+      "zone_starlux": null
     },
     "ZAG": {
       "name": "薩格勒布弗拉尼奧·圖季曼",
@@ -798,7 +877,8 @@
       "zone_eva": "Z4",
       "zone_dynasty": "Z4",
       "zone_ana": "Z6",
-      "zone_krisflyer": "Z4"
+      "zone_krisflyer": "Z4",
+      "zone_starlux": null
     },
     "LJU": {
       "name": "盧布里雅那約熱·普奇尼克",
@@ -808,7 +888,8 @@
       "zone_eva": "Z4",
       "zone_dynasty": "Z4",
       "zone_ana": "Z6",
-      "zone_krisflyer": "Z4"
+      "zone_krisflyer": "Z4",
+      "zone_starlux": null
     },
     "TLV": {
       "name": "特拉維夫本-古里安",
@@ -818,7 +899,8 @@
       "zone_eva": "Z4",
       "zone_dynasty": "Z4",
       "zone_ana": "Z6",
-      "zone_krisflyer": "Z4"
+      "zone_krisflyer": "Z4",
+      "zone_starlux": null
     },
     "KBP": {
       "name": "基輔博里斯波爾",
@@ -828,7 +910,8 @@
       "zone_eva": "Z4",
       "zone_dynasty": "Z4",
       "zone_ana": "Z6",
-      "zone_krisflyer": "Z4"
+      "zone_krisflyer": "Z4",
+      "zone_starlux": null
     },
     "RIX": {
       "name": "里加",
@@ -838,7 +921,8 @@
       "zone_eva": "Z4",
       "zone_dynasty": "Z4",
       "zone_ana": "Z6",
-      "zone_krisflyer": "Z4"
+      "zone_krisflyer": "Z4",
+      "zone_starlux": null
     },
     "TLL": {
       "name": "塔林",
@@ -848,7 +932,8 @@
       "zone_eva": "Z4",
       "zone_dynasty": "Z4",
       "zone_ana": "Z6",
-      "zone_krisflyer": "Z4"
+      "zone_krisflyer": "Z4",
+      "zone_starlux": null
     },
     "VNO": {
       "name": "維爾紐斯",
@@ -858,7 +943,8 @@
       "zone_eva": "Z4",
       "zone_dynasty": "Z4",
       "zone_ana": "Z6",
-      "zone_krisflyer": "Z4"
+      "zone_krisflyer": "Z4",
+      "zone_starlux": null
     },
     "SKP": {
       "name": "斯科普里亞歷山大大帝",
@@ -868,7 +954,8 @@
       "zone_eva": "Z4",
       "zone_dynasty": "Z4",
       "zone_ana": "Z6",
-      "zone_krisflyer": "Z4"
+      "zone_krisflyer": "Z4",
+      "zone_starlux": null
     },
     "DUB": {
       "name": "都柏林",
@@ -878,7 +965,8 @@
       "zone_eva": "Z4",
       "zone_dynasty": "Z4",
       "zone_ana": "Z6",
-      "zone_krisflyer": "Z4"
+      "zone_krisflyer": "Z4",
+      "zone_starlux": null
     },
     "LIS": {
       "name": "里斯本艾多拉多·龔薩維斯",
@@ -888,7 +976,8 @@
       "zone_eva": "Z4",
       "zone_dynasty": "Z4",
       "zone_ana": "Z6",
-      "zone_krisflyer": "Z4"
+      "zone_krisflyer": "Z4",
+      "zone_starlux": null
     },
     "BRU": {
       "name": "布魯塞爾",
@@ -898,7 +987,8 @@
       "zone_eva": "Z4",
       "zone_dynasty": "Z4",
       "zone_ana": "Z6",
-      "zone_krisflyer": "Z4"
+      "zone_krisflyer": "Z4",
+      "zone_starlux": null
     },
     "OSL": {
       "name": "奧斯陸加德莫恩",
@@ -908,7 +998,8 @@
       "zone_eva": "Z4",
       "zone_dynasty": "Z4",
       "zone_ana": "Z6",
-      "zone_krisflyer": "Z4"
+      "zone_krisflyer": "Z4",
+      "zone_starlux": null
     },
     "MAN": {
       "name": "曼徹斯特",
@@ -918,7 +1009,8 @@
       "zone_eva": "Z4",
       "zone_dynasty": "Z4",
       "zone_ana": "Z6",
-      "zone_krisflyer": "Z4"
+      "zone_krisflyer": "Z4",
+      "zone_starlux": null
     },
     "GVA": {
       "name": "日內瓦柯安特蘭",
@@ -928,7 +1020,8 @@
       "zone_eva": "Z4",
       "zone_dynasty": "Z4",
       "zone_ana": "Z6",
-      "zone_krisflyer": "Z4"
+      "zone_krisflyer": "Z4",
+      "zone_starlux": null
     },
     "HAM": {
       "name": "漢堡",
@@ -938,7 +1031,8 @@
       "zone_eva": "Z4",
       "zone_dynasty": "Z4",
       "zone_ana": "Z6",
-      "zone_krisflyer": "Z4"
+      "zone_krisflyer": "Z4",
+      "zone_starlux": null
     },
     "DUS": {
       "name": "杜塞道夫",
@@ -948,7 +1042,8 @@
       "zone_eva": "Z4",
       "zone_dynasty": "Z4",
       "zone_ana": "Z6",
-      "zone_krisflyer": "Z4"
+      "zone_krisflyer": "Z4",
+      "zone_starlux": null
     },
     "RUH": {
       "name": "利雅德哈立德王",
@@ -958,7 +1053,8 @@
       "zone_eva": "Z4",
       "zone_dynasty": "Z3",
       "zone_ana": "Z4",
-      "zone_krisflyer": "Z4"
+      "zone_krisflyer": "Z4",
+      "zone_starlux": null
     },
     "JED": {
       "name": "吉達阿布杜勒阿齊茲王",
@@ -968,7 +1064,8 @@
       "zone_eva": "Z4",
       "zone_dynasty": "Z3",
       "zone_ana": "Z4",
-      "zone_krisflyer": "Z4"
+      "zone_krisflyer": "Z4",
+      "zone_starlux": null
     },
     "KWI": {
       "name": "科威特",
@@ -978,7 +1075,8 @@
       "zone_eva": "Z4",
       "zone_dynasty": "Z3",
       "zone_ana": "Z4",
-      "zone_krisflyer": "Z4"
+      "zone_krisflyer": "Z4",
+      "zone_starlux": null
     },
     "BAH": {
       "name": "巴林國際",
@@ -988,7 +1086,8 @@
       "zone_eva": "Z4",
       "zone_dynasty": "Z3",
       "zone_ana": "Z4",
-      "zone_krisflyer": "Z4"
+      "zone_krisflyer": "Z4",
+      "zone_starlux": null
     },
     "MCT": {
       "name": "馬斯喀特穆斯卡特",
@@ -998,7 +1097,8 @@
       "zone_eva": "Z4",
       "zone_dynasty": "Z3",
       "zone_ana": "Z4",
-      "zone_krisflyer": "Z4"
+      "zone_krisflyer": "Z4",
+      "zone_starlux": null
     },
     "AMM": {
       "name": "安曼皇后·阿利亞",
@@ -1008,7 +1108,8 @@
       "zone_eva": "Z4",
       "zone_dynasty": "Z3",
       "zone_ana": "Z4",
-      "zone_krisflyer": "Z4"
+      "zone_krisflyer": "Z4",
+      "zone_starlux": null
     },
     "CAI": {
       "name": "開羅",
@@ -1018,7 +1119,8 @@
       "zone_eva": "Z4",
       "zone_dynasty": "Z4",
       "zone_ana": "Z6",
-      "zone_krisflyer": "Z4"
+      "zone_krisflyer": "Z4",
+      "zone_starlux": null
     },
     "NBO": {
       "name": "奈洛比喬莫·肯雅塔",
@@ -1028,7 +1130,8 @@
       "zone_eva": "Z4",
       "zone_dynasty": "Z4",
       "zone_ana": "Z6",
-      "zone_krisflyer": "Z4"
+      "zone_krisflyer": "Z4",
+      "zone_starlux": null
     },
     "JNB": {
       "name": "約翰尼斯堡奧比·坦博",
@@ -1038,7 +1141,8 @@
       "zone_eva": "Z4",
       "zone_dynasty": "Z4",
       "zone_ana": "Z6",
-      "zone_krisflyer": "Z4"
+      "zone_krisflyer": "Z4",
+      "zone_starlux": null
     },
     "CPT": {
       "name": "開普敦",
@@ -1048,7 +1152,8 @@
       "zone_eva": "Z4",
       "zone_dynasty": "Z4",
       "zone_ana": "Z6",
-      "zone_krisflyer": "Z4"
+      "zone_krisflyer": "Z4",
+      "zone_starlux": null
     },
     "CMN": {
       "name": "卡薩布蘭卡穆罕默德五世",
@@ -1058,7 +1163,8 @@
       "zone_eva": "Z4",
       "zone_dynasty": "Z4",
       "zone_ana": "Z6",
-      "zone_krisflyer": "Z4"
+      "zone_krisflyer": "Z4",
+      "zone_starlux": null
     },
     "ADD": {
       "name": "阿迪斯阿貝巴博萊",
@@ -1068,7 +1174,8 @@
       "zone_eva": "Z4",
       "zone_dynasty": "Z4",
       "zone_ana": "Z6",
-      "zone_krisflyer": "Z4"
+      "zone_krisflyer": "Z4",
+      "zone_starlux": null
     },
     "HNL": {
       "name": "檀香山丹尼爾·井上",
@@ -1078,7 +1185,8 @@
       "zone_eva": "Z5",
       "zone_dynasty": "Z5",
       "zone_ana": "Z5",
-      "zone_krisflyer": "Z5"
+      "zone_krisflyer": "Z5",
+      "zone_starlux": null
     },
     "GRU": {
       "name": "聖保羅瓜魯柳斯",
@@ -1088,7 +1196,8 @@
       "zone_eva": "Z5",
       "zone_dynasty": "Z5",
       "zone_ana": "Z5",
-      "zone_krisflyer": "Z5"
+      "zone_krisflyer": "Z5",
+      "zone_starlux": null
     },
     "BOG": {
       "name": "波哥大埃爾多拉多",
@@ -1098,7 +1207,8 @@
       "zone_eva": "Z5",
       "zone_dynasty": "Z5",
       "zone_ana": "Z5",
-      "zone_krisflyer": "Z5"
+      "zone_krisflyer": "Z5",
+      "zone_starlux": null
     },
     "SCL": {
       "name": "聖地牙哥阿圖羅·梅里諾·貝尼特斯",
@@ -1108,7 +1218,8 @@
       "zone_eva": "Z5",
       "zone_dynasty": "Z5",
       "zone_ana": "Z5",
-      "zone_krisflyer": "Z5"
+      "zone_krisflyer": "Z5",
+      "zone_starlux": null
     },
     "ALA": {
       "name": "阿拉木圖",
@@ -1118,7 +1229,8 @@
       "zone_eva": "Z3",
       "zone_dynasty": "Z3",
       "zone_ana": "Z4",
-      "zone_krisflyer": "Z4"
+      "zone_krisflyer": "Z4",
+      "zone_starlux": null
     },
     "MLE": {
       "name": "馬爾地夫伊布拉欣·納希爾",
@@ -1128,7 +1240,8 @@
       "zone_eva": "Z3",
       "zone_dynasty": "Z3",
       "zone_ana": "Z4",
-      "zone_krisflyer": "Z1"
+      "zone_krisflyer": "Z1",
+      "zone_starlux": null
     },
     "KTM": {
       "name": "加德滿都特里布萬",
@@ -1138,7 +1251,8 @@
       "zone_eva": "Z3",
       "zone_dynasty": "Z3",
       "zone_ana": "Z4",
-      "zone_krisflyer": "Z1"
+      "zone_krisflyer": "Z1",
+      "zone_starlux": null
     }
   }
 }
