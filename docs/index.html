@@ -229,16 +229,18 @@ Promise.all([
 });
 
 function init(){
-  // 填充機場選單
+  // 填充機場選單：台灣優先，其餘按國家字母排序
   var airports = Object.entries(AIRPORTS).sort(function(a,b){
+    var aTW = a[1].country==='台灣' ? 0 : 1;
+    var bTW = b[1].country==='台灣' ? 0 : 1;
+    if(aTW!==bTW) return aTW-bTW;
     return a[1].country.localeCompare(b[1].country,'zh-TW') || a[1].city.localeCompare(b[1].city,'zh-TW');
   });
 
-  // 按國家分組
+  // 按國家分組（台灣包含 origin 機場）
   var groups = {};
   airports.forEach(function(e){
     var code=e[0], info=e[1];
-    if(info.zone_asia_miles==='origin') return;
     var c=info.country;
     if(!groups[c]) groups[c]=[];
     groups[c].push({code,info});
@@ -310,13 +312,20 @@ function calcRoute(){
     var pid=entry[0], prog=entry[1];
     if(filterProg!=='all'&&filterProg!==pid) return;
 
-    // 找目的地在這個計畫的 zone
-    var zoneKey='zone_'+pid.replace('_mileage','').replace('_flyer','_dynasty').replace('dynasty','dynasty');
-    // 簡化：直接用計畫縮寫對應 zone
-    var zoneMap={asia_miles:'zone_asia_miles',eva_mileage:'zone_eva',dynasty_flyer:'zone_dynasty',ana_mileage:'zone_ana',krisflyer:'zone_ana'};
+    // zone 對應表（含 krisflyer 獨立 zone）
+    var zoneMap={asia_miles:'zone_asia_miles',eva_mileage:'zone_eva',dynasty_flyer:'zone_dynasty',ana_mileage:'zone_ana',krisflyer:'zone_krisflyer'};
     var zk=zoneMap[pid];
-    var toZone=toInfo[zk];
-    if(!toZone) return;
+    // 判斷哪個是非台灣端（有實際 zone）
+    var fromIsOrigin=(fromInfo[zk]==='origin');
+    var toIsOrigin=(toInfo[zk]==='origin');
+    if(fromIsOrigin&&toIsOrigin){return;} // 台灣內線不適用
+    if(!fromIsOrigin&&!toIsOrigin){
+      // 兩端皆非台灣：資料不支援，跳過
+      return;
+    }
+    var destInfo = fromIsOrigin ? toInfo : fromInfo;
+    var toZone=destInfo[zk];
+    if(!toZone||toZone==='origin') return;
 
     // 找對應 zone 的哩程數
     var zoneData=prog.zones.chart.find(function(z){return z.zone===toZone;});
