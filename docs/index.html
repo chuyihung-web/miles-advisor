@@ -6,128 +6,135 @@
 <title>哩程開票顧問</title>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:#0d1117;color:#e6edf3;min-height:100vh}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans TC",sans-serif;background:#0d1117;color:#e6edf3;min-height:100vh;font-size:16px;line-height:1.5}
 
 /* Header */
-header{background:linear-gradient(135deg,#161b22 0%,#1c2128 100%);border-bottom:1px solid #30363d;padding:16px 40px;display:flex;align-items:center;justify-content:space-between}
-.logo{display:flex;align-items:center;gap:12px}
-.logo-icon{width:40px;height:40px;background:linear-gradient(135deg,#3b82f6,#8b5cf6);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:20px}
-.logo h1{font-size:18px;font-weight:700;color:#e6edf3}
-.logo p{font-size:12px;color:#6e7681;margin-top:1px}
+header{background:linear-gradient(135deg,#161b22 0%,#1c2128 100%);border-bottom:1px solid #30363d;padding:18px 40px;display:flex;align-items:center;justify-content:space-between}
+.logo{display:flex;align-items:center;gap:14px}
+.logo-icon{width:44px;height:44px;background:linear-gradient(135deg,#3b82f6,#8b5cf6);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:22px}
+.logo h1{font-size:20px;font-weight:700;color:#e6edf3}
+.logo p{font-size:13px;color:#8b949e;margin-top:2px}
 
 /* Hero */
-.hero{background:linear-gradient(135deg,#0d1117 0%,#161b22 50%,#1c2128 100%);padding:40px 40px 32px;max-width:1100px;margin:0 auto}
-.hero h2{font-size:28px;font-weight:700;margin-bottom:8px}
+.hero{background:linear-gradient(135deg,#0d1117 0%,#161b22 50%,#1c2128 100%);padding:44px 40px 36px;max-width:1100px;margin:0 auto}
+.hero h2{font-size:32px;font-weight:800;margin-bottom:10px;letter-spacing:-.5px}
 .hero h2 span{background:linear-gradient(90deg,#3b82f6,#8b5cf6);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
-.hero p{color:#6e7681;font-size:15px}
+.hero p{color:#8b949e;font-size:16px}
 
 /* Tab nav */
-main{max-width:1100px;margin:0 auto;padding:0 40px 40px}
-.tab-nav{display:flex;gap:4px;background:#161b22;border:1px solid #30363d;border-radius:12px;padding:4px;margin-bottom:24px}
-.tab-btn{flex:1;padding:11px 20px;border:none;border-radius:9px;font-size:14px;font-weight:500;cursor:pointer;background:transparent;color:#6e7681;transition:all .15s;text-align:center}
-.tab-btn.active{background:linear-gradient(135deg,#1d2d50,#2d1b6e);color:#93c5fd;border:1px solid #3b82f6}
-.tab-btn:hover:not(.active){color:#e6edf3}
+main{max-width:1100px;margin:0 auto;padding:0 40px 48px}
+.tab-nav{display:flex;gap:4px;background:#161b22;border:1px solid #30363d;border-radius:14px;padding:5px;margin-bottom:28px}
+.tab-btn{flex:1;padding:13px 20px;border:none;border-radius:10px;font-size:15px;font-weight:500;cursor:pointer;background:transparent;color:#8b949e;transition:all .15s;text-align:center}
+.tab-btn.active{background:linear-gradient(135deg,#1d2d50,#2d1b6e);color:#93c5fd;border:1px solid #3b82f655;box-shadow:0 2px 8px rgba(59,130,246,.15)}
+.tab-btn:hover:not(.active){color:#e6edf3;background:#1c2128}
 .tab-pane{display:none}.tab-pane.active{display:block}
 
 /* Card */
-.card{background:#161b22;border:1px solid #30363d;border-radius:14px;padding:24px;margin-bottom:16px}
-.card-title{font-size:13px;font-weight:600;color:#6e7681;letter-spacing:.06em;margin-bottom:16px;display:flex;align-items:center;gap:8px}
+.card{background:#161b22;border:1px solid #30363d;border-radius:16px;padding:28px;margin-bottom:16px}
+.card-title{font-size:14px;font-weight:600;color:#8b949e;letter-spacing:.05em;margin-bottom:20px;display:flex;align-items:center;gap:10px}
 .card-title::after{content:'';flex:1;height:1px;background:#30363d}
 
 /* Form */
-.form-grid{display:grid;grid-template-columns:1fr 1fr 1fr auto;gap:16px;align-items:end}
-.field{display:flex;flex-direction:column;gap:6px}
-.field label{font-size:12px;font-weight:500;color:#6e7681}
-.field select,.field input{background:#0d1117;border:1px solid #30363d;border-radius:10px;color:#e6edf3;font-size:15px;padding:11px 14px;outline:none;width:100%;appearance:none}
+.form-grid{display:grid;grid-template-columns:1fr 1fr 1fr auto;gap:18px;align-items:end}
+.field{display:flex;flex-direction:column;gap:8px}
+.field label{font-size:13px;font-weight:600;color:#8b949e;letter-spacing:.02em}
+.field select,.field input{background:#0d1117;border:1px solid #30363d;border-radius:10px;color:#e6edf3;font-size:15px;padding:13px 16px;outline:none;width:100%;appearance:none;transition:border-color .15s}
 .field select:focus,.field input:focus{border-color:#3b82f6;box-shadow:0 0 0 3px rgba(59,130,246,.15)}
-.calc-btn{background:linear-gradient(135deg,#3b82f6,#8b5cf6);color:#fff;border:none;border-radius:10px;padding:12px 24px;font-size:15px;font-weight:600;cursor:pointer;white-space:nowrap;height:48px}
-.calc-btn:hover{opacity:.9}
+.calc-btn{background:linear-gradient(135deg,#3b82f6,#8b5cf6);color:#fff;border:none;border-radius:10px;padding:13px 28px;font-size:16px;font-weight:700;cursor:pointer;white-space:nowrap;height:52px;letter-spacing:.02em;box-shadow:0 4px 12px rgba(59,130,246,.3)}
+.calc-btn:hover{opacity:.9;box-shadow:0 6px 16px rgba(59,130,246,.4)}
 
 /* Cabin selector */
-.cabin-selector{display:flex;gap:8px;margin-top:16px;flex-wrap:wrap}
-.cabin-btn{background:#0d1117;border:1px solid #30363d;border-radius:8px;color:#6e7681;padding:8px 16px;font-size:13px;cursor:pointer;transition:all .15s}
-.cabin-btn.active{background:#1d2d50;border-color:#3b82f6;color:#93c5fd}
+.cabin-selector{display:flex;gap:10px;margin-top:18px;flex-wrap:wrap;align-items:center}
+.cabin-selector>span{font-size:13px;color:#8b949e;font-weight:500;white-space:nowrap}
+.cabin-btn{background:#0d1117;border:1px solid #30363d;border-radius:10px;color:#8b949e;padding:9px 18px;font-size:14px;cursor:pointer;transition:all .15s;font-weight:500}
+.cabin-btn.active{background:#1d2d50;border-color:#3b82f6;color:#93c5fd;box-shadow:0 0 0 1px #3b82f655}
+.cabin-btn:hover:not(.active){border-color:#484f58;color:#c9d1d9}
 
 /* Results */
-#result1,#result2{margin-top:20px}
-.result-card{background:#0d1117;border:1px solid #30363d;border-radius:12px;padding:20px;margin-bottom:10px;display:flex;align-items:flex-start;gap:16px;transition:border-color .15s}
-.result-card.rank1{border-color:#22c55e;background:#0a1f0a}
-.result-card.rank2{border-color:#3b82f6;background:#0a1520}
-.result-card.rank3{border-color:#8b5cf6;background:#130a20}
-.result-rank{font-size:26px;min-width:36px;text-align:center;padding-top:2px}
-.result-body{flex:1}
+#result1,#result2{margin-top:24px}
+.result-summary{font-size:14px;color:#8b949e;margin-bottom:16px;padding:0 4px;display:flex;align-items:center;gap:6px}
+.result-card{background:#0d1117;border:1px solid #30363d;border-radius:14px;padding:22px 24px;margin-bottom:12px;display:flex;align-items:flex-start;gap:18px;transition:border-color .2s,box-shadow .2s}
+.result-card:hover{box-shadow:0 4px 16px rgba(0,0,0,.4)}
+.result-card.rank1{border-color:#22c55e;background:#071510}
+.result-card.rank2{border-color:#3b82f6;background:#071220}
+.result-card.rank3{border-color:#8b5cf6;background:#0e0720}
+.result-rank{font-size:28px;min-width:40px;text-align:center;padding-top:2px}
+.result-body{flex:1;min-width:0}
 .result-header{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:10px}
-.result-program{font-size:17px;font-weight:700;color:#e6edf3}
-.result-alliance{font-size:11px;padding:2px 8px;border-radius:20px;background:#30363d;color:#6e7681}
-.result-miles{font-size:28px;font-weight:800;color:#e6edf3;margin-bottom:4px}
-.result-miles span{font-size:14px;color:#6e7681;font-weight:400;margin-left:4px}
-.result-route{font-size:13px;color:#6e7681;margin-bottom:8px}
-.result-value{font-size:13px}
-.sweet-spots{margin-top:10px;border-top:1px solid #30363d;padding-top:10px}
-.sweet-spot-item{font-size:12px;color:#6e7681;display:flex;gap:6px;margin-bottom:3px}
+.result-program{font-size:18px;font-weight:700;color:#e6edf3}
+.result-alliance{font-size:12px;padding:3px 10px;border-radius:20px;background:#21262d;color:#8b949e;font-weight:500;border:1px solid #30363d}
+.result-miles{font-size:30px;font-weight:800;color:#e6edf3;margin-bottom:6px;letter-spacing:-.5px}
+.result-miles span{font-size:15px;color:#8b949e;font-weight:400;margin-left:6px}
+.result-route{font-size:14px;color:#8b949e;margin-bottom:10px}
+.result-value{font-size:14px}
+.sweet-spots{margin-top:12px;border-top:1px solid #30363d;padding-top:12px}
+.sweet-spot-item{font-size:13px;color:#8b949e;display:flex;gap:8px;margin-bottom:5px;line-height:1.5}
 .sweet-spot-item::before{content:'💡';flex-shrink:0}
-.badge{font-size:11px;padding:2px 8px;border-radius:6px;font-weight:500;white-space:nowrap}
-.badge-best{background:#14532d;color:#4ade80}
-.badge-value{background:#1e1b4b;color:#a5b4fc}
-.no-result{text-align:center;color:#6e7681;padding:40px;font-size:14px}
+.badge{font-size:12px;padding:3px 10px;border-radius:6px;font-weight:600;white-space:nowrap}
+.badge-best{background:#14532d;color:#4ade80;border:1px solid #166534}
+.badge-value{background:#1e1b4b;color:#a5b4fc;border:1px solid #3730a3}
+.no-result{text-align:center;color:#6e7681;padding:48px;font-size:15px}
 
 /* Reverse calc */
-.reverse-grid{display:grid;grid-template-columns:1fr 1fr 1fr auto;gap:16px;align-items:end}
+.reverse-grid{display:grid;grid-template-columns:1fr 1fr 1fr auto;gap:18px;align-items:end}
 .result-routes{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
-.route-chip{background:#161b22;border:1px solid #30363d;border-radius:8px;padding:6px 12px;font-size:13px;color:#c9d1d9}
+.route-chip{background:#161b22;border:1px solid #30363d;border-radius:8px;padding:7px 14px;font-size:14px;color:#c9d1d9}
 .route-chip.highlight{border-color:#3b82f6;color:#93c5fd;background:#0a1520}
 
 /* Airlines & connections in results */
-.airlines-section{margin-top:12px;padding-top:12px;border-top:1px solid #21262d}
-.section-label{font-size:11px;font-weight:600;color:#6e7681;letter-spacing:.06em;margin-bottom:8px;display:flex;align-items:center;gap:6px}
-.airline-list{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px}
-.airline-chip{display:flex;align-items:center;gap:5px;background:#1c2128;border:1px solid #30363d;border-radius:6px;padding:4px 10px;font-size:12px;color:#c9d1d9}
-.airline-chip.direct{border-color:#22c55e44;background:#0a1f0a}
-.airline-chip .iata{font-size:10px;color:#6e7681;font-weight:600}
-.airline-chip .direct-badge{font-size:10px;color:#4ade80}
-.connection-list{display:flex;flex-direction:column;gap:4px;margin-bottom:10px}
-.connection-item{font-size:12px;color:#6e7681;display:flex;gap:6px;align-items:flex-start}
-.connection-item::before{content:'🔀';flex-shrink:0;font-size:11px;margin-top:1px}
-.dest-btn{display:inline-flex;align-items:center;gap:4px;background:#1c2128;border:1px solid #30363d;border-radius:6px;padding:3px 10px;font-size:11px;cursor:pointer;transition:all .15s;color:#c9d1d9;white-space:nowrap;}
-.dest-btn:hover{background:#21262d;border-color:#58a6ff;color:#58a6ff;}
-.dest-btn.active{background:#0d2f6e;border-color:#1d4ed8;color:#93c5fd;}
-.dest-detail-panel{background:#0d1117;border:1px solid #30363d;border-radius:12px;padding:18px;margin-top:12px;animation:fadeIn .2s ease;}
+.airlines-section{margin-top:14px;padding-top:14px;border-top:1px solid #21262d}
+.section-label{font-size:12px;font-weight:600;color:#8b949e;letter-spacing:.06em;margin-bottom:10px;display:flex;align-items:center;gap:6px}
+.airline-list{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px}
+.airline-chip{display:flex;align-items:center;gap:6px;background:#1c2128;border:1px solid #30363d;border-radius:8px;padding:6px 12px;font-size:13px;color:#c9d1d9}
+.airline-chip.direct{border-color:#22c55e55;background:#071510}
+.airline-chip .iata{font-size:11px;color:#8b949e;font-weight:700}
+.airline-chip .direct-badge{font-size:11px;color:#4ade80}
+.connection-list{display:flex;flex-direction:column;gap:6px;margin-bottom:12px}
+.connection-item{font-size:13px;color:#8b949e;display:flex;gap:8px;align-items:flex-start;line-height:1.5}
+.connection-item::before{content:'🔀';flex-shrink:0;font-size:12px;margin-top:2px}
+.dest-btn{display:inline-flex;align-items:center;gap:5px;background:#1c2128;border:1px solid #30363d;border-radius:8px;padding:5px 12px;font-size:13px;cursor:pointer;transition:all .15s;color:#c9d1d9;white-space:nowrap;font-weight:500}
+.dest-btn:hover{background:#21262d;border-color:#58a6ff;color:#58a6ff}
+.dest-btn.active{background:#0d2f6e;border-color:#1d4ed8;color:#93c5fd}
+.dest-detail-panel{background:#0d1117;border:1px solid #30363d;border-radius:14px;padding:20px;margin-top:14px;animation:fadeIn .2s ease}
 @keyframes fadeIn{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:translateY(0)}}
-.offorigin-box{background:#1a1200;border:1px solid #92400e;border-radius:8px;padding:10px 14px;margin-top:10px;}
-.offorigin-box .offorigin-header{display:flex;align-items:center;gap:8px;margin-bottom:8px;font-size:12px;font-weight:600;color:#fbbf24;}
-.offorigin-tip{border-top:1px solid #292100;padding-top:8px;margin-top:8px;}
-.offorigin-tip:first-child{border-top:none;padding-top:0;margin-top:0;}
-.offorigin-via{display:inline-flex;align-items:center;gap:4px;background:#292100;border:1px solid #78350f;border-radius:12px;padding:2px 10px;font-size:11px;font-weight:600;color:#fcd34d;margin-bottom:4px;}
-.benefit-badge{display:inline-block;border-radius:10px;padding:1px 8px;font-size:10px;font-weight:600;margin-left:4px;}
-.benefit-cheaper{background:#052e16;color:#4ade80;border:1px solid #166534;}
-.benefit-upgrade{background:#1e1b4b;color:#a5b4fc;border:1px solid #3730a3;}
-.benefit-availability{background:#1c1917;color:#a8a29e;border:1px solid #44403c;}
-.alliance-tip-box{background:#0d1b2a;border:1px solid #1d4ed8;border-radius:8px;padding:10px 14px;margin-top:10px;}
-.alliance-tip-box .section-label{color:#93c5fd;}
-.booking-tip-box{background:#0d1117;border:1px solid #30363d;border-radius:8px;padding:10px 12px;font-size:12px;color:#8b949e;display:flex;gap:8px;align-items:flex-start}
+.offorigin-box{background:#1a1200;border:1px solid #92400e;border-radius:10px;padding:14px 16px;margin-top:12px}
+.offorigin-box .offorigin-header{display:flex;align-items:center;gap:8px;margin-bottom:10px;font-size:13px;font-weight:600;color:#fbbf24}
+.offorigin-tip{border-top:1px solid #292100;padding-top:10px;margin-top:10px}
+.offorigin-tip:first-child{border-top:none;padding-top:0;margin-top:0}
+.offorigin-via{display:inline-flex;align-items:center;gap:4px;background:#292100;border:1px solid #78350f;border-radius:12px;padding:3px 12px;font-size:12px;font-weight:600;color:#fcd34d;margin-bottom:6px}
+.benefit-badge{display:inline-block;border-radius:10px;padding:2px 9px;font-size:11px;font-weight:600;margin-left:5px}
+.benefit-cheaper{background:#052e16;color:#4ade80;border:1px solid #166534}
+.benefit-upgrade{background:#1e1b4b;color:#a5b4fc;border:1px solid #3730a3}
+.benefit-availability{background:#1c1917;color:#a8a29e;border:1px solid #44403c}
+.alliance-tip-box{background:#0d1b2a;border:1px solid #1d4ed855;border-radius:10px;padding:14px 16px;margin-top:12px}
+.alliance-tip-box .section-label{color:#93c5fd}
+.booking-tip-box{background:#161b22;border:1px solid #30363d;border-radius:10px;padding:12px 16px;font-size:13px;color:#8b949e;display:flex;gap:10px;align-items:flex-start;line-height:1.6}
 .booking-tip-box::before{content:'💡';flex-shrink:0}
-.booking-link{display:inline-flex;align-items:center;gap:4px;background:linear-gradient(135deg,#1d4ed8,#7c3aed);color:#fff;border:none;border-radius:6px;padding:6px 14px;font-size:12px;font-weight:600;cursor:pointer;text-decoration:none;margin-top:10px}
+.booking-link{display:inline-flex;align-items:center;gap:6px;background:linear-gradient(135deg,#1d4ed8,#7c3aed);color:#fff;border:none;border-radius:8px;padding:8px 18px;font-size:14px;font-weight:600;cursor:pointer;text-decoration:none;margin-top:12px;box-shadow:0 2px 8px rgba(59,130,246,.3)}
 .booking-link:hover{opacity:.85}
 
 /* Program cards overview */
-.programs-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px;margin-top:8px}
-.prog-card{background:#0d1117;border:1px solid #30363d;border-radius:12px;padding:18px}
-.prog-card-header{display:flex;align-items:center;gap:10px;margin-bottom:12px}
-.prog-icon{width:36px;height:36px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:18px}
-.prog-name{font-size:15px;font-weight:600;color:#e6edf3}
-.prog-airline{font-size:12px;color:#6e7681}
-.prog-spots{margin-top:8px}
-.prog-spot{font-size:12px;color:#6e7681;padding:4px 0;border-bottom:1px solid #21262d;display:flex;gap:6px}
+.programs-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:16px;margin-top:8px}
+.prog-card{background:#0d1117;border:1px solid #30363d;border-radius:14px;padding:20px;transition:border-color .2s}
+.prog-card:hover{border-color:#484f58}
+.prog-card-header{display:flex;align-items:center;gap:12px;margin-bottom:14px}
+.prog-icon{width:40px;height:40px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:20px}
+.prog-name{font-size:16px;font-weight:700;color:#e6edf3}
+.prog-airline{font-size:13px;color:#8b949e;margin-top:1px}
+.prog-spots{margin-top:10px}
+.prog-spot{font-size:13px;color:#8b949e;padding:6px 0;border-bottom:1px solid #21262d;display:flex;gap:8px;line-height:1.5}
 .prog-spot:last-child{border-bottom:none}
 .prog-spot::before{content:'⭐';flex-shrink:0}
-.partners{display:flex;flex-wrap:wrap;gap:4px;margin-top:8px}
-.partner-chip{font-size:11px;background:#1c2128;border:1px solid #30363d;border-radius:4px;padding:2px 8px;color:#8b949e}
+.partners{display:flex;flex-wrap:wrap;gap:5px;margin-top:10px}
+.partner-chip{font-size:12px;background:#1c2128;border:1px solid #30363d;border-radius:6px;padding:3px 10px;color:#8b949e}
 
 @media(max-width:768px){
   header,main,.hero{padding-left:16px;padding-right:16px}
   .form-grid,.reverse-grid{grid-template-columns:1fr 1fr}
   .calc-btn{grid-column:1/-1}
   .programs-grid{grid-template-columns:1fr}
+  .hero h2{font-size:26px}
+  .tab-btn{font-size:13px;padding:11px 12px}
 }
 </style>
 </head>
