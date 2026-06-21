@@ -88,6 +88,11 @@ main{max-width:1100px;margin:0 auto;padding:0 40px 40px}
 .connection-list{display:flex;flex-direction:column;gap:4px;margin-bottom:10px}
 .connection-item{font-size:12px;color:#6e7681;display:flex;gap:6px;align-items:flex-start}
 .connection-item::before{content:'🔀';flex-shrink:0;font-size:11px;margin-top:1px}
+.dest-btn{display:inline-flex;align-items:center;gap:4px;background:#1c2128;border:1px solid #30363d;border-radius:6px;padding:3px 10px;font-size:11px;cursor:pointer;transition:all .15s;color:#c9d1d9;white-space:nowrap;}
+.dest-btn:hover{background:#21262d;border-color:#58a6ff;color:#58a6ff;}
+.dest-btn.active{background:#0d2f6e;border-color:#1d4ed8;color:#93c5fd;}
+.dest-detail-panel{background:#0d1117;border:1px solid #30363d;border-radius:12px;padding:18px;margin-top:12px;animation:fadeIn .2s ease;}
+@keyframes fadeIn{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:translateY(0)}}
 .offorigin-box{background:#1a1200;border:1px solid #92400e;border-radius:8px;padding:10px 14px;margin-top:10px;}
 .offorigin-box .offorigin-header{display:flex;align-items:center;gap:8px;margin-bottom:8px;font-size:12px;font-weight:600;color:#fbbf24;}
 .offorigin-tip{border-top:1px solid #292100;padding-top:8px;margin-top:8px;}
@@ -749,9 +754,14 @@ function calcReverse(){
     var diffPct=Math.round(diff/r.milesNeeded*100);
     // 直飛航空
     var directAirlines=r.zoneData.airlines?r.zoneData.airlines.filter(function(a){return a.direct;}).map(function(a){return a.code+' '+a.name;}).join('、'):'';
-    // 城市清單
+    // 城市清單 → 可點擊按鈕
+    var zoneKey='zone_'+r.zoneData.zone+'_'+pid;
+    window._revZones=window._revZones||{};
+    window._revZones[zoneKey]={zoneData:r.zoneData,bestCabin:r.bestCabin,milesNeeded:r.milesNeeded,prog:prog,pid:pid,myMiles:myMiles};
     var cityChips=r.airports.map(function(a){
-      return '<span style="background:#1c2128;border:1px solid #30363d;border-radius:6px;padding:2px 8px;font-size:11px;white-space:nowrap">'+a.info.city+'<span style="color:#4b5563;margin-left:3px">'+a.code+'</span></span>';
+      return '<button class="dest-btn" onclick="showDestDetail(''+zoneKey+'',''+a.code+'',this)">'
+        +a.info.city+'<span style="color:#4b5563;margin-left:3px">'+a.code+'</span>'
+        +'</button>';
     }).join(' ');
 
     html+='<div class="result-card" style="border-color:'+(cabinBorders[r.bestCabin]||'#30363d')+'44;margin-bottom:8px">'
@@ -775,7 +785,7 @@ function calcReverse(){
           return upgradeTip;
         })()
         // 城市列表
-        +(cityChips?'<div style="display:flex;flex-wrap:wrap;gap:4px;margin-bottom:6px">'+cityChips+'</div>':'')
+        +(cityChips?'<div style="font-size:11px;color:#4b5563;margin-bottom:4px">👆 點選城市查看開票建議</div><div style="display:flex;flex-wrap:wrap;gap:4px;margin-bottom:6px">'+cityChips+'</div><div id="detail-'+zoneKey+'" class="dest-detail-panel" style="display:none"></div>':'')
         // 直飛航空
         +(directAirlines?'<div style="font-size:11px;color:#6e7681">✈️ 直飛：'+directAirlines+'</div>':'')
         // 開票提示
@@ -801,6 +811,107 @@ function calcReverse(){
   }
 
   el.innerHTML=html;
+  window._revZones=window._revZones||{};
+}
+
+function showDestDetail(zoneKey, airportCode, btn){
+  var data=window._revZones&&window._revZones[zoneKey];
+  if(!data) return;
+
+  // toggle active
+  var panel=document.getElementById('detail-'+zoneKey);
+  var allBtns=panel.parentElement.querySelectorAll('.dest-btn');
+  allBtns.forEach(function(b){b.classList.remove('active');});
+
+  if(panel.style.display!=='none'&&panel.dataset.airport===airportCode){
+    panel.style.display='none'; return;
+  }
+  btn.classList.add('active');
+  panel.dataset.airport=airportCode;
+  panel.style.display='block';
+
+  var ap=AIRPORTS[airportCode];
+  var zd=data.zoneData;
+  var prog=data.prog;
+  var cabinLabels={eco:'經濟艙',prem_eco:'豪華經濟艙',biz:'商務艙',first:'頭等艙'};
+  var cabinIcons={eco:'🪑',prem_eco:'🛋️',biz:'💺',first:'👑'};
+  var cabinOrder=['first','biz','prem_eco','eco'];
+
+  // 所有艙等費率
+  var cabinRows=cabinOrder.map(function(c){
+    if(!zd[c]) return '';
+    var canAfford=data.myMiles>=zd[c];
+    var diff=data.myMiles-zd[c];
+    return '<div style="display:flex;align-items:center;gap:8px;padding:5px 0;border-bottom:1px solid #21262d">'
+      +'<span style="font-size:13px;min-width:20px">'+cabinIcons[c]+'</span>'
+      +'<span style="font-size:12px;color:'+(canAfford?'#e6edf3':'#6e7681')+';flex:1">'+cabinLabels[c]+'</span>'
+      +'<span style="font-size:12px;font-weight:600;color:'+(canAfford?'#4ade80':'#f87171')+'">'+zd[c].toLocaleString()+' 哩</span>'
+      +(canAfford?'<span style="font-size:11px;color:#4b5563">剩 '+diff.toLocaleString()+'</span>':'<span style="font-size:11px;color:#f87171">差 '+(zd[c]-data.myMiles).toLocaleString()+'</span>')
+    +'</div>';
+  }).join('');
+
+  // 航空資訊
+  var directList=zd.airlines?zd.airlines.filter(function(a){return a.direct;}):[];
+  var connectList=zd.airlines?zd.airlines.filter(function(a){return !a.direct;}):[];
+  var airlinesHtml='';
+  if(directList.length){
+    airlinesHtml+='<div style="font-size:11px;font-weight:600;color:#4ade80;margin:8px 0 4px">✈️ 直飛航班</div>'
+      +directList.map(function(a){
+        var routes=a.routes?a.routes.filter(function(r){
+          return r.indexOf(airportCode)>=0||r.indexOf('TPE')>=0;
+        }).slice(0,3):[];
+        return '<div style="font-size:12px;color:#c9d1d9;margin-bottom:3px"><b>'+a.code+'</b> '+a.name
+          +(routes.length?' <span style="color:#6e7681">'+routes.join('、')+'</span>':'')+'</div>';
+      }).join('');
+  }
+  if(connectList.length){
+    airlinesHtml+='<div style="font-size:11px;font-weight:600;color:#6e7681;margin:8px 0 4px">🔀 轉機航班</div>'
+      +connectList.slice(0,4).map(function(a){
+        return '<div style="font-size:12px;color:#6e7681;margin-bottom:2px"><b>'+a.code+'</b> '+a.name+'</div>';
+      }).join('');
+  }
+  if(zd.connections&&zd.connections.length){
+    airlinesHtml+='<div style="font-size:11px;color:#9ca3af;margin-top:6px">'
+      +zd.connections.map(function(c){return '• '+c.tip;}).join('<br>')+'</div>';
+  }
+
+  // 外站開票建議
+  var offHtml='';
+  if(prog.offorigin_tips&&prog.offorigin_tips.length){
+    var matched=prog.offorigin_tips.filter(function(t){return t.apply_zones&&t.apply_zones.indexOf(zd.zone)>=0;});
+    if(matched.length){
+      offHtml='<div style="background:#1a1200;border:1px solid #92400e;border-radius:8px;padding:10px 12px;margin-top:10px">'
+        +'<div style="font-size:11px;font-weight:600;color:#fbbf24;margin-bottom:6px">🌏 外站開票建議</div>'
+        +matched.map(function(t){
+          var bLabel={cheaper:'省哩程',upgrade:'升等機會',availability:'更易取位'}[t.benefit]||t.benefit;
+          var bColor={cheaper:'#4ade80',upgrade:'#a5b4fc',availability:'#a8a29e'}[t.benefit]||'#9ca3af';
+          return '<div style="border-top:1px solid #292100;padding-top:8px;margin-top:8px;first:border-top:none">'
+            +'<div style="display:flex;align-items:center;gap:6px;margin-bottom:4px">'
+              +'<span style="font-size:11px;font-weight:600;color:#fcd34d">'+t.flag+' 定位至 '+t.via_name+'（'+t.via+'）</span>'
+              +'<span style="font-size:10px;color:'+bColor+';border:1px solid;border-radius:8px;padding:1px 6px">'+bLabel+'</span>'
+              +(t.miles_delta&&t.miles_delta<0?'<span style="font-size:11px;color:#4ade80">省 '+Math.abs(t.miles_delta/1000).toFixed(0)+',000 哩</span>':'')
+            +'</div>'
+            +'<div style="font-size:11px;color:#d97706;margin-bottom:4px">定位成本：'+t.positioning_est+'</div>'
+            +'<div style="font-size:11px;color:#c9d1d9;line-height:1.6">'+t.tip+'</div>'
+          +'</div>';
+        }).join('')
+      +'</div>';
+    }
+  }
+
+  panel.innerHTML=''
+    +'<div style="display:flex;align-items:center;gap:8px;margin-bottom:12px">'
+      +'<span style="font-size:18px">'+cabinIcons[data.bestCabin]+'</span>'
+      +'<div>'
+        +'<div style="font-size:14px;font-weight:600;color:#e6edf3">'+(ap?ap.city:airportCode)+' ('+airportCode+')</div>'
+        +'<div style="font-size:11px;color:#6e7681">'+(ap?ap.country+' · ':'')+zd.label+'</div>'
+      +'</div>'
+      +'<a href="'+prog.booking_url+'" target="_blank" rel="noopener" style="margin-left:auto;font-size:11px;background:#1d4ed8;color:#fff;border-radius:6px;padding:4px 12px;text-decoration:none">前往開票 →</a>'
+    +'</div>'
+    +'<div style="margin-bottom:10px">'+cabinRows+'</div>'
+    +airlinesHtml
+    +(zd.booking_tip?'<div style="font-size:11px;color:#9ca3af;background:#161b22;border-radius:6px;padding:8px 10px;margin-top:8px;line-height:1.6">💡 '+zd.booking_tip+'</div>':'')
+    +offHtml;
 }
 
 // ── Tab3: 計畫總覽 ────────────────────────────────────────────────
