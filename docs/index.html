@@ -759,7 +759,7 @@ function calcReverse(){
     window._revZones=window._revZones||{};
     window._revZones[zoneKey]={zoneData:r.zoneData,bestCabin:r.bestCabin,milesNeeded:r.milesNeeded,prog:prog,pid:pid,myMiles:myMiles};
     var cityChips=r.airports.map(function(a){
-      return '<button class="dest-btn" onclick="showDestDetail(''+zoneKey+'',''+a.code+'',this)">'
+      return '<button class="dest-btn" data-zk="'+zoneKey+'" data-ac="'+a.code+'" onclick="showDestDetail(this.dataset.zk,this.dataset.ac,this)">'
         +a.info.city+'<span style="color:#4b5563;margin-left:3px">'+a.code+'</span>'
         +'</button>';
     }).join(' ');
