@@ -649,6 +649,7 @@ function calcReverse(){
   var el=document.getElementById('result2');
 
   if(!myMiles){el.innerHTML='<div class="no-result">請輸入哩程數量</div>';return;}
+  try {
 
   var prog=CHARTS.programs[pid];
   if(!prog){el.innerHTML='<div class="no-result">計畫資料找不到</div>';return;}
@@ -812,6 +813,9 @@ function calcReverse(){
 
   el.innerHTML=html;
   window._revZones=window._revZones||{};
+  } catch(e) {
+    el.innerHTML='<div style="color:#f87171;padding:16px;background:#1a0000;border-radius:8px;font-size:12px"><b>錯誤：</b>'+e.message+'<br><pre style="margin-top:8px;font-size:10px;white-space:pre-wrap">'+e.stack+'</pre></div>';
+  }
 }
 
 function showDestDetail(zoneKey, airportCode, btn){
