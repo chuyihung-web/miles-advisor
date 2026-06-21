@@ -2036,6 +2036,4235 @@
         "東南亞商務艙28,000哩（星宇自家豪華商務，長榮之外的好選擇）",
         "美西直飛LAX/SEA，A350商務艙體驗（2024年新開航）"
       ]
+    },
+    "jal_mileage": {
+      "name": "JAL 哩程銀行",
+      "airline": "日本航空",
+      "alliance": "寰宇一家",
+      "iata": "JL",
+      "booking_url": "https://www.jal.co.jp/jp/en/jalmileage/",
+      "currency": "哩",
+      "note": "寰宇一家夥伴可開，台灣出發適用。2025年6月10日後費率，需自行至官網確認最新數字",
+      "zones": {
+        "airport_map": {
+          "TPE": "origin",
+          "TSA": "origin",
+          "KHH": "origin",
+          "RMQ": "origin",
+          "NRT": "Z1",
+          "HND": "Z1",
+          "KIX": "Z1",
+          "CTS": "Z1",
+          "OKA": "Z1",
+          "FUK": "Z1",
+          "NGO": "Z1",
+          "SDJ": "Z1",
+          "ICN": "Z2",
+          "GMP": "Z2",
+          "PUS": "Z2",
+          "HKG": "Z2",
+          "MFM": "Z2",
+          "PEK": "Z2",
+          "PKX": "Z2",
+          "PVG": "Z2",
+          "SHA": "Z2",
+          "CAN": "Z2",
+          "CTU": "Z2",
+          "SZX": "Z2",
+          "BKK": "Z2",
+          "DMK": "Z2",
+          "CNX": "Z2",
+          "HKT": "Z2",
+          "SIN": "Z2",
+          "KUL": "Z2",
+          "PEN": "Z2",
+          "MNL": "Z2",
+          "CEB": "Z2",
+          "SGN": "Z2",
+          "HAN": "Z2",
+          "DAD": "Z2",
+          "CGK": "Z2",
+          "DPS": "Z2",
+          "RGN": "Z2",
+          "PNH": "Z2",
+          "GUM": "Z2",
+          "SYD": "Z3",
+          "MEL": "Z3",
+          "BNE": "Z3",
+          "PER": "Z3",
+          "AKL": "Z3",
+          "CHC": "Z3",
+          "NAN": "Z3",
+          "DEL": "Z3",
+          "BOM": "Z3",
+          "CMB": "Z3",
+          "KTM": "Z3",
+          "MLE": "Z3",
+          "DXB": "Z3",
+          "AUH": "Z3",
+          "DOH": "Z3",
+          "RUH": "Z3",
+          "JED": "Z3",
+          "KWI": "Z3",
+          "BAH": "Z3",
+          "MCT": "Z3",
+          "AMM": "Z3",
+          "LHR": "Z4",
+          "LGW": "Z4",
+          "MAN": "Z4",
+          "CDG": "Z4",
+          "FRA": "Z4",
+          "MUC": "Z4",
+          "AMS": "Z4",
+          "VIE": "Z4",
+          "ZRH": "Z4",
+          "GVA": "Z4",
+          "FCO": "Z4",
+          "MXP": "Z4",
+          "MAD": "Z4",
+          "BCN": "Z4",
+          "ARN": "Z4",
+          "CPH": "Z4",
+          "HEL": "Z4",
+          "OSL": "Z4",
+          "IST": "Z4",
+          "DUB": "Z4",
+          "LIS": "Z4",
+          "BRU": "Z4",
+          "WAW": "Z4",
+          "PRG": "Z4",
+          "BUD": "Z4",
+          "ATH": "Z4",
+          "OTP": "Z4",
+          "SOF": "Z4",
+          "BEG": "Z4",
+          "ZAG": "Z4",
+          "LJU": "Z4",
+          "TLV": "Z4",
+          "CAI": "Z4",
+          "DUS": "Z4",
+          "HAM": "Z4",
+          "RIX": "Z4",
+          "TLL": "Z4",
+          "VNO": "Z4",
+          "SKP": "Z4",
+          "KBP": "Z4",
+          "NBO": "Z4",
+          "JNB": "Z4",
+          "CPT": "Z4",
+          "CMN": "Z4",
+          "ADD": "Z4",
+          "LAX": "Z5",
+          "SFO": "Z5",
+          "SEA": "Z5",
+          "LAS": "Z5",
+          "YVR": "Z5",
+          "HNL": "Z5",
+          "JFK": "Z6",
+          "EWR": "Z6",
+          "ORD": "Z6",
+          "BOS": "Z6",
+          "IAD": "Z6",
+          "YYZ": "Z6",
+          "GRU": "Z6",
+          "BOG": "Z6",
+          "SCL": "Z6"
+        },
+        "chart": [
+          {
+            "zone": "Z1",
+            "label": "台灣 ↔ 日本",
+            "eco": 15000,
+            "prem_eco": 25000,
+            "biz": 35000,
+            "first": 65000,
+            "airlines": [
+              {
+                "code": "JL",
+                "name": "日本航空",
+                "direct": true,
+                "routes": [
+                  "TPE-NRT",
+                  "TPE-HND",
+                  "TPE-KIX",
+                  "TPE-FUK",
+                  "TPE-OKA",
+                  "TPE-CTS",
+                  "TPE-NGO"
+                ]
+              },
+              {
+                "code": "CX",
+                "name": "國泰航空",
+                "direct": false,
+                "routes": [
+                  "TPE-HKG-NRT"
+                ]
+              },
+              {
+                "code": "AA",
+                "name": "美國航空",
+                "direct": false,
+                "routes": [
+                  "TPE-NRT-各城市"
+                ]
+              }
+            ],
+            "connections": [],
+            "booking_tip": "JAL直飛最方便，可在JAL官網或電話開票；⚠️ 2025/6/10起哩程數調漲，請至官網確認最新費率"
+          },
+          {
+            "zone": "Z2",
+            "label": "台灣 ↔ 韓國/中國/東南亞",
+            "eco": 20000,
+            "prem_eco": 32000,
+            "biz": 50000,
+            "first": 85000,
+            "airlines": [
+              {
+                "code": "JL",
+                "name": "日本航空",
+                "direct": false,
+                "routes": [
+                  "TPE-NRT-ICN",
+                  "TPE-NRT-BKK",
+                  "TPE-NRT-SIN"
+                ]
+              },
+              {
+                "code": "AA",
+                "name": "美國航空",
+                "direct": false,
+                "routes": [
+                  "TPE-NRT-BKK"
+                ]
+              },
+              {
+                "code": "MH",
+                "name": "馬來西亞航空",
+                "direct": true,
+                "routes": [
+                  "TPE-KUL"
+                ]
+              },
+              {
+                "code": "CX",
+                "name": "國泰航空",
+                "direct": false,
+                "routes": [
+                  "TPE-HKG-BKK",
+                  "TPE-HKG-SIN"
+                ]
+              }
+            ],
+            "connections": [
+              {
+                "via": "NRT",
+                "tip": "日航轉東京可接韓國/東南亞，轉機約3小時"
+              }
+            ],
+            "booking_tip": "東南亞建議用國泰或馬航直飛，再以JAL哩程開票；JAL自身不直飛台灣→東南亞"
+          },
+          {
+            "zone": "Z3",
+            "label": "台灣 ↔ 澳洲/紐西蘭/南亞/中東",
+            "eco": 30000,
+            "prem_eco": 48000,
+            "biz": 65000,
+            "first": 115000,
+            "airlines": [
+              {
+                "code": "JL",
+                "name": "日本航空",
+                "direct": false,
+                "routes": [
+                  "TPE-NRT-SYD",
+                  "TPE-NRT-MEL",
+                  "TPE-NRT-BNE"
+                ]
+              },
+              {
+                "code": "QF",
+                "name": "澳洲航空",
+                "direct": false,
+                "routes": [
+                  "TPE-NRT-SYD"
+                ]
+              },
+              {
+                "code": "MH",
+                "name": "馬來西亞航空",
+                "direct": false,
+                "routes": [
+                  "TPE-KUL-SYD",
+                  "TPE-KUL-MEL"
+                ]
+              }
+            ],
+            "connections": [
+              {
+                "via": "NRT",
+                "tip": "日航轉東京接澳洲，全程約18小時"
+              }
+            ],
+            "booking_tip": "澳洲需經東京轉機，哩程較高；建議比較長榮EVA的澳洲直接路線"
+          },
+          {
+            "zone": "Z4",
+            "label": "台灣 ↔ 歐洲/非洲",
+            "eco": 42000,
+            "prem_eco": 62000,
+            "biz": 75000,
+            "first": 115000,
+            "airlines": [
+              {
+                "code": "JL",
+                "name": "日本航空",
+                "direct": false,
+                "routes": [
+                  "TPE-NRT-LHR",
+                  "TPE-NRT-FRA",
+                  "TPE-NRT-CDG",
+                  "TPE-HND-LHR"
+                ]
+              },
+              {
+                "code": "BA",
+                "name": "英國航空",
+                "direct": false,
+                "routes": [
+                  "TPE-NRT-LHR",
+                  "TPE-HKG-LHR"
+                ]
+              },
+              {
+                "code": "IB",
+                "name": "伊比利亞航空",
+                "direct": false,
+                "routes": [
+                  "TPE-NRT-MAD"
+                ]
+              },
+              {
+                "code": "AY",
+                "name": "芬蘭航空",
+                "direct": false,
+                "routes": [
+                  "TPE-NRT-HEL"
+                ]
+              }
+            ],
+            "connections": [
+              {
+                "via": "NRT",
+                "tip": "日航直飛LHR/FRA/CDG，轉東京後約12-14小時"
+              },
+              {
+                "via": "LHR",
+                "tip": "英航轉希斯羅可接歐洲全境"
+              }
+            ],
+            "booking_tip": "JAL直飛LHR/FRA/CDG，性價比佳；⚠️ 2025/6後費率調漲，歐洲商務需75,000哩"
+          },
+          {
+            "zone": "Z5",
+            "label": "台灣 ↔ 北美洲西岸",
+            "eco": 35000,
+            "prem_eco": 55000,
+            "biz": 65000,
+            "first": 115000,
+            "airlines": [
+              {
+                "code": "JL",
+                "name": "日本航空",
+                "direct": false,
+                "routes": [
+                  "TPE-NRT-LAX",
+                  "TPE-HND-LAX",
+                  "TPE-NRT-SFO",
+                  "TPE-HND-SFO"
+                ]
+              },
+              {
+                "code": "AA",
+                "name": "美國航空",
+                "direct": false,
+                "routes": [
+                  "TPE-NRT-LAX",
+                  "TPE-NRT-SFO"
+                ]
+              }
+            ],
+            "connections": [
+              {
+                "via": "NRT/HND",
+                "tip": "日航直飛LA/舊金山，轉東京後約10-11小時"
+              }
+            ],
+            "booking_tip": "JAL轉東京飛北美西岸，商務艙65,000哩性價比高"
+          },
+          {
+            "zone": "Z6",
+            "label": "台灣 ↔ 北美洲東岸/南美洲",
+            "eco": 40000,
+            "prem_eco": 62000,
+            "biz": 75000,
+            "first": 115000,
+            "airlines": [
+              {
+                "code": "JL",
+                "name": "日本航空",
+                "direct": false,
+                "routes": [
+                  "TPE-NRT-JFK",
+                  "TPE-HND-JFK",
+                  "TPE-NRT-ORD",
+                  "TPE-NRT-BOS"
+                ]
+              },
+              {
+                "code": "AA",
+                "name": "美國航空",
+                "direct": false,
+                "routes": [
+                  "TPE-NRT-JFK",
+                  "TPE-NRT-ORD"
+                ]
+              }
+            ],
+            "connections": [
+              {
+                "via": "NRT",
+                "tip": "日航轉東京飛紐約，全程約18-19小時"
+              }
+            ],
+            "booking_tip": "東岸比西岸貴10,000哩；AA美國航空夥伴可接更多內陸城市"
+          }
+        ]
+      },
+      "transfer_partners": [
+        "美國運通Membership Rewards",
+        "Chase Ultimate Rewards（間接）"
+      ],
+      "sweet_spots": [
+        "日本商務艙35,000哩（⚠️2025/6後費率，JAL直飛）",
+        "北美西岸商務艙65,000哩（轉東京，比AA更便宜）",
+        "歐洲商務艙75,000哩（JAL直飛LHR/FRA/CDG）"
+      ]
+    },
+    "ba_avios": {
+      "name": "英航 Executive Club（Avios）",
+      "airline": "英國航空",
+      "alliance": "寰宇一家",
+      "iata": "BA",
+      "booking_url": "https://www.britishairways.com/travel/redeem/public/en_tw",
+      "currency": "Avios",
+      "note": "距離制計費（非固定zone），台灣出發以夥伴航班為主（JL/CX/AA/MH）",
+      "zones": {
+        "airport_map": {
+          "TPE": "origin",
+          "TSA": "origin",
+          "KHH": "origin",
+          "RMQ": "origin",
+          "HKG": "Z1",
+          "MFM": "Z1",
+          "NRT": "Z2",
+          "HND": "Z2",
+          "KIX": "Z2",
+          "CTS": "Z2",
+          "OKA": "Z2",
+          "FUK": "Z2",
+          "NGO": "Z2",
+          "SDJ": "Z2",
+          "ICN": "Z2",
+          "GMP": "Z2",
+          "PUS": "Z2",
+          "BKK": "Z3",
+          "DMK": "Z3",
+          "CNX": "Z3",
+          "HKT": "Z3",
+          "SIN": "Z3",
+          "KUL": "Z3",
+          "PEN": "Z3",
+          "MNL": "Z3",
+          "CEB": "Z3",
+          "SGN": "Z3",
+          "HAN": "Z3",
+          "DAD": "Z3",
+          "CGK": "Z4",
+          "DPS": "Z4",
+          "GUM": "Z4",
+          "SYD": "Z5",
+          "MEL": "Z5",
+          "BNE": "Z5",
+          "PER": "Z5",
+          "AKL": "Z5",
+          "CHC": "Z5",
+          "NAN": "Z5",
+          "DEL": "Z5",
+          "BOM": "Z5",
+          "CMB": "Z5",
+          "KTM": "Z5",
+          "MLE": "Z5",
+          "DXB": "Z5",
+          "AUH": "Z5",
+          "DOH": "Z5",
+          "RUH": "Z5",
+          "JED": "Z5",
+          "KWI": "Z5",
+          "BAH": "Z5",
+          "MCT": "Z5",
+          "AMM": "Z5",
+          "LHR": "Z6",
+          "LGW": "Z6",
+          "MAN": "Z6",
+          "CDG": "Z6",
+          "FRA": "Z6",
+          "MUC": "Z6",
+          "AMS": "Z6",
+          "VIE": "Z6",
+          "ZRH": "Z6",
+          "GVA": "Z6",
+          "FCO": "Z6",
+          "MXP": "Z6",
+          "MAD": "Z6",
+          "BCN": "Z6",
+          "ARN": "Z6",
+          "CPH": "Z6",
+          "HEL": "Z6",
+          "OSL": "Z6",
+          "IST": "Z6",
+          "DUB": "Z6",
+          "LIS": "Z6",
+          "BRU": "Z6",
+          "WAW": "Z6",
+          "PRG": "Z6",
+          "BUD": "Z6",
+          "ATH": "Z6",
+          "OTP": "Z6",
+          "SOF": "Z6",
+          "BEG": "Z6",
+          "ZAG": "Z6",
+          "LJU": "Z6",
+          "TLV": "Z6",
+          "CAI": "Z6",
+          "DUS": "Z6",
+          "HAM": "Z6",
+          "RIX": "Z6",
+          "TLL": "Z6",
+          "VNO": "Z6",
+          "SKP": "Z6",
+          "KBP": "Z6",
+          "NBO": "Z6",
+          "JNB": "Z6",
+          "CPT": "Z6",
+          "CMN": "Z6",
+          "ADD": "Z6",
+          "LAX": "Z7",
+          "SFO": "Z7",
+          "SEA": "Z7",
+          "LAS": "Z7",
+          "YVR": "Z7",
+          "HNL": "Z7",
+          "JFK": "Z7",
+          "EWR": "Z7",
+          "ORD": "Z7",
+          "BOS": "Z7",
+          "IAD": "Z7",
+          "YYZ": "Z7",
+          "GRU": "Z7",
+          "BOG": "Z7",
+          "SCL": "Z7"
+        },
+        "chart": [
+          {
+            "zone": "Z1",
+            "label": "台灣 ↔ 香港/澳門（~800km）",
+            "eco": 7500,
+            "prem_eco": 12500,
+            "biz": 15000,
+            "first": null,
+            "airlines": [
+              {
+                "code": "CX",
+                "name": "國泰航空",
+                "direct": true,
+                "routes": [
+                  "TPE-HKG"
+                ]
+              },
+              {
+                "code": "BA",
+                "name": "英國航空（夥伴開）",
+                "direct": false,
+                "routes": []
+              }
+            ],
+            "connections": [],
+            "booking_tip": "距離最短，Avios最划算；在BA.com直接開CX票"
+          },
+          {
+            "zone": "Z2",
+            "label": "台灣 ↔ 日本/韓國（~1400-2200km）",
+            "eco": 10000,
+            "prem_eco": 17500,
+            "biz": 20000,
+            "first": null,
+            "airlines": [
+              {
+                "code": "JL",
+                "name": "日本航空",
+                "direct": true,
+                "routes": [
+                  "TPE-NRT",
+                  "TPE-HND",
+                  "TPE-KIX",
+                  "TPE-FUK",
+                  "TPE-OKA",
+                  "TPE-NGO"
+                ]
+              },
+              {
+                "code": "CX",
+                "name": "國泰航空",
+                "direct": false,
+                "routes": [
+                  "TPE-HKG-NRT",
+                  "TPE-HKG-ICN"
+                ]
+              }
+            ],
+            "connections": [],
+            "booking_tip": "用BA Avios開日航JL直飛日本，商務艙20,000 Avios超划算"
+          },
+          {
+            "zone": "Z3",
+            "label": "台灣 ↔ 東南亞北部（~2200-3800km）",
+            "eco": 12500,
+            "prem_eco": 22500,
+            "biz": 25000,
+            "first": null,
+            "airlines": [
+              {
+                "code": "JL",
+                "name": "日本航空",
+                "direct": false,
+                "routes": [
+                  "TPE-NRT-BKK"
+                ]
+              },
+              {
+                "code": "MH",
+                "name": "馬來西亞航空",
+                "direct": true,
+                "routes": [
+                  "TPE-KUL"
+                ]
+              },
+              {
+                "code": "CX",
+                "name": "國泰航空",
+                "direct": false,
+                "routes": [
+                  "TPE-HKG-BKK",
+                  "TPE-HKG-SIN"
+                ]
+              }
+            ],
+            "connections": [],
+            "booking_tip": "Avios開馬航MH直飛KUL性價比高"
+          },
+          {
+            "zone": "Z4",
+            "label": "台灣 ↔ 東南亞南部/印尼（~3800-4800km）",
+            "eco": 20000,
+            "prem_eco": 35000,
+            "biz": 40000,
+            "first": null,
+            "airlines": [
+              {
+                "code": "CX",
+                "name": "國泰航空",
+                "direct": false,
+                "routes": [
+                  "TPE-HKG-SIN",
+                  "TPE-HKG-CGK"
+                ]
+              },
+              {
+                "code": "MH",
+                "name": "馬來西亞航空",
+                "direct": false,
+                "routes": [
+                  "TPE-KUL-SIN",
+                  "TPE-KUL-CGK"
+                ]
+              }
+            ],
+            "connections": [],
+            "booking_tip": "新加坡/雅加達距離較遠，哩程跳一級"
+          },
+          {
+            "zone": "Z5",
+            "label": "台灣 ↔ 澳洲/紐西蘭/南亞/中東（~4800-8500km）",
+            "eco": 25000,
+            "prem_eco": 44000,
+            "biz": 50000,
+            "first": null,
+            "airlines": [
+              {
+                "code": "JL",
+                "name": "日本航空",
+                "direct": false,
+                "routes": [
+                  "TPE-NRT-SYD",
+                  "TPE-NRT-MEL"
+                ]
+              },
+              {
+                "code": "QF",
+                "name": "澳洲航空",
+                "direct": false,
+                "routes": [
+                  "TPE-NRT-SYD"
+                ]
+              },
+              {
+                "code": "MH",
+                "name": "馬來西亞航空",
+                "direct": false,
+                "routes": [
+                  "TPE-KUL-SYD",
+                  "TPE-KUL-DEL"
+                ]
+              }
+            ],
+            "connections": [],
+            "booking_tip": "澳洲路線Avios和Asia Miles差不多；首選長榮或亞洲萬里通"
+          },
+          {
+            "zone": "Z6",
+            "label": "台灣 ↔ 歐洲/非洲（~8500-11000km）",
+            "eco": 30000,
+            "prem_eco": 52500,
+            "biz": 60000,
+            "first": null,
+            "airlines": [
+              {
+                "code": "CX",
+                "name": "國泰航空",
+                "direct": false,
+                "routes": [
+                  "TPE-HKG-LHR"
+                ]
+              },
+              {
+                "code": "BA",
+                "name": "英國航空",
+                "direct": false,
+                "routes": [
+                  "TPE-HKG-LHR",
+                  "TPE-NRT-LHR"
+                ]
+              },
+              {
+                "code": "JL",
+                "name": "日本航空",
+                "direct": false,
+                "routes": [
+                  "TPE-NRT-LHR",
+                  "TPE-NRT-FRA"
+                ]
+              }
+            ],
+            "connections": [
+              {
+                "via": "HKG",
+                "tip": "國泰轉HKG可直達LHR，英航夥伴可接歐洲各城市"
+              },
+              {
+                "via": "NRT",
+                "tip": "日航轉東京後飛LHR/FRA"
+              }
+            ],
+            "booking_tip": "⭐甜蜜點：開CX商務套艙TPE-HKG-LHR僅60,000 Avios，優於Asia Miles"
+          },
+          {
+            "zone": "Z7",
+            "label": "台灣 ↔ 北美洲（>11000km）",
+            "eco": 40000,
+            "prem_eco": 70000,
+            "biz": 80000,
+            "first": null,
+            "airlines": [
+              {
+                "code": "AA",
+                "name": "美國航空",
+                "direct": false,
+                "routes": [
+                  "TPE-NRT-JFK",
+                  "TPE-NRT-LAX",
+                  "TPE-NRT-ORD"
+                ]
+              },
+              {
+                "code": "JL",
+                "name": "日本航空",
+                "direct": false,
+                "routes": [
+                  "TPE-NRT-JFK",
+                  "TPE-NRT-LAX"
+                ]
+              },
+              {
+                "code": "CX",
+                "name": "國泰航空",
+                "direct": false,
+                "routes": [
+                  "TPE-HKG-LAX",
+                  "TPE-HKG-JFK"
+                ]
+              }
+            ],
+            "connections": [
+              {
+                "via": "NRT",
+                "tip": "日航/AA轉東京飛美國"
+              },
+              {
+                "via": "HKG",
+                "tip": "國泰轉香港飛北美"
+              }
+            ],
+            "booking_tip": "北美80,000 Avios商務艙，與Asia Miles相近；可用Avios開AA美線，連接更多城市"
+          }
+        ]
+      },
+      "transfer_partners": [
+        "美國運通Membership Rewards",
+        "Chase Ultimate Rewards",
+        "Citi ThankYou",
+        "Capital One",
+        "土耳其航空哩程互轉"
+      ],
+      "sweet_spots": [
+        "台日商務艙20,000 Avios（日航JL直飛，寰宇一家最低之一）",
+        "台英商務艙60,000 Avios（CX轉HKG，比Asia Miles省25,000）",
+        "Avios可1:1兌換Iberia/Aer Lingus/Finnair哩程，靈活性高"
+      ]
+    },
+    "flying_blue": {
+      "name": "法荷航 Flying Blue",
+      "airline": "法國航空/荷蘭皇家航空",
+      "alliance": "天合聯盟",
+      "iata": "AF/KL",
+      "booking_url": "https://www.flyingblue.com",
+      "currency": "哩（動態定價）",
+      "note": "動態定價，每月有Promo Rewards特價班次；以下為典型參考值，實際依查詢時機",
+      "zones": {
+        "airport_map": {
+          "TPE": "origin",
+          "TSA": "origin",
+          "KHH": "origin",
+          "RMQ": "origin",
+          "NRT": "Z1",
+          "HND": "Z1",
+          "KIX": "Z1",
+          "CTS": "Z1",
+          "OKA": "Z1",
+          "FUK": "Z1",
+          "NGO": "Z1",
+          "SDJ": "Z1",
+          "ICN": "Z1",
+          "GMP": "Z1",
+          "PUS": "Z1",
+          "HKG": "Z2",
+          "MFM": "Z2",
+          "PEK": "Z2",
+          "PKX": "Z2",
+          "PVG": "Z2",
+          "SHA": "Z2",
+          "CAN": "Z2",
+          "CTU": "Z2",
+          "SZX": "Z2",
+          "BKK": "Z2",
+          "DMK": "Z2",
+          "CNX": "Z2",
+          "HKT": "Z2",
+          "SIN": "Z2",
+          "KUL": "Z2",
+          "PEN": "Z2",
+          "MNL": "Z2",
+          "CEB": "Z2",
+          "SGN": "Z2",
+          "HAN": "Z2",
+          "DAD": "Z2",
+          "CGK": "Z2",
+          "DPS": "Z2",
+          "RGN": "Z2",
+          "PNH": "Z2",
+          "GUM": "Z2",
+          "SYD": "Z3",
+          "MEL": "Z3",
+          "BNE": "Z3",
+          "PER": "Z3",
+          "AKL": "Z3",
+          "CHC": "Z3",
+          "NAN": "Z3",
+          "DEL": "Z3",
+          "BOM": "Z3",
+          "CMB": "Z3",
+          "KTM": "Z3",
+          "MLE": "Z3",
+          "DXB": "Z4",
+          "AUH": "Z4",
+          "DOH": "Z4",
+          "RUH": "Z4",
+          "JED": "Z4",
+          "KWI": "Z4",
+          "BAH": "Z4",
+          "MCT": "Z4",
+          "AMM": "Z4",
+          "LHR": "Z5",
+          "LGW": "Z5",
+          "MAN": "Z5",
+          "CDG": "Z5",
+          "FRA": "Z5",
+          "MUC": "Z5",
+          "AMS": "Z5",
+          "VIE": "Z5",
+          "ZRH": "Z5",
+          "GVA": "Z5",
+          "FCO": "Z5",
+          "MXP": "Z5",
+          "MAD": "Z5",
+          "BCN": "Z5",
+          "ARN": "Z5",
+          "CPH": "Z5",
+          "HEL": "Z5",
+          "OSL": "Z5",
+          "IST": "Z5",
+          "DUB": "Z5",
+          "LIS": "Z5",
+          "BRU": "Z5",
+          "WAW": "Z5",
+          "PRG": "Z5",
+          "BUD": "Z5",
+          "ATH": "Z5",
+          "OTP": "Z5",
+          "SOF": "Z5",
+          "BEG": "Z5",
+          "ZAG": "Z5",
+          "LJU": "Z5",
+          "TLV": "Z5",
+          "CAI": "Z5",
+          "DUS": "Z5",
+          "HAM": "Z5",
+          "RIX": "Z5",
+          "TLL": "Z5",
+          "VNO": "Z5",
+          "SKP": "Z5",
+          "KBP": "Z5",
+          "NBO": "Z5",
+          "JNB": "Z5",
+          "CPT": "Z5",
+          "CMN": "Z5",
+          "ADD": "Z5",
+          "LAX": "Z6",
+          "SFO": "Z6",
+          "SEA": "Z6",
+          "LAS": "Z6",
+          "YVR": "Z6",
+          "HNL": "Z6",
+          "JFK": "Z6",
+          "EWR": "Z6",
+          "ORD": "Z6",
+          "BOS": "Z6",
+          "IAD": "Z6",
+          "YYZ": "Z6",
+          "GRU": "Z6",
+          "BOG": "Z6",
+          "SCL": "Z6"
+        },
+        "chart": [
+          {
+            "zone": "Z1",
+            "label": "台灣 ↔ 日本/韓國",
+            "eco": 17000,
+            "prem_eco": 28000,
+            "biz": 40000,
+            "first": null,
+            "airlines": [
+              {
+                "code": "KE",
+                "name": "大韓航空",
+                "direct": false,
+                "routes": [
+                  "TPE-ICN-NRT"
+                ]
+              },
+              {
+                "code": "CI",
+                "name": "中華航空",
+                "direct": true,
+                "routes": [
+                  "TPE-NRT",
+                  "TPE-ICN"
+                ]
+              },
+              {
+                "code": "MU",
+                "name": "中國東方航空",
+                "direct": false,
+                "routes": [
+                  "TPE-PVG-NRT"
+                ]
+              }
+            ],
+            "connections": [],
+            "booking_tip": "天合聯盟在日本/韓國的主要合作夥伴為大韓航空KE和中華航空CI"
+          },
+          {
+            "zone": "Z2",
+            "label": "台灣 ↔ 東南亞/香港/中國",
+            "eco": 20000,
+            "prem_eco": 35000,
+            "biz": 50000,
+            "first": null,
+            "airlines": [
+              {
+                "code": "CI",
+                "name": "中華航空",
+                "direct": true,
+                "routes": [
+                  "TPE-BKK",
+                  "TPE-SIN",
+                  "TPE-MNL",
+                  "TPE-SGN",
+                  "TPE-HAN",
+                  "TPE-HKG"
+                ]
+              },
+              {
+                "code": "VN",
+                "name": "越南航空",
+                "direct": true,
+                "routes": [
+                  "TPE-SGN",
+                  "TPE-HAN"
+                ]
+              },
+              {
+                "code": "KE",
+                "name": "大韓航空",
+                "direct": false,
+                "routes": [
+                  "TPE-ICN-BKK",
+                  "TPE-ICN-SIN"
+                ]
+              }
+            ],
+            "connections": [],
+            "booking_tip": "華航CI直飛最方便；越南航空VN直飛越南也是天合夥伴"
+          },
+          {
+            "zone": "Z3",
+            "label": "台灣 ↔ 澳洲/南亞",
+            "eco": 28000,
+            "prem_eco": 45000,
+            "biz": 65000,
+            "first": null,
+            "airlines": [
+              {
+                "code": "CI",
+                "name": "中華航空",
+                "direct": false,
+                "routes": [
+                  "TPE-BKK-SYD",
+                  "TPE-SIN-SYD"
+                ]
+              },
+              {
+                "code": "KE",
+                "name": "大韓航空",
+                "direct": false,
+                "routes": [
+                  "TPE-ICN-SYD",
+                  "TPE-ICN-MEL"
+                ]
+              }
+            ],
+            "connections": [
+              {
+                "via": "BKK/SIN",
+                "tip": "華航轉曼谷或新加坡接澳洲"
+              },
+              {
+                "via": "ICN",
+                "tip": "大韓轉首爾接澳洲"
+              }
+            ],
+            "booking_tip": "澳洲建議查Promo Rewards特價，有時經濟艙可低於20,000哩"
+          },
+          {
+            "zone": "Z4",
+            "label": "台灣 ↔ 中東",
+            "eco": 25000,
+            "prem_eco": 40000,
+            "biz": 60000,
+            "first": null,
+            "airlines": [
+              {
+                "code": "KE",
+                "name": "大韓航空",
+                "direct": false,
+                "routes": [
+                  "TPE-ICN-DXB"
+                ]
+              },
+              {
+                "code": "CI",
+                "name": "中華航空",
+                "direct": false,
+                "routes": [
+                  "TPE-AMS-DXB"
+                ]
+              }
+            ],
+            "connections": [],
+            "booking_tip": "中東需轉機，建議考慮Emirates Skywards直接兌換"
+          },
+          {
+            "zone": "Z5",
+            "label": "台灣 ↔ 歐洲/非洲",
+            "eco": 35000,
+            "prem_eco": 55000,
+            "biz": 70000,
+            "first": null,
+            "airlines": [
+              {
+                "code": "CI",
+                "name": "中華航空",
+                "direct": true,
+                "routes": [
+                  "TPE-AMS",
+                  "TPE-FRA"
+                ]
+              },
+              {
+                "code": "AF",
+                "name": "法國航空",
+                "direct": false,
+                "routes": [
+                  "TPE-SIN-CDG",
+                  "TPE-HKG-CDG"
+                ]
+              },
+              {
+                "code": "KL",
+                "name": "荷蘭皇家航空",
+                "direct": false,
+                "routes": [
+                  "TPE-AMS"
+                ]
+              },
+              {
+                "code": "KE",
+                "name": "大韓航空",
+                "direct": false,
+                "routes": [
+                  "TPE-ICN-CDG",
+                  "TPE-ICN-FRA",
+                  "TPE-ICN-AMS"
+                ]
+              },
+              {
+                "code": "MU",
+                "name": "中國東方航空",
+                "direct": false,
+                "routes": [
+                  "TPE-PVG-CDG",
+                  "TPE-PVG-LHR"
+                ]
+              }
+            ],
+            "connections": [
+              {
+                "via": "AMS直飛",
+                "tip": "華航直飛阿姆斯特丹，荷航接歐洲城市"
+              },
+              {
+                "via": "CDG",
+                "tip": "法航巴黎轉機可達東歐、地中海各城市"
+              },
+              {
+                "via": "ICN",
+                "tip": "大韓轉首爾飛歐洲，可到CDG/FRA/AMS等"
+              }
+            ],
+            "booking_tip": "⭐甜蜜點：每月Promo Rewards可找到低至24,000哩的歐洲商務艙；華航直飛AMS是最快選擇"
+          },
+          {
+            "zone": "Z6",
+            "label": "台灣 ↔ 北美洲/南美洲",
+            "eco": 40000,
+            "prem_eco": 65000,
+            "biz": 75000,
+            "first": null,
+            "airlines": [
+              {
+                "code": "CI",
+                "name": "中華航空",
+                "direct": true,
+                "routes": [
+                  "TPE-LAX",
+                  "TPE-SFO",
+                  "TPE-JFK",
+                  "TPE-ORD"
+                ]
+              },
+              {
+                "code": "DL",
+                "name": "達美航空",
+                "direct": false,
+                "routes": [
+                  "TPE-NRT-SEA",
+                  "TPE-NRT-LAX"
+                ]
+              },
+              {
+                "code": "KE",
+                "name": "大韓航空",
+                "direct": false,
+                "routes": [
+                  "TPE-ICN-JFK",
+                  "TPE-ICN-LAX"
+                ]
+              }
+            ],
+            "connections": [
+              {
+                "via": "直飛",
+                "tip": "華航直飛多個美國城市，最方便"
+              },
+              {
+                "via": "ICN",
+                "tip": "大韓轉首爾可接美國各城市"
+              }
+            ],
+            "booking_tip": "北美建議查Promo Rewards，有時低至45,000哩商務艙"
+          }
+        ]
+      },
+      "transfer_partners": [
+        "美國運通Membership Rewards",
+        "Chase Ultimate Rewards",
+        "Citi ThankYou",
+        "Capital One"
+      ],
+      "sweet_spots": [
+        "每月Promo Rewards歐洲商務艙低至24,000哩（極划算）",
+        "法荷航動態定價，淡季可找到超低哩程兌換",
+        "天合聯盟覆蓋廣，含華航CI直飛歐美的票"
+      ]
+    },
+    "korean_skypass": {
+      "name": "大韓航空 SKYPASS",
+      "airline": "大韓航空",
+      "alliance": "天合聯盟",
+      "iata": "KE",
+      "booking_url": "https://www.koreanair.com/us/en/skypass",
+      "currency": "哩",
+      "note": "大韓航空直飛台北首爾，天合聯盟夥伴可開票",
+      "zones": {
+        "airport_map": {
+          "TPE": "origin",
+          "TSA": "origin",
+          "KHH": "origin",
+          "RMQ": "origin",
+          "ICN": "Z1",
+          "GMP": "Z1",
+          "PUS": "Z1",
+          "NRT": "Z2",
+          "HND": "Z2",
+          "KIX": "Z2",
+          "CTS": "Z2",
+          "OKA": "Z2",
+          "FUK": "Z2",
+          "NGO": "Z2",
+          "SDJ": "Z2",
+          "HKG": "Z2",
+          "MFM": "Z2",
+          "PEK": "Z2",
+          "PKX": "Z2",
+          "PVG": "Z2",
+          "SHA": "Z2",
+          "CAN": "Z2",
+          "CTU": "Z2",
+          "SZX": "Z2",
+          "BKK": "Z3",
+          "DMK": "Z3",
+          "CNX": "Z3",
+          "HKT": "Z3",
+          "SIN": "Z3",
+          "KUL": "Z3",
+          "PEN": "Z3",
+          "MNL": "Z3",
+          "CEB": "Z3",
+          "SGN": "Z3",
+          "HAN": "Z3",
+          "DAD": "Z3",
+          "CGK": "Z3",
+          "DPS": "Z3",
+          "RGN": "Z3",
+          "PNH": "Z3",
+          "GUM": "Z3",
+          "SYD": "Z4",
+          "MEL": "Z4",
+          "BNE": "Z4",
+          "PER": "Z4",
+          "AKL": "Z4",
+          "CHC": "Z4",
+          "NAN": "Z4",
+          "DEL": "Z4",
+          "BOM": "Z4",
+          "CMB": "Z4",
+          "KTM": "Z4",
+          "MLE": "Z4",
+          "DXB": "Z5",
+          "AUH": "Z5",
+          "DOH": "Z5",
+          "RUH": "Z5",
+          "JED": "Z5",
+          "KWI": "Z5",
+          "BAH": "Z5",
+          "MCT": "Z5",
+          "AMM": "Z5",
+          "LHR": "Z6",
+          "LGW": "Z6",
+          "MAN": "Z6",
+          "CDG": "Z6",
+          "FRA": "Z6",
+          "MUC": "Z6",
+          "AMS": "Z6",
+          "VIE": "Z6",
+          "ZRH": "Z6",
+          "GVA": "Z6",
+          "FCO": "Z6",
+          "MXP": "Z6",
+          "MAD": "Z6",
+          "BCN": "Z6",
+          "ARN": "Z6",
+          "CPH": "Z6",
+          "HEL": "Z6",
+          "OSL": "Z6",
+          "IST": "Z6",
+          "DUB": "Z6",
+          "LIS": "Z6",
+          "BRU": "Z6",
+          "WAW": "Z6",
+          "PRG": "Z6",
+          "BUD": "Z6",
+          "ATH": "Z6",
+          "OTP": "Z6",
+          "SOF": "Z6",
+          "BEG": "Z6",
+          "ZAG": "Z6",
+          "LJU": "Z6",
+          "TLV": "Z6",
+          "CAI": "Z6",
+          "DUS": "Z6",
+          "HAM": "Z6",
+          "RIX": "Z6",
+          "TLL": "Z6",
+          "VNO": "Z6",
+          "SKP": "Z6",
+          "KBP": "Z6",
+          "NBO": "Z6",
+          "JNB": "Z6",
+          "CPT": "Z6",
+          "CMN": "Z6",
+          "ADD": "Z6",
+          "LAX": "Z7",
+          "SFO": "Z7",
+          "SEA": "Z7",
+          "LAS": "Z7",
+          "YVR": "Z7",
+          "HNL": "Z7",
+          "JFK": "Z7",
+          "EWR": "Z7",
+          "ORD": "Z7",
+          "BOS": "Z7",
+          "IAD": "Z7",
+          "YYZ": "Z7",
+          "GRU": "Z7",
+          "BOG": "Z7",
+          "SCL": "Z7"
+        },
+        "chart": [
+          {
+            "zone": "Z1",
+            "label": "台灣 ↔ 韓國（首爾/釜山，直飛）",
+            "eco": 10000,
+            "prem_eco": null,
+            "biz": 25000,
+            "first": 40000,
+            "airlines": [
+              {
+                "code": "KE",
+                "name": "大韓航空",
+                "direct": true,
+                "routes": [
+                  "TPE-ICN",
+                  "TPE-GMP",
+                  "TPE-PUS"
+                ]
+              },
+              {
+                "code": "CI",
+                "name": "中華航空",
+                "direct": true,
+                "routes": [
+                  "TPE-ICN"
+                ]
+              }
+            ],
+            "connections": [],
+            "booking_tip": "大韓直飛首爾，商務艙25,000哩；CI也可用SKYPASS哩程開"
+          },
+          {
+            "zone": "Z2",
+            "label": "台灣 ↔ 日本/中國/香港",
+            "eco": 15000,
+            "prem_eco": null,
+            "biz": 35000,
+            "first": 55000,
+            "airlines": [
+              {
+                "code": "KE",
+                "name": "大韓航空",
+                "direct": false,
+                "routes": [
+                  "TPE-ICN-NRT",
+                  "TPE-ICN-HND",
+                  "TPE-ICN-KIX"
+                ]
+              },
+              {
+                "code": "CI",
+                "name": "中華航空",
+                "direct": true,
+                "routes": [
+                  "TPE-NRT",
+                  "TPE-KIX",
+                  "TPE-HKG"
+                ]
+              }
+            ],
+            "connections": [
+              {
+                "via": "ICN",
+                "tip": "大韓轉首爾接日本各城市"
+              }
+            ],
+            "booking_tip": "日本建議直接用長榮/華航/JAL直飛，SKYPASS需繞首爾"
+          },
+          {
+            "zone": "Z3",
+            "label": "台灣 ↔ 東南亞",
+            "eco": 20000,
+            "prem_eco": null,
+            "biz": 40000,
+            "first": 60000,
+            "airlines": [
+              {
+                "code": "KE",
+                "name": "大韓航空",
+                "direct": false,
+                "routes": [
+                  "TPE-ICN-BKK",
+                  "TPE-ICN-SIN",
+                  "TPE-ICN-MNL"
+                ]
+              },
+              {
+                "code": "CI",
+                "name": "中華航空",
+                "direct": true,
+                "routes": [
+                  "TPE-BKK",
+                  "TPE-SIN",
+                  "TPE-MNL"
+                ]
+              }
+            ],
+            "connections": [
+              {
+                "via": "ICN",
+                "tip": "大韓轉首爾接東南亞"
+              }
+            ],
+            "booking_tip": "東南亞建議用Flying Blue或華航Dynasty直接開，SKYPASS需繞首爾較費時"
+          },
+          {
+            "zone": "Z4",
+            "label": "台灣 ↔ 澳洲/紐西蘭/南亞",
+            "eco": 27500,
+            "prem_eco": null,
+            "biz": 55000,
+            "first": 80000,
+            "airlines": [
+              {
+                "code": "KE",
+                "name": "大韓航空",
+                "direct": false,
+                "routes": [
+                  "TPE-ICN-SYD",
+                  "TPE-ICN-MEL",
+                  "TPE-ICN-BNE",
+                  "TPE-ICN-AKL"
+                ]
+              }
+            ],
+            "connections": [
+              {
+                "via": "ICN",
+                "tip": "大韓轉首爾飛澳洲，全程約14-16小時"
+              }
+            ],
+            "booking_tip": "澳洲航線大韓直飛ICN-SYD/MEL，可省一段轉機"
+          },
+          {
+            "zone": "Z5",
+            "label": "台灣 ↔ 中東",
+            "eco": 25000,
+            "prem_eco": null,
+            "biz": 50000,
+            "first": 75000,
+            "airlines": [
+              {
+                "code": "KE",
+                "name": "大韓航空",
+                "direct": false,
+                "routes": [
+                  "TPE-ICN-DXB",
+                  "TPE-ICN-DOH"
+                ]
+              }
+            ],
+            "connections": [],
+            "booking_tip": "中東需轉首爾，可考慮Emirates Skywards更直接"
+          },
+          {
+            "zone": "Z6",
+            "label": "台灣 ↔ 歐洲/非洲",
+            "eco": 37500,
+            "prem_eco": null,
+            "biz": 75000,
+            "first": 105000,
+            "airlines": [
+              {
+                "code": "KE",
+                "name": "大韓航空",
+                "direct": false,
+                "routes": [
+                  "TPE-ICN-CDG",
+                  "TPE-ICN-FRA",
+                  "TPE-ICN-AMS",
+                  "TPE-ICN-LHR",
+                  "TPE-ICN-FCO",
+                  "TPE-ICN-MAD"
+                ]
+              },
+              {
+                "code": "CI",
+                "name": "中華航空",
+                "direct": true,
+                "routes": [
+                  "TPE-AMS",
+                  "TPE-FRA"
+                ]
+              }
+            ],
+            "connections": [
+              {
+                "via": "ICN",
+                "tip": "大韓ICN直飛歐洲主要城市，轉機約2小時"
+              }
+            ],
+            "booking_tip": "歐洲商務75,000哩，比Flying Blue略高；大韓頭等艙105,000哩可開A380"
+          },
+          {
+            "zone": "Z7",
+            "label": "台灣 ↔ 北美洲",
+            "eco": 42500,
+            "prem_eco": null,
+            "biz": 80000,
+            "first": 110000,
+            "airlines": [
+              {
+                "code": "KE",
+                "name": "大韓航空",
+                "direct": false,
+                "routes": [
+                  "TPE-ICN-JFK",
+                  "TPE-ICN-LAX",
+                  "TPE-ICN-ORD",
+                  "TPE-ICN-SEA",
+                  "TPE-ICN-YVR"
+                ]
+              },
+              {
+                "code": "DL",
+                "name": "達美航空",
+                "direct": false,
+                "routes": [
+                  "TPE-NRT-ATL",
+                  "TPE-NRT-SEA"
+                ]
+              }
+            ],
+            "connections": [
+              {
+                "via": "ICN",
+                "tip": "大韓轉首爾飛美國，全程約16-18小時"
+              }
+            ],
+            "booking_tip": "⭐甜蜜點：大韓頭等艙110,000哩開A380頭等，是最高CP值之一"
+          }
+        ]
+      },
+      "transfer_partners": [
+        "Chase Ultimate Rewards",
+        "美國運通（部分）"
+      ],
+      "sweet_spots": [
+        "大韓A380頭等艙110,000哩（ICN-LAX/JFK，體驗頂級）",
+        "台韓商務艙25,000哩（直飛最方便）",
+        "歐洲商務艙75,000哩（轉首爾，ICN直飛多城市）"
+      ]
+    },
+    "emirates_skywards": {
+      "name": "阿聯酋 Skywards",
+      "airline": "阿聯酋航空",
+      "alliance": "獨立（無聯盟）",
+      "iata": "EK",
+      "booking_url": "https://www.emirates.com/tw/chinese/skywards/",
+      "currency": "哩",
+      "note": "⚠️ 阿聯酋目前不飛台灣，需先搭其他航空至杜拜DXB後搭乘；或從其他城市出發",
+      "zones": {
+        "airport_map": {
+          "DXB": "origin",
+          "AUH": "origin",
+          "BKK": "Z1",
+          "DMK": "Z1",
+          "SIN": "Z1",
+          "KUL": "Z1",
+          "MNL": "Z1",
+          "CGK": "Z1",
+          "DPS": "Z1",
+          "CMB": "Z3",
+          "MLE": "Z3",
+          "NRT": "Z2",
+          "HND": "Z2",
+          "KIX": "Z2",
+          "CTS": "Z2",
+          "OKA": "Z2",
+          "FUK": "Z2",
+          "NGO": "Z2",
+          "SDJ": "Z2",
+          "ICN": "Z2",
+          "GMP": "Z2",
+          "PUS": "Z2",
+          "HKG": "Z2",
+          "MFM": "Z2",
+          "PEK": "Z2",
+          "PVG": "Z2",
+          "CAN": "Z2",
+          "SYD": "Z3",
+          "MEL": "Z3",
+          "BNE": "Z3",
+          "PER": "Z3",
+          "AKL": "Z3",
+          "CHC": "Z3",
+          "NAN": "Z3",
+          "BOM": "Z3",
+          "KTM": "Z3",
+          "LHR": "Z4",
+          "LGW": "Z4",
+          "MAN": "Z4",
+          "CDG": "Z4",
+          "FRA": "Z4",
+          "MUC": "Z4",
+          "AMS": "Z4",
+          "VIE": "Z4",
+          "ZRH": "Z4",
+          "GVA": "Z4",
+          "FCO": "Z4",
+          "MXP": "Z4",
+          "MAD": "Z4",
+          "BCN": "Z4",
+          "ARN": "Z4",
+          "CPH": "Z4",
+          "HEL": "Z4",
+          "OSL": "Z4",
+          "IST": "Z4",
+          "DUB": "Z4",
+          "LIS": "Z4",
+          "BRU": "Z4",
+          "WAW": "Z4",
+          "PRG": "Z4",
+          "BUD": "Z4",
+          "ATH": "Z4",
+          "OTP": "Z4",
+          "SOF": "Z4",
+          "BEG": "Z4",
+          "ZAG": "Z4",
+          "LJU": "Z4",
+          "TLV": "Z4",
+          "CAI": "Z4",
+          "DUS": "Z4",
+          "HAM": "Z4",
+          "RIX": "Z4",
+          "TLL": "Z4",
+          "VNO": "Z4",
+          "SKP": "Z4",
+          "KBP": "Z4",
+          "CPT": "Z4",
+          "CMN": "Z4",
+          "ADD": "Z4",
+          "LAX": "Z5",
+          "SFO": "Z5",
+          "SEA": "Z5",
+          "LAS": "Z5",
+          "YVR": "Z5",
+          "HNL": "Z5",
+          "JFK": "Z6",
+          "EWR": "Z6",
+          "ORD": "Z6",
+          "BOS": "Z6",
+          "IAD": "Z6",
+          "YYZ": "Z6",
+          "GRU": "Z6",
+          "BOG": "Z6",
+          "SCL": "Z6"
+        },
+        "chart": [
+          {
+            "zone": "Z1",
+            "label": "杜拜 ↔ 東南亞/南亞（從DXB出發）",
+            "eco": 25000,
+            "prem_eco": 40000,
+            "biz": 50000,
+            "first": 75000,
+            "airlines": [
+              {
+                "code": "EK",
+                "name": "阿聯酋航空",
+                "direct": true,
+                "routes": [
+                  "DXB-BKK",
+                  "DXB-SIN",
+                  "DXB-KUL",
+                  "DXB-MNL",
+                  "DXB-CGK",
+                  "DXB-CMB",
+                  "DXB-MLE"
+                ]
+              }
+            ],
+            "connections": [],
+            "booking_tip": "⚠️ 台灣出發需先飛至DXB（建議用其他哩程兌換）再接EK班機"
+          },
+          {
+            "zone": "Z2",
+            "label": "杜拜 ↔ 東北亞（日本/韓國/中國/香港）",
+            "eco": 25000,
+            "prem_eco": 40000,
+            "biz": 55000,
+            "first": 75000,
+            "airlines": [
+              {
+                "code": "EK",
+                "name": "阿聯酋航空",
+                "direct": true,
+                "routes": [
+                  "DXB-NRT",
+                  "DXB-HND",
+                  "DXB-KIX",
+                  "DXB-ICN",
+                  "DXB-PEK",
+                  "DXB-PVG",
+                  "DXB-HKG"
+                ]
+              }
+            ],
+            "connections": [],
+            "booking_tip": "從杜拜直飛日本/韓國，適合中東轉機旅程"
+          },
+          {
+            "zone": "Z3",
+            "label": "杜拜 ↔ 澳洲/紐西蘭/印度",
+            "eco": 30000,
+            "prem_eco": 50000,
+            "biz": 65000,
+            "first": 80000,
+            "airlines": [
+              {
+                "code": "EK",
+                "name": "阿聯酋航空",
+                "direct": true,
+                "routes": [
+                  "DXB-SYD",
+                  "DXB-MEL",
+                  "DXB-BNE",
+                  "DXB-PER",
+                  "DXB-AKL",
+                  "DXB-DEL",
+                  "DXB-BOM"
+                ]
+              }
+            ],
+            "connections": [],
+            "booking_tip": "阿聯酋A380飛澳洲體驗極佳，頭等套艙80,000哩"
+          },
+          {
+            "zone": "Z4",
+            "label": "杜拜 ↔ 歐洲/非洲",
+            "eco": 35000,
+            "prem_eco": 55000,
+            "biz": 65000,
+            "first": 80000,
+            "airlines": [
+              {
+                "code": "EK",
+                "name": "阿聯酋航空",
+                "direct": true,
+                "routes": [
+                  "DXB-LHR",
+                  "DXB-CDG",
+                  "DXB-FRA",
+                  "DXB-AMS",
+                  "DXB-MUC",
+                  "DXB-FCO",
+                  "DXB-MAD",
+                  "DXB-ZRH",
+                  "DXB-VIE",
+                  "DXB-WAW",
+                  "DXB-ATH",
+                  "DXB-IST",
+                  "DXB-NBO",
+                  "DXB-JNB"
+                ]
+              }
+            ],
+            "connections": [],
+            "booking_tip": "⭐甜蜜點：DXB-LHR頭等艙80,000哩，A380頭等豪華套艙"
+          },
+          {
+            "zone": "Z5",
+            "label": "杜拜 ↔ 北美洲西岸",
+            "eco": 45000,
+            "prem_eco": 70000,
+            "biz": 80000,
+            "first": 100000,
+            "airlines": [
+              {
+                "code": "EK",
+                "name": "阿聯酋航空",
+                "direct": true,
+                "routes": [
+                  "DXB-LAX",
+                  "DXB-SFO",
+                  "DXB-SEA",
+                  "DXB-YVR"
+                ]
+              }
+            ],
+            "connections": [],
+            "booking_tip": "阿聯酋直飛北美西岸，A380商務艙80,000哩"
+          },
+          {
+            "zone": "Z6",
+            "label": "杜拜 ↔ 北美洲東岸",
+            "eco": 55000,
+            "prem_eco": 85000,
+            "biz": 100000,
+            "first": 120000,
+            "airlines": [
+              {
+                "code": "EK",
+                "name": "阿聯酋航空",
+                "direct": true,
+                "routes": [
+                  "DXB-JFK",
+                  "DXB-EWR",
+                  "DXB-ORD",
+                  "DXB-BOS",
+                  "DXB-IAD"
+                ]
+              }
+            ],
+            "connections": [],
+            "booking_tip": "⚠️ 2025年5月起頭等艙須銀卡以上會員才能兌換"
+          }
+        ]
+      },
+      "transfer_partners": [
+        "美國運通Membership Rewards",
+        "Chase Ultimate Rewards",
+        "Citi ThankYou",
+        "Marriott Bonvoy（轉換率3:1）",
+        "大韓航空SKYPASS互轉"
+      ],
+      "sweet_spots": [
+        "⭐杜拜→歐洲頭等艙80,000哩（A380頭等套艙，業界最佳體驗）",
+        "⭐杜拜→澳洲頭等艙80,000哩（A380直飛）",
+        "⚠️阿聯酋不飛台灣，需先至杜拜中轉"
+      ]
+    },
+    "united_mileageplus": {
+      "name": "聯合航空 MileagePlus",
+      "airline": "聯合航空",
+      "alliance": "星空聯盟",
+      "iata": "UA",
+      "booking_url": "https://www.united.com/zh-tw/",
+      "currency": "哩",
+      "note": "星空聯盟最大計畫之一，可開長榮BR/ANA/新航SQ等夥伴機票；部分區間動態定價",
+      "zones": {
+        "airport_map": {
+          "TPE": "origin",
+          "TSA": "origin",
+          "KHH": "origin",
+          "RMQ": "origin",
+          "NRT": "Z1",
+          "HND": "Z1",
+          "KIX": "Z1",
+          "CTS": "Z1",
+          "OKA": "Z1",
+          "FUK": "Z1",
+          "NGO": "Z1",
+          "SDJ": "Z1",
+          "ICN": "Z1",
+          "GMP": "Z1",
+          "PUS": "Z1",
+          "HKG": "Z2",
+          "MFM": "Z2",
+          "PEK": "Z2",
+          "PKX": "Z2",
+          "PVG": "Z2",
+          "SHA": "Z2",
+          "CAN": "Z2",
+          "CTU": "Z2",
+          "SZX": "Z2",
+          "BKK": "Z2",
+          "DMK": "Z2",
+          "CNX": "Z2",
+          "HKT": "Z2",
+          "SIN": "Z2",
+          "KUL": "Z2",
+          "PEN": "Z2",
+          "MNL": "Z2",
+          "CEB": "Z2",
+          "SGN": "Z2",
+          "HAN": "Z2",
+          "DAD": "Z2",
+          "CGK": "Z2",
+          "DPS": "Z2",
+          "RGN": "Z2",
+          "PNH": "Z2",
+          "GUM": "Z2",
+          "SYD": "Z3",
+          "MEL": "Z3",
+          "BNE": "Z3",
+          "PER": "Z3",
+          "AKL": "Z3",
+          "CHC": "Z3",
+          "NAN": "Z3",
+          "DEL": "Z3",
+          "BOM": "Z3",
+          "CMB": "Z3",
+          "KTM": "Z3",
+          "MLE": "Z3",
+          "DXB": "Z4",
+          "AUH": "Z4",
+          "DOH": "Z4",
+          "RUH": "Z4",
+          "JED": "Z4",
+          "KWI": "Z4",
+          "BAH": "Z4",
+          "MCT": "Z4",
+          "AMM": "Z4",
+          "LHR": "Z5",
+          "LGW": "Z5",
+          "MAN": "Z5",
+          "CDG": "Z5",
+          "FRA": "Z5",
+          "MUC": "Z5",
+          "AMS": "Z5",
+          "VIE": "Z5",
+          "ZRH": "Z5",
+          "GVA": "Z5",
+          "FCO": "Z5",
+          "MXP": "Z5",
+          "MAD": "Z5",
+          "BCN": "Z5",
+          "ARN": "Z5",
+          "CPH": "Z5",
+          "HEL": "Z5",
+          "OSL": "Z5",
+          "IST": "Z5",
+          "DUB": "Z5",
+          "LIS": "Z5",
+          "BRU": "Z5",
+          "WAW": "Z5",
+          "PRG": "Z5",
+          "BUD": "Z5",
+          "ATH": "Z5",
+          "OTP": "Z5",
+          "SOF": "Z5",
+          "BEG": "Z5",
+          "ZAG": "Z5",
+          "LJU": "Z5",
+          "TLV": "Z5",
+          "CAI": "Z5",
+          "DUS": "Z5",
+          "HAM": "Z5",
+          "RIX": "Z5",
+          "TLL": "Z5",
+          "VNO": "Z5",
+          "SKP": "Z5",
+          "KBP": "Z5",
+          "NBO": "Z5",
+          "JNB": "Z5",
+          "CPT": "Z5",
+          "CMN": "Z5",
+          "ADD": "Z5",
+          "LAX": "Z6",
+          "SFO": "Z6",
+          "SEA": "Z6",
+          "LAS": "Z6",
+          "YVR": "Z6",
+          "HNL": "Z6",
+          "JFK": "Z7",
+          "EWR": "Z7",
+          "ORD": "Z7",
+          "BOS": "Z7",
+          "IAD": "Z7",
+          "YYZ": "Z7",
+          "GRU": "Z7",
+          "BOG": "Z7",
+          "SCL": "Z7"
+        },
+        "chart": [
+          {
+            "zone": "Z1",
+            "label": "台灣 ↔ 日本/韓國",
+            "eco": 22000,
+            "prem_eco": null,
+            "biz": 40000,
+            "first": 70000,
+            "airlines": [
+              {
+                "code": "BR",
+                "name": "長榮航空",
+                "direct": true,
+                "routes": [
+                  "TPE-NRT",
+                  "TPE-HND",
+                  "TPE-KIX",
+                  "TPE-FUK",
+                  "TPE-OKA",
+                  "TPE-ICN"
+                ]
+              },
+              {
+                "code": "NH",
+                "name": "全日空ANA",
+                "direct": true,
+                "routes": [
+                  "TPE-NRT",
+                  "TPE-HND"
+                ]
+              },
+              {
+                "code": "UA",
+                "name": "聯合航空",
+                "direct": false,
+                "routes": [
+                  "NRT-SFO等"
+                ]
+              }
+            ],
+            "connections": [],
+            "booking_tip": "MileagePlus開長榮BR或全日空NH直飛日本，40,000哩商務艙"
+          },
+          {
+            "zone": "Z2",
+            "label": "台灣 ↔ 東南亞/香港/中國",
+            "eco": 22000,
+            "prem_eco": null,
+            "biz": 40000,
+            "first": 70000,
+            "airlines": [
+              {
+                "code": "BR",
+                "name": "長榮航空",
+                "direct": true,
+                "routes": [
+                  "TPE-BKK",
+                  "TPE-SIN",
+                  "TPE-KUL",
+                  "TPE-SGN",
+                  "TPE-HAN"
+                ]
+              },
+              {
+                "code": "TG",
+                "name": "泰國國際航空",
+                "direct": true,
+                "routes": [
+                  "TPE-BKK"
+                ]
+              },
+              {
+                "code": "SQ",
+                "name": "新加坡航空",
+                "direct": true,
+                "routes": [
+                  "TPE-SIN"
+                ]
+              }
+            ],
+            "connections": [],
+            "booking_tip": "東南亞用MileagePlus開長榮/泰航/新航，商務40,000哩"
+          },
+          {
+            "zone": "Z3",
+            "label": "台灣 ↔ 澳洲/紐西蘭/南亞",
+            "eco": 30000,
+            "prem_eco": null,
+            "biz": 55000,
+            "first": 90000,
+            "airlines": [
+              {
+                "code": "NH",
+                "name": "全日空ANA",
+                "direct": false,
+                "routes": [
+                  "NRT-SYD",
+                  "NRT-MEL"
+                ]
+              },
+              {
+                "code": "SQ",
+                "name": "新加坡航空",
+                "direct": false,
+                "routes": [
+                  "TPE-SIN-SYD",
+                  "TPE-SIN-MEL",
+                  "TPE-SIN-PER"
+                ]
+              },
+              {
+                "code": "TG",
+                "name": "泰國國際航空",
+                "direct": false,
+                "routes": [
+                  "TPE-BKK-SYD"
+                ]
+              }
+            ],
+            "connections": [
+              {
+                "via": "SIN",
+                "tip": "新航轉新加坡接澳洲，MileagePlus可開票"
+              }
+            ],
+            "booking_tip": "澳洲55,000哩商務艙，新航轉新加坡是最好選擇"
+          },
+          {
+            "zone": "Z4",
+            "label": "台灣 ↔ 中東",
+            "eco": 30000,
+            "prem_eco": null,
+            "biz": 55000,
+            "first": 90000,
+            "airlines": [
+              {
+                "code": "LH",
+                "name": "漢莎航空",
+                "direct": false,
+                "routes": [
+                  "TPE-AMS-FRA-DXB"
+                ]
+              },
+              {
+                "code": "TK",
+                "name": "土耳其航空",
+                "direct": false,
+                "routes": [
+                  "TPE-SIN-IST-DXB"
+                ]
+              }
+            ],
+            "connections": [],
+            "booking_tip": "中東路線選擇有限，建議Emirates Skywards"
+          },
+          {
+            "zone": "Z5",
+            "label": "台灣 ↔ 歐洲/非洲",
+            "eco": 30000,
+            "prem_eco": null,
+            "biz": 55000,
+            "first": 90000,
+            "airlines": [
+              {
+                "code": "BR",
+                "name": "長榮航空",
+                "direct": true,
+                "routes": [
+                  "TPE-AMS",
+                  "TPE-LHR",
+                  "TPE-VIE"
+                ]
+              },
+              {
+                "code": "LH",
+                "name": "漢莎航空",
+                "direct": false,
+                "routes": [
+                  "TPE-AMS-FRA",
+                  "TPE-VIE-MUC"
+                ]
+              },
+              {
+                "code": "LX",
+                "name": "瑞士航空",
+                "direct": false,
+                "routes": [
+                  "TPE-AMS-ZRH"
+                ]
+              },
+              {
+                "code": "OS",
+                "name": "奧地利航空",
+                "direct": false,
+                "routes": [
+                  "TPE-VIE-BUD",
+                  "TPE-VIE-WAW",
+                  "TPE-VIE-PRG"
+                ]
+              },
+              {
+                "code": "TK",
+                "name": "土耳其航空",
+                "direct": false,
+                "routes": [
+                  "TPE-SIN-IST",
+                  "TPE-BKK-IST"
+                ]
+              }
+            ],
+            "connections": [
+              {
+                "via": "AMS直飛",
+                "tip": "長榮直飛AMS，漢莎/北歐接歐洲各城"
+              },
+              {
+                "via": "VIE直飛",
+                "tip": "長榮直飛VIE，奧航接東歐各城市"
+              },
+              {
+                "via": "IST",
+                "tip": "土耳其航空轉伊斯坦堡，覆蓋東歐全境"
+              }
+            ],
+            "booking_tip": "⭐甜蜜點：55,000哩開長榮歐洲商務艙（比其他計畫便宜）；土耳其航空IST覆蓋東歐最全面"
+          },
+          {
+            "zone": "Z6",
+            "label": "台灣 ↔ 北美洲西岸",
+            "eco": 35000,
+            "prem_eco": null,
+            "biz": 65000,
+            "first": 110000,
+            "airlines": [
+              {
+                "code": "BR",
+                "name": "長榮航空",
+                "direct": true,
+                "routes": [
+                  "TPE-LAX",
+                  "TPE-SFO",
+                  "TPE-SEA",
+                  "TPE-YVR"
+                ]
+              },
+              {
+                "code": "NH",
+                "name": "全日空ANA",
+                "direct": false,
+                "routes": [
+                  "NRT-LAX",
+                  "NRT-SFO",
+                  "NRT-SEA"
+                ]
+              },
+              {
+                "code": "UA",
+                "name": "聯合航空",
+                "direct": false,
+                "routes": [
+                  "NRT-SFO",
+                  "NRT-ORD",
+                  "NRT-IAD"
+                ]
+              }
+            ],
+            "connections": [
+              {
+                "via": "直飛",
+                "tip": "長榮直飛LAX/SFO/SEA/YVR"
+              },
+              {
+                "via": "NRT",
+                "tip": "ANA轉東京飛北美"
+              }
+            ],
+            "booking_tip": "北美西岸65,000哩，長榮直飛最方便；ANA轉東京可到更多城市"
+          },
+          {
+            "zone": "Z7",
+            "label": "台灣 ↔ 北美洲東岸/南美洲",
+            "eco": 40000,
+            "prem_eco": null,
+            "biz": 75000,
+            "first": 120000,
+            "airlines": [
+              {
+                "code": "BR",
+                "name": "長榮航空",
+                "direct": true,
+                "routes": [
+                  "TPE-JFK",
+                  "TPE-ORD"
+                ]
+              },
+              {
+                "code": "UA",
+                "name": "聯合航空",
+                "direct": false,
+                "routes": [
+                  "NRT-JFK",
+                  "NRT-EWR",
+                  "NRT-BOS",
+                  "NRT-IAD",
+                  "NRT-ORD"
+                ]
+              },
+              {
+                "code": "NH",
+                "name": "全日空ANA",
+                "direct": false,
+                "routes": [
+                  "NRT-JFK",
+                  "NRT-ORD"
+                ]
+              }
+            ],
+            "connections": [
+              {
+                "via": "直飛",
+                "tip": "長榮直飛JFK/ORD"
+              },
+              {
+                "via": "NRT",
+                "tip": "聯合/ANA轉東京"
+              }
+            ],
+            "booking_tip": "東岸75,000哩商務艙；長榮直飛JFK是最便利選項"
+          }
+        ]
+      },
+      "transfer_partners": [
+        "Chase Ultimate Rewards（1:1直接轉）",
+        "美國運通Membership Rewards",
+        "Citi ThankYou",
+        "Capital One",
+        "Marriott Bonvoy（3:1）"
+      ],
+      "sweet_spots": [
+        "⭐歐洲商務55,000哩（長榮直飛AMS/LHR/VIE，比ANA省16,000哩）",
+        "北美西岸商務65,000哩（長榮直飛）",
+        "Chase UR直接1:1轉入，美國最易累積"
+      ]
+    },
+    "miles_more": {
+      "name": "漢莎 Miles & More",
+      "airline": "漢莎集團（LH/LX/OS/SN）",
+      "alliance": "星空聯盟",
+      "iata": "LH",
+      "booking_url": "https://www.miles-and-more.com",
+      "currency": "哩",
+      "note": "漢莎/瑞士/奧地利/布魯塞爾航空共用計畫；歐洲內短途開票性價比極高",
+      "zones": {
+        "airport_map": {
+          "TPE": "origin",
+          "TSA": "origin",
+          "KHH": "origin",
+          "RMQ": "origin",
+          "NRT": "Z1",
+          "HND": "Z1",
+          "KIX": "Z1",
+          "CTS": "Z1",
+          "OKA": "Z1",
+          "FUK": "Z1",
+          "NGO": "Z1",
+          "SDJ": "Z1",
+          "ICN": "Z1",
+          "GMP": "Z1",
+          "PUS": "Z1",
+          "HKG": "Z2",
+          "MFM": "Z2",
+          "PEK": "Z2",
+          "PKX": "Z2",
+          "PVG": "Z2",
+          "SHA": "Z2",
+          "CAN": "Z2",
+          "CTU": "Z2",
+          "SZX": "Z2",
+          "BKK": "Z2",
+          "DMK": "Z2",
+          "CNX": "Z2",
+          "HKT": "Z2",
+          "SIN": "Z2",
+          "KUL": "Z2",
+          "PEN": "Z2",
+          "MNL": "Z2",
+          "CEB": "Z2",
+          "SGN": "Z2",
+          "HAN": "Z2",
+          "DAD": "Z2",
+          "CGK": "Z2",
+          "DPS": "Z2",
+          "RGN": "Z2",
+          "PNH": "Z2",
+          "GUM": "Z2",
+          "SYD": "Z3",
+          "MEL": "Z3",
+          "BNE": "Z3",
+          "PER": "Z3",
+          "AKL": "Z3",
+          "CHC": "Z3",
+          "NAN": "Z3",
+          "DEL": "Z3",
+          "BOM": "Z3",
+          "CMB": "Z3",
+          "KTM": "Z3",
+          "MLE": "Z3",
+          "DXB": "Z3",
+          "AUH": "Z3",
+          "DOH": "Z3",
+          "RUH": "Z3",
+          "JED": "Z3",
+          "KWI": "Z3",
+          "BAH": "Z3",
+          "MCT": "Z3",
+          "AMM": "Z3",
+          "LHR": "Z4",
+          "LGW": "Z4",
+          "MAN": "Z4",
+          "CDG": "Z4",
+          "MUC": "Z4",
+          "FRA": "Z4",
+          "AMS": "Z4",
+          "VIE": "Z4",
+          "ZRH": "Z4",
+          "GVA": "Z4",
+          "FCO": "Z4",
+          "MXP": "Z4",
+          "MAD": "Z4",
+          "BCN": "Z4",
+          "ARN": "Z4",
+          "CPH": "Z4",
+          "HEL": "Z4",
+          "OSL": "Z4",
+          "DUB": "Z4",
+          "LIS": "Z4",
+          "BRU": "Z4",
+          "DUS": "Z4",
+          "HAM": "Z4",
+          "IST": "Z4",
+          "WAW": "Z5",
+          "PRG": "Z5",
+          "BUD": "Z5",
+          "ATH": "Z5",
+          "OTP": "Z5",
+          "SOF": "Z5",
+          "BEG": "Z5",
+          "ZAG": "Z5",
+          "LJU": "Z5",
+          "TLV": "Z5",
+          "CAI": "Z5",
+          "KBP": "Z5",
+          "RIX": "Z5",
+          "TLL": "Z5",
+          "VNO": "Z5",
+          "SKP": "Z5",
+          "NBO": "Z5",
+          "JNB": "Z5",
+          "CPT": "Z5",
+          "CMN": "Z5",
+          "ADD": "Z5",
+          "LAX": "Z6",
+          "SFO": "Z6",
+          "SEA": "Z6",
+          "LAS": "Z6",
+          "YVR": "Z6",
+          "HNL": "Z6",
+          "JFK": "Z6",
+          "EWR": "Z6",
+          "ORD": "Z6",
+          "BOS": "Z6",
+          "IAD": "Z6",
+          "YYZ": "Z6",
+          "GRU": "Z6",
+          "BOG": "Z6",
+          "SCL": "Z6"
+        },
+        "chart": [
+          {
+            "zone": "Z1",
+            "label": "台灣 ↔ 日本/韓國",
+            "eco": 20000,
+            "prem_eco": 35000,
+            "biz": 40000,
+            "first": 70000,
+            "airlines": [
+              {
+                "code": "BR",
+                "name": "長榮航空",
+                "direct": true,
+                "routes": [
+                  "TPE-NRT",
+                  "TPE-HND",
+                  "TPE-KIX",
+                  "TPE-FUK",
+                  "TPE-OKA",
+                  "TPE-ICN"
+                ]
+              },
+              {
+                "code": "NH",
+                "name": "全日空ANA",
+                "direct": true,
+                "routes": [
+                  "TPE-NRT",
+                  "TPE-HND"
+                ]
+              },
+              {
+                "code": "LH",
+                "name": "漢莎航空",
+                "direct": false,
+                "routes": [
+                  "透過星空聯盟夥伴"
+                ]
+              }
+            ],
+            "connections": [],
+            "booking_tip": "Miles & More開長榮BR/全日空NH直飛日本"
+          },
+          {
+            "zone": "Z2",
+            "label": "台灣 ↔ 東南亞/香港/中國",
+            "eco": 20000,
+            "prem_eco": 35000,
+            "biz": 40000,
+            "first": 70000,
+            "airlines": [
+              {
+                "code": "BR",
+                "name": "長榮航空",
+                "direct": true,
+                "routes": [
+                  "TPE-BKK",
+                  "TPE-SIN",
+                  "TPE-KUL",
+                  "TPE-SGN",
+                  "TPE-HAN",
+                  "TPE-MNL"
+                ]
+              },
+              {
+                "code": "TG",
+                "name": "泰國國際航空",
+                "direct": true,
+                "routes": [
+                  "TPE-BKK"
+                ]
+              },
+              {
+                "code": "SQ",
+                "name": "新加坡航空",
+                "direct": true,
+                "routes": [
+                  "TPE-SIN"
+                ]
+              }
+            ],
+            "connections": [],
+            "booking_tip": "東南亞用長榮/泰航/新航直飛，Miles & More開票"
+          },
+          {
+            "zone": "Z3",
+            "label": "台灣 ↔ 澳洲/南亞/中東",
+            "eco": 25000,
+            "prem_eco": 45000,
+            "biz": 55000,
+            "first": 90000,
+            "airlines": [
+              {
+                "code": "SQ",
+                "name": "新加坡航空",
+                "direct": false,
+                "routes": [
+                  "TPE-SIN-SYD",
+                  "TPE-SIN-MEL",
+                  "TPE-SIN-PER"
+                ]
+              },
+              {
+                "code": "TG",
+                "name": "泰國國際航空",
+                "direct": false,
+                "routes": [
+                  "TPE-BKK-SYD",
+                  "TPE-BKK-DEL"
+                ]
+              },
+              {
+                "code": "NH",
+                "name": "全日空ANA",
+                "direct": false,
+                "routes": [
+                  "NRT-SYD"
+                ]
+              }
+            ],
+            "connections": [],
+            "booking_tip": "澳洲55,000哩商務艙，新航轉新加坡"
+          },
+          {
+            "zone": "Z4",
+            "label": "台灣 ↔ 西歐主要城市",
+            "eco": 35000,
+            "prem_eco": 55000,
+            "biz": 65000,
+            "first": 95000,
+            "airlines": [
+              {
+                "code": "BR",
+                "name": "長榮航空",
+                "direct": true,
+                "routes": [
+                  "TPE-AMS",
+                  "TPE-LHR",
+                  "TPE-VIE"
+                ]
+              },
+              {
+                "code": "LH",
+                "name": "漢莎航空",
+                "direct": false,
+                "routes": [
+                  "TPE-AMS-FRA",
+                  "TPE-AMS-MUC",
+                  "TPE-VIE-FRA"
+                ]
+              },
+              {
+                "code": "LX",
+                "name": "瑞士航空",
+                "direct": false,
+                "routes": [
+                  "TPE-AMS-ZRH",
+                  "TPE-VIE-ZRH"
+                ]
+              },
+              {
+                "code": "OS",
+                "name": "奧地利航空",
+                "direct": false,
+                "routes": [
+                  "TPE-VIE-BUD",
+                  "TPE-VIE-PRG"
+                ]
+              },
+              {
+                "code": "SN",
+                "name": "布魯塞爾航空",
+                "direct": false,
+                "routes": [
+                  "TPE-AMS-BRU"
+                ]
+              }
+            ],
+            "connections": [
+              {
+                "via": "AMS直飛",
+                "tip": "長榮直飛AMS，漢莎集團接大多數西歐城市"
+              },
+              {
+                "via": "VIE直飛",
+                "tip": "長榮直飛VIE，奧航直接接東歐"
+              }
+            ],
+            "booking_tip": "⭐甜蜜點：65,000哩商務艙，漢莎集團有最完整的歐洲內短途接駁"
+          },
+          {
+            "zone": "Z5",
+            "label": "台灣 ↔ 東歐/巴爾幹/波羅的海/非洲",
+            "eco": 35000,
+            "prem_eco": 55000,
+            "biz": 65000,
+            "first": 95000,
+            "airlines": [
+              {
+                "code": "LH",
+                "name": "漢莎航空",
+                "direct": false,
+                "routes": [
+                  "TPE-FRA-WAW",
+                  "TPE-FRA-PRG",
+                  "TPE-MUC-BUD",
+                  "TPE-FRA-ATH"
+                ]
+              },
+              {
+                "code": "OS",
+                "name": "奧地利航空",
+                "direct": false,
+                "routes": [
+                  "TPE-VIE-WAW",
+                  "TPE-VIE-PRG",
+                  "TPE-VIE-BUD",
+                  "TPE-VIE-ZAG",
+                  "TPE-VIE-BEG",
+                  "TPE-VIE-LJU"
+                ]
+              },
+              {
+                "code": "LX",
+                "name": "瑞士航空",
+                "direct": false,
+                "routes": [
+                  "TPE-ZRH-TLV",
+                  "TPE-ZRH-ATH"
+                ]
+              }
+            ],
+            "connections": [
+              {
+                "via": "VIE",
+                "tip": "⭐奧地利航空從VIE直飛整個巴爾幹/東歐，覆蓋最全"
+              },
+              {
+                "via": "FRA/MUC",
+                "tip": "漢莎轉法蘭克福/慕尼黑接波蘭/捷克/匈牙利"
+              }
+            ],
+            "booking_tip": "⭐東歐最強計畫之一：長榮飛VIE，奧航OS接WAW/PRG/BUD/ZAG/BEG/LJU等東歐全境"
+          },
+          {
+            "zone": "Z6",
+            "label": "台灣 ↔ 北美洲/南美洲",
+            "eco": 40000,
+            "prem_eco": 65000,
+            "biz": 75000,
+            "first": 110000,
+            "airlines": [
+              {
+                "code": "BR",
+                "name": "長榮航空",
+                "direct": true,
+                "routes": [
+                  "TPE-LAX",
+                  "TPE-SFO",
+                  "TPE-SEA",
+                  "TPE-JFK",
+                  "TPE-ORD",
+                  "TPE-YVR"
+                ]
+              },
+              {
+                "code": "UA",
+                "name": "聯合航空",
+                "direct": false,
+                "routes": [
+                  "NRT-SFO",
+                  "NRT-ORD",
+                  "NRT-IAD"
+                ]
+              },
+              {
+                "code": "NH",
+                "name": "全日空ANA",
+                "direct": false,
+                "routes": [
+                  "NRT-LAX",
+                  "NRT-JFK"
+                ]
+              }
+            ],
+            "connections": [
+              {
+                "via": "直飛",
+                "tip": "長榮直飛北美多個城市"
+              },
+              {
+                "via": "NRT",
+                "tip": "全日空/聯合轉東京"
+              }
+            ],
+            "booking_tip": "北美75,000哩商務艙，長榮直飛最方便；Miles & More開票長榮有時較易取得商務艙"
+          }
+        ]
+      },
+      "transfer_partners": [
+        "美國運通Membership Rewards（部分地區）",
+        "Payback（德國）",
+        "台灣較少直接合作夥伴"
+      ],
+      "sweet_spots": [
+        "⭐東歐全境最強：長榮VIE直飛+奧航OS接巴爾幹/東歐各城",
+        "歐洲商務65,000哩（漢莎集團內短途接駁最完整）",
+        "漢莎頭等艙95,000哩（法蘭克福出發，全球頂級體驗）"
+      ]
+    },
+    "thai_rop": {
+      "name": "泰航 Royal Orchid Plus",
+      "airline": "泰國國際航空",
+      "alliance": "星空聯盟",
+      "iata": "TG",
+      "booking_url": "https://www.thaiairways.com/en_TH/royal_orchid_plus/index.page",
+      "currency": "哩",
+      "note": "泰航直飛台北曼谷，星空聯盟夥伴可開票",
+      "zones": {
+        "airport_map": {
+          "TPE": "origin",
+          "TSA": "origin",
+          "KHH": "origin",
+          "RMQ": "origin",
+          "BKK": "Z1",
+          "DMK": "Z1",
+          "CNX": "Z1",
+          "HKT": "Z1",
+          "NRT": "Z2",
+          "HND": "Z2",
+          "KIX": "Z2",
+          "CTS": "Z2",
+          "OKA": "Z2",
+          "FUK": "Z2",
+          "NGO": "Z2",
+          "SDJ": "Z2",
+          "ICN": "Z2",
+          "GMP": "Z2",
+          "PUS": "Z2",
+          "HKG": "Z2",
+          "MFM": "Z2",
+          "SIN": "Z2",
+          "KUL": "Z2",
+          "MNL": "Z2",
+          "SGN": "Z2",
+          "HAN": "Z2",
+          "DAD": "Z2",
+          "CGK": "Z2",
+          "DPS": "Z2",
+          "SYD": "Z3",
+          "MEL": "Z3",
+          "BNE": "Z3",
+          "PER": "Z3",
+          "AKL": "Z3",
+          "CHC": "Z3",
+          "NAN": "Z3",
+          "DEL": "Z3",
+          "BOM": "Z3",
+          "CMB": "Z3",
+          "KTM": "Z3",
+          "MLE": "Z3",
+          "DXB": "Z3",
+          "AUH": "Z3",
+          "DOH": "Z3",
+          "RUH": "Z3",
+          "JED": "Z3",
+          "KWI": "Z3",
+          "BAH": "Z3",
+          "MCT": "Z3",
+          "AMM": "Z3",
+          "LHR": "Z4",
+          "LGW": "Z4",
+          "MAN": "Z4",
+          "CDG": "Z4",
+          "FRA": "Z4",
+          "MUC": "Z4",
+          "AMS": "Z4",
+          "VIE": "Z4",
+          "ZRH": "Z4",
+          "GVA": "Z4",
+          "FCO": "Z4",
+          "MXP": "Z4",
+          "MAD": "Z4",
+          "BCN": "Z4",
+          "ARN": "Z4",
+          "CPH": "Z4",
+          "HEL": "Z4",
+          "OSL": "Z4",
+          "IST": "Z4",
+          "DUB": "Z4",
+          "LIS": "Z4",
+          "BRU": "Z4",
+          "WAW": "Z4",
+          "PRG": "Z4",
+          "BUD": "Z4",
+          "ATH": "Z4",
+          "OTP": "Z4",
+          "SOF": "Z4",
+          "BEG": "Z4",
+          "ZAG": "Z4",
+          "LJU": "Z4",
+          "TLV": "Z4",
+          "CAI": "Z4",
+          "DUS": "Z4",
+          "HAM": "Z4",
+          "RIX": "Z4",
+          "TLL": "Z4",
+          "VNO": "Z4",
+          "SKP": "Z4",
+          "KBP": "Z4",
+          "NBO": "Z4",
+          "JNB": "Z4",
+          "CPT": "Z4",
+          "CMN": "Z4",
+          "ADD": "Z4",
+          "LAX": "Z5",
+          "SFO": "Z5",
+          "SEA": "Z5",
+          "LAS": "Z5",
+          "YVR": "Z5",
+          "HNL": "Z5",
+          "JFK": "Z5",
+          "EWR": "Z5",
+          "ORD": "Z5",
+          "BOS": "Z5",
+          "IAD": "Z5",
+          "YYZ": "Z5",
+          "GRU": "Z5",
+          "BOG": "Z5",
+          "SCL": "Z5"
+        },
+        "chart": [
+          {
+            "zone": "Z1",
+            "label": "台灣 ↔ 泰國（曼谷/清邁/普吉）",
+            "eco": 10000,
+            "prem_eco": 15000,
+            "biz": 25000,
+            "first": 40000,
+            "airlines": [
+              {
+                "code": "TG",
+                "name": "泰國國際航空",
+                "direct": true,
+                "routes": [
+                  "TPE-BKK",
+                  "TPE-CNX"
+                ]
+              },
+              {
+                "code": "BR",
+                "name": "長榮航空",
+                "direct": true,
+                "routes": [
+                  "TPE-BKK"
+                ]
+              }
+            ],
+            "connections": [],
+            "booking_tip": "泰航直飛曼谷，商務艙25,000哩；台灣累積泰航哩程以信用卡為主"
+          },
+          {
+            "zone": "Z2",
+            "label": "台灣 ↔ 東北亞/其他東南亞",
+            "eco": 15000,
+            "prem_eco": 25000,
+            "biz": 35000,
+            "first": 55000,
+            "airlines": [
+              {
+                "code": "TG",
+                "name": "泰國國際航空",
+                "direct": false,
+                "routes": [
+                  "TPE-BKK-NRT",
+                  "TPE-BKK-ICN",
+                  "TPE-BKK-SIN"
+                ]
+              },
+              {
+                "code": "BR",
+                "name": "長榮航空",
+                "direct": true,
+                "routes": [
+                  "TPE-NRT",
+                  "TPE-ICN",
+                  "TPE-SIN",
+                  "TPE-KUL",
+                  "TPE-MNL"
+                ]
+              }
+            ],
+            "connections": [
+              {
+                "via": "BKK",
+                "tip": "泰航轉曼谷可接日本/韓國"
+              }
+            ],
+            "booking_tip": "日本建議直接用長榮BR直飛，以ROP哩程開票"
+          },
+          {
+            "zone": "Z3",
+            "label": "台灣 ↔ 澳洲/南亞/中東",
+            "eco": 20000,
+            "prem_eco": 35000,
+            "biz": 55000,
+            "first": 80000,
+            "airlines": [
+              {
+                "code": "TG",
+                "name": "泰國國際航空",
+                "direct": false,
+                "routes": [
+                  "TPE-BKK-SYD",
+                  "TPE-BKK-MEL",
+                  "TPE-BKK-DEL",
+                  "TPE-BKK-BOM",
+                  "TPE-BKK-DXB"
+                ]
+              },
+              {
+                "code": "SQ",
+                "name": "新加坡航空",
+                "direct": false,
+                "routes": [
+                  "TPE-SIN-SYD",
+                  "TPE-SIN-MEL"
+                ]
+              }
+            ],
+            "connections": [
+              {
+                "via": "BKK",
+                "tip": "泰航轉曼谷接澳洲，全程約12-14小時"
+              }
+            ],
+            "booking_tip": "澳洲55,000哩商務；泰航轉曼谷或新航轉新加坡都可"
+          },
+          {
+            "zone": "Z4",
+            "label": "台灣 ↔ 歐洲/非洲",
+            "eco": 35000,
+            "prem_eco": 55000,
+            "biz": 65000,
+            "first": 90000,
+            "airlines": [
+              {
+                "code": "TG",
+                "name": "泰國國際航空",
+                "direct": false,
+                "routes": [
+                  "TPE-BKK-LHR",
+                  "TPE-BKK-FRA",
+                  "TPE-BKK-CDG",
+                  "TPE-BKK-MUC",
+                  "TPE-BKK-ZRH",
+                  "TPE-BKK-FCO",
+                  "TPE-BKK-CPH",
+                  "TPE-BKK-IST",
+                  "TPE-BKK-NBO",
+                  "TPE-BKK-JNB"
+                ]
+              },
+              {
+                "code": "LH",
+                "name": "漢莎航空",
+                "direct": false,
+                "routes": [
+                  "TPE-AMS-FRA"
+                ]
+              },
+              {
+                "code": "BR",
+                "name": "長榮航空",
+                "direct": true,
+                "routes": [
+                  "TPE-AMS",
+                  "TPE-LHR",
+                  "TPE-VIE"
+                ]
+              }
+            ],
+            "connections": [
+              {
+                "via": "BKK",
+                "tip": "泰航轉曼谷直飛歐洲多個城市，轉機約2小時"
+              },
+              {
+                "via": "AMS直飛",
+                "tip": "長榮直飛AMS，用ROP哩程開票"
+              }
+            ],
+            "booking_tip": "歐洲65,000哩商務，泰航轉BKK航點豐富；或用長榮直飛AMS/LHR/VIE"
+          },
+          {
+            "zone": "Z5",
+            "label": "台灣 ↔ 北美洲",
+            "eco": 40000,
+            "prem_eco": 65000,
+            "biz": 75000,
+            "first": 100000,
+            "airlines": [
+              {
+                "code": "BR",
+                "name": "長榮航空",
+                "direct": true,
+                "routes": [
+                  "TPE-LAX",
+                  "TPE-SFO",
+                  "TPE-SEA",
+                  "TPE-JFK",
+                  "TPE-ORD"
+                ]
+              },
+              {
+                "code": "UA",
+                "name": "聯合航空",
+                "direct": false,
+                "routes": [
+                  "NRT-SFO",
+                  "NRT-IAD"
+                ]
+              }
+            ],
+            "connections": [],
+            "booking_tip": "北美建議用長榮BR直飛，以ROP哩程開票"
+          }
+        ]
+      },
+      "transfer_partners": [
+        "台灣較少直接合作信用卡",
+        "泰國本地銀行積點"
+      ],
+      "sweet_spots": [
+        "台灣→曼谷商務艙25,000哩（泰航直飛，最低哩程）",
+        "歐洲商務65,000哩（泰航轉BKK，航點多）",
+        "非洲奈洛比/約翰尼斯堡可經曼谷一站轉機"
+      ]
+    },
+    "turkish_miles": {
+      "name": "土耳其航空 Miles&Smiles",
+      "airline": "土耳其航空",
+      "alliance": "星空聯盟",
+      "iata": "TK",
+      "booking_url": "https://www.turkishairlines.com/zh-tw/miles-and-smiles/",
+      "currency": "哩",
+      "note": "IST伊斯坦堡是東歐最大轉機樞紐；無直飛台灣，需先至IST或透過夥伴",
+      "zones": {
+        "airport_map": {
+          "TPE": "origin",
+          "TSA": "origin",
+          "KHH": "origin",
+          "RMQ": "origin",
+          "BKK": "Z1",
+          "DMK": "Z1",
+          "SIN": "Z1",
+          "KUL": "Z1",
+          "MNL": "Z1",
+          "SGN": "Z1",
+          "HAN": "Z1",
+          "CGK": "Z1",
+          "DPS": "Z1",
+          "NRT": "Z2",
+          "HND": "Z2",
+          "KIX": "Z2",
+          "CTS": "Z2",
+          "OKA": "Z2",
+          "FUK": "Z2",
+          "NGO": "Z2",
+          "SDJ": "Z2",
+          "ICN": "Z2",
+          "GMP": "Z2",
+          "PUS": "Z2",
+          "HKG": "Z2",
+          "MFM": "Z2",
+          "PEK": "Z2",
+          "PVG": "Z2",
+          "CAN": "Z2",
+          "SYD": "Z3",
+          "MEL": "Z3",
+          "BNE": "Z3",
+          "PER": "Z3",
+          "AKL": "Z3",
+          "CHC": "Z3",
+          "NAN": "Z3",
+          "DEL": "Z3",
+          "BOM": "Z3",
+          "CMB": "Z3",
+          "KTM": "Z3",
+          "MLE": "Z3",
+          "DXB": "Z4",
+          "AUH": "Z4",
+          "DOH": "Z4",
+          "RUH": "Z4",
+          "JED": "Z4",
+          "KWI": "Z4",
+          "BAH": "Z4",
+          "MCT": "Z4",
+          "AMM": "Z4",
+          "CAI": "Z5",
+          "NBO": "Z4",
+          "CMN": "Z4",
+          "ADD": "Z4",
+          "LHR": "Z5",
+          "LGW": "Z5",
+          "MAN": "Z5",
+          "CDG": "Z5",
+          "FRA": "Z5",
+          "MUC": "Z5",
+          "AMS": "Z5",
+          "VIE": "Z5",
+          "ZRH": "Z5",
+          "GVA": "Z5",
+          "FCO": "Z5",
+          "MXP": "Z5",
+          "MAD": "Z5",
+          "BCN": "Z5",
+          "ARN": "Z5",
+          "CPH": "Z5",
+          "HEL": "Z5",
+          "OSL": "Z5",
+          "IST": "Z5",
+          "DUB": "Z5",
+          "LIS": "Z5",
+          "BRU": "Z5",
+          "WAW": "Z5",
+          "PRG": "Z5",
+          "BUD": "Z5",
+          "ATH": "Z5",
+          "OTP": "Z5",
+          "SOF": "Z5",
+          "BEG": "Z5",
+          "ZAG": "Z5",
+          "LJU": "Z5",
+          "TLV": "Z5",
+          "DUS": "Z5",
+          "HAM": "Z5",
+          "RIX": "Z5",
+          "TLL": "Z5",
+          "VNO": "Z5",
+          "SKP": "Z5",
+          "KBP": "Z5",
+          "LAX": "Z6",
+          "SFO": "Z6",
+          "SEA": "Z6",
+          "LAS": "Z6",
+          "YVR": "Z6",
+          "HNL": "Z6",
+          "JFK": "Z6",
+          "EWR": "Z6",
+          "ORD": "Z6",
+          "BOS": "Z6",
+          "IAD": "Z6",
+          "YYZ": "Z6",
+          "GRU": "Z6",
+          "BOG": "Z6",
+          "SCL": "Z6"
+        },
+        "chart": [
+          {
+            "zone": "Z1",
+            "label": "台灣 ↔ 東南亞",
+            "eco": 12000,
+            "prem_eco": null,
+            "biz": 25000,
+            "first": null,
+            "airlines": [
+              {
+                "code": "TK",
+                "name": "土耳其航空",
+                "direct": false,
+                "routes": [
+                  "TPE-SIN-IST（反向）"
+                ]
+              },
+              {
+                "code": "BR",
+                "name": "長榮航空",
+                "direct": true,
+                "routes": [
+                  "TPE-BKK",
+                  "TPE-SIN",
+                  "TPE-KUL"
+                ]
+              },
+              {
+                "code": "TG",
+                "name": "泰國國際航空",
+                "direct": true,
+                "routes": [
+                  "TPE-BKK"
+                ]
+              }
+            ],
+            "connections": [],
+            "booking_tip": "東南亞用長榮/泰航直飛，以Miles&Smiles開票"
+          },
+          {
+            "zone": "Z2",
+            "label": "台灣 ↔ 日本/韓國/中國/香港",
+            "eco": 15000,
+            "prem_eco": null,
+            "biz": 30000,
+            "first": null,
+            "airlines": [
+              {
+                "code": "BR",
+                "name": "長榮航空",
+                "direct": true,
+                "routes": [
+                  "TPE-NRT",
+                  "TPE-HND",
+                  "TPE-KIX",
+                  "TPE-ICN"
+                ]
+              },
+              {
+                "code": "NH",
+                "name": "全日空ANA",
+                "direct": true,
+                "routes": [
+                  "TPE-NRT"
+                ]
+              }
+            ],
+            "connections": [],
+            "booking_tip": "日本以長榮/ANA直飛，Miles&Smiles哩程相對較低"
+          },
+          {
+            "zone": "Z3",
+            "label": "台灣 ↔ 澳洲/南亞",
+            "eco": 22000,
+            "prem_eco": null,
+            "biz": 45000,
+            "first": null,
+            "airlines": [
+              {
+                "code": "SQ",
+                "name": "新加坡航空",
+                "direct": false,
+                "routes": [
+                  "TPE-SIN-SYD",
+                  "TPE-SIN-MEL"
+                ]
+              },
+              {
+                "code": "TG",
+                "name": "泰國國際航空",
+                "direct": false,
+                "routes": [
+                  "TPE-BKK-SYD",
+                  "TPE-BKK-DEL"
+                ]
+              }
+            ],
+            "connections": [],
+            "booking_tip": "澳洲45,000哩商務，新航轉新加坡"
+          },
+          {
+            "zone": "Z4",
+            "label": "台灣 ↔ 中東/北非",
+            "eco": 20000,
+            "prem_eco": null,
+            "biz": 40000,
+            "first": null,
+            "airlines": [
+              {
+                "code": "TK",
+                "name": "土耳其航空",
+                "direct": false,
+                "routes": [
+                  "TPE-SIN-IST-DXB",
+                  "TPE-BKK-IST-AMM",
+                  "TPE-SIN-IST-CAI"
+                ]
+              },
+              {
+                "code": "SQ",
+                "name": "新加坡航空",
+                "direct": false,
+                "routes": [
+                  "TPE-SIN-DXB"
+                ]
+              }
+            ],
+            "connections": [
+              {
+                "via": "IST",
+                "tip": "土耳其轉伊斯坦堡接中東/北非，IST是中東最大轉機點"
+              }
+            ],
+            "booking_tip": "中東/北非建議先飛IST，土耳其航空覆蓋DXB/AMM/CAI/RUH等"
+          },
+          {
+            "zone": "Z5",
+            "label": "台灣 ↔ 歐洲（IST是東歐最大樞紐）",
+            "eco": 30000,
+            "prem_eco": null,
+            "biz": 55000,
+            "first": null,
+            "airlines": [
+              {
+                "code": "TK",
+                "name": "土耳其航空",
+                "direct": false,
+                "routes": [
+                  "需從IST接：IST-WAW",
+                  "IST-PRG",
+                  "IST-BUD",
+                  "IST-ATH",
+                  "IST-SOF",
+                  "IST-OTP",
+                  "IST-BEG",
+                  "IST-ZAG",
+                  "IST-RIX",
+                  "IST-TLL",
+                  "IST-VNO",
+                  "IST-SKP",
+                  "IST-LHR",
+                  "IST-CDG",
+                  "IST-FRA",
+                  "IST-AMS",
+                  "IST-VIE"
+                ]
+              },
+              {
+                "code": "BR",
+                "name": "長榮航空",
+                "direct": true,
+                "routes": [
+                  "TPE-AMS",
+                  "TPE-LHR",
+                  "TPE-VIE"
+                ]
+              },
+              {
+                "code": "LH",
+                "name": "漢莎航空",
+                "direct": false,
+                "routes": [
+                  "TPE-AMS-FRA-WAW",
+                  "TPE-VIE-BUD"
+                ]
+              }
+            ],
+            "connections": [
+              {
+                "via": "IST（土耳其中轉）",
+                "tip": "⭐IST是東歐30+城市最佳中轉：WAW/PRG/BUD/ATH/SOF/OTP/BEG/ZAG/RIX/TLL/VNO/SKP全覆蓋"
+              },
+              {
+                "via": "AMS/VIE直飛",
+                "tip": "長榮直飛再轉東歐，可搭配Miles&Smiles開東歐段"
+              }
+            ],
+            "booking_tip": "⭐東歐覆蓋最廣：土耳其航空IST轉機可達幾乎所有東歐城市，商務艙55,000哩"
+          },
+          {
+            "zone": "Z6",
+            "label": "台灣 ↔ 北美洲",
+            "eco": 35000,
+            "prem_eco": null,
+            "biz": 65000,
+            "first": null,
+            "airlines": [
+              {
+                "code": "BR",
+                "name": "長榮航空",
+                "direct": true,
+                "routes": [
+                  "TPE-LAX",
+                  "TPE-SFO",
+                  "TPE-SEA",
+                  "TPE-JFK",
+                  "TPE-ORD"
+                ]
+              },
+              {
+                "code": "UA",
+                "name": "聯合航空",
+                "direct": false,
+                "routes": [
+                  "NRT-SFO",
+                  "NRT-ORD"
+                ]
+              }
+            ],
+            "connections": [],
+            "booking_tip": "北美65,000哩商務，長榮直飛；Miles&Smiles北美哩程相對合理"
+          }
+        ]
+      },
+      "transfer_partners": [
+        "美國運通Membership Rewards",
+        "BA Avios可互轉",
+        "Marriott Bonvoy（3:1）"
+      ],
+      "sweet_spots": [
+        "⭐東歐全境最強：IST是歐洲30+城市最佳轉機點（巴爾幹/波羅的海全覆蓋）",
+        "歐洲商務55,000哩（比多數計畫便宜）",
+        "中東40,000哩商務，IST中轉中東全境"
+      ]
+    },
+    "malaysia_enrich": {
+      "name": "馬航 Enrich",
+      "airline": "馬來西亞航空",
+      "alliance": "寰宇一家",
+      "iata": "MH",
+      "booking_url": "https://www.malaysiaairlines.com/tw/zh/enrich.html",
+      "currency": "哩",
+      "note": "馬航直飛台北吉隆坡，寰宇一家夥伴可開票",
+      "zones": {
+        "airport_map": {
+          "TPE": "origin",
+          "TSA": "origin",
+          "KHH": "origin",
+          "RMQ": "origin",
+          "KUL": "Z1",
+          "PEN": "Z1",
+          "NRT": "Z2",
+          "HND": "Z2",
+          "KIX": "Z2",
+          "CTS": "Z2",
+          "OKA": "Z2",
+          "FUK": "Z2",
+          "NGO": "Z2",
+          "SDJ": "Z2",
+          "ICN": "Z2",
+          "GMP": "Z2",
+          "PUS": "Z2",
+          "HKG": "Z2",
+          "MFM": "Z2",
+          "BKK": "Z2",
+          "DMK": "Z2",
+          "SIN": "Z2",
+          "MNL": "Z2",
+          "SGN": "Z2",
+          "HAN": "Z2",
+          "DAD": "Z2",
+          "CGK": "Z3",
+          "DPS": "Z3",
+          "DEL": "Z3",
+          "BOM": "Z3",
+          "CMB": "Z3",
+          "KTM": "Z3",
+          "MLE": "Z3",
+          "DXB": "Z4",
+          "AUH": "Z4",
+          "DOH": "Z4",
+          "RUH": "Z4",
+          "JED": "Z4",
+          "KWI": "Z4",
+          "BAH": "Z4",
+          "MCT": "Z4",
+          "AMM": "Z4",
+          "SYD": "Z4",
+          "MEL": "Z4",
+          "BNE": "Z4",
+          "PER": "Z4",
+          "AKL": "Z4",
+          "CHC": "Z4",
+          "NAN": "Z4",
+          "LHR": "Z5",
+          "LGW": "Z5",
+          "MAN": "Z5",
+          "CDG": "Z5",
+          "FRA": "Z5",
+          "MUC": "Z5",
+          "AMS": "Z5",
+          "VIE": "Z5",
+          "ZRH": "Z5",
+          "GVA": "Z5",
+          "FCO": "Z5",
+          "MXP": "Z5",
+          "MAD": "Z5",
+          "BCN": "Z5",
+          "ARN": "Z5",
+          "CPH": "Z5",
+          "HEL": "Z5",
+          "OSL": "Z5",
+          "IST": "Z5",
+          "DUB": "Z5",
+          "LIS": "Z5",
+          "BRU": "Z5",
+          "WAW": "Z5",
+          "PRG": "Z5",
+          "BUD": "Z5",
+          "ATH": "Z5",
+          "OTP": "Z5",
+          "SOF": "Z5",
+          "BEG": "Z5",
+          "ZAG": "Z5",
+          "LJU": "Z5",
+          "TLV": "Z5",
+          "CAI": "Z5",
+          "DUS": "Z5",
+          "HAM": "Z5",
+          "RIX": "Z5",
+          "TLL": "Z5",
+          "VNO": "Z5",
+          "SKP": "Z5",
+          "KBP": "Z5",
+          "NBO": "Z5",
+          "JNB": "Z5",
+          "CPT": "Z5",
+          "CMN": "Z5",
+          "ADD": "Z5",
+          "LAX": "Z6",
+          "SFO": "Z6",
+          "SEA": "Z6",
+          "LAS": "Z6",
+          "YVR": "Z6",
+          "HNL": "Z6",
+          "JFK": "Z6",
+          "EWR": "Z6",
+          "ORD": "Z6",
+          "BOS": "Z6",
+          "IAD": "Z6",
+          "YYZ": "Z6",
+          "GRU": "Z6",
+          "BOG": "Z6",
+          "SCL": "Z6"
+        },
+        "chart": [
+          {
+            "zone": "Z1",
+            "label": "台灣 ↔ 馬來西亞（吉隆坡/檳城）",
+            "eco": 10000,
+            "prem_eco": null,
+            "biz": 20000,
+            "first": null,
+            "airlines": [
+              {
+                "code": "MH",
+                "name": "馬來西亞航空",
+                "direct": true,
+                "routes": [
+                  "TPE-KUL"
+                ]
+              },
+              {
+                "code": "CX",
+                "name": "國泰航空",
+                "direct": false,
+                "routes": [
+                  "TPE-HKG-KUL"
+                ]
+              }
+            ],
+            "connections": [],
+            "booking_tip": "馬航直飛KUL，商務艙20,000哩；Enrich哩程台灣累積較難"
+          },
+          {
+            "zone": "Z2",
+            "label": "台灣 ↔ 日韓/東南亞鄰近",
+            "eco": 15000,
+            "prem_eco": null,
+            "biz": 30000,
+            "first": null,
+            "airlines": [
+              {
+                "code": "MH",
+                "name": "馬來西亞航空",
+                "direct": false,
+                "routes": [
+                  "TPE-KUL-NRT",
+                  "TPE-KUL-BKK",
+                  "TPE-KUL-SIN"
+                ]
+              },
+              {
+                "code": "CX",
+                "name": "國泰航空",
+                "direct": false,
+                "routes": [
+                  "TPE-HKG-NRT",
+                  "TPE-HKG-BKK"
+                ]
+              },
+              {
+                "code": "JL",
+                "name": "日本航空",
+                "direct": true,
+                "routes": [
+                  "TPE-NRT",
+                  "TPE-KIX"
+                ]
+              }
+            ],
+            "connections": [
+              {
+                "via": "KUL",
+                "tip": "馬航轉吉隆坡接日本/東南亞"
+              }
+            ],
+            "booking_tip": "日本建議用日航JL直飛，以Enrich哩程開票"
+          },
+          {
+            "zone": "Z3",
+            "label": "台灣 ↔ 印尼/南亞",
+            "eco": 18000,
+            "prem_eco": null,
+            "biz": 35000,
+            "first": null,
+            "airlines": [
+              {
+                "code": "MH",
+                "name": "馬來西亞航空",
+                "direct": false,
+                "routes": [
+                  "TPE-KUL-CGK",
+                  "TPE-KUL-DPS",
+                  "TPE-KUL-DEL",
+                  "TPE-KUL-BOM"
+                ]
+              }
+            ],
+            "connections": [
+              {
+                "via": "KUL",
+                "tip": "馬航轉吉隆坡接印尼/印度"
+              }
+            ],
+            "booking_tip": "峇里島/雅加達建議轉KUL，馬航直飛印尼航班密集"
+          },
+          {
+            "zone": "Z4",
+            "label": "台灣 ↔ 中東/澳洲/紐西蘭",
+            "eco": 25000,
+            "prem_eco": null,
+            "biz": 50000,
+            "first": null,
+            "airlines": [
+              {
+                "code": "MH",
+                "name": "馬來西亞航空",
+                "direct": false,
+                "routes": [
+                  "TPE-KUL-SYD",
+                  "TPE-KUL-MEL",
+                  "TPE-KUL-PER",
+                  "TPE-KUL-AKL",
+                  "TPE-KUL-DXB",
+                  "TPE-KUL-DOH",
+                  "TPE-KUL-DEL"
+                ]
+              }
+            ],
+            "connections": [
+              {
+                "via": "KUL",
+                "tip": "馬航轉吉隆坡接澳洲/中東，KUL是東南亞重要樞紐"
+              }
+            ],
+            "booking_tip": "澳洲50,000哩商務，馬航KUL-SYD/MEL/PER航班密集"
+          },
+          {
+            "zone": "Z5",
+            "label": "台灣 ↔ 歐洲/非洲",
+            "eco": 35000,
+            "prem_eco": null,
+            "biz": 65000,
+            "first": null,
+            "airlines": [
+              {
+                "code": "MH",
+                "name": "馬來西亞航空",
+                "direct": false,
+                "routes": [
+                  "TPE-KUL-LHR",
+                  "TPE-KUL-CDG",
+                  "TPE-KUL-FRA",
+                  "TPE-KUL-AMS"
+                ]
+              },
+              {
+                "code": "CX",
+                "name": "國泰航空",
+                "direct": false,
+                "routes": [
+                  "TPE-HKG-LHR"
+                ]
+              },
+              {
+                "code": "BA",
+                "name": "英國航空",
+                "direct": false,
+                "routes": [
+                  "TPE-HKG-LHR",
+                  "TPE-NRT-LHR"
+                ]
+              }
+            ],
+            "connections": [
+              {
+                "via": "KUL",
+                "tip": "馬航轉KUL直飛LHR/CDG/FRA/AMS，全程約16小時"
+              }
+            ],
+            "booking_tip": "歐洲65,000哩商務；馬航KUL-LHR是知名長程航線"
+          },
+          {
+            "zone": "Z6",
+            "label": "台灣 ↔ 北美洲",
+            "eco": 40000,
+            "prem_eco": null,
+            "biz": 75000,
+            "first": null,
+            "airlines": [
+              {
+                "code": "CX",
+                "name": "國泰航空",
+                "direct": false,
+                "routes": [
+                  "TPE-HKG-LAX",
+                  "TPE-HKG-JFK"
+                ]
+              },
+              {
+                "code": "JL",
+                "name": "日本航空",
+                "direct": false,
+                "routes": [
+                  "TPE-NRT-LAX",
+                  "TPE-NRT-JFK"
+                ]
+              },
+              {
+                "code": "AA",
+                "name": "美國航空",
+                "direct": false,
+                "routes": [
+                  "TPE-NRT-LAX",
+                  "TPE-NRT-JFK"
+                ]
+              }
+            ],
+            "connections": [],
+            "booking_tip": "北美建議用亞洲萬里通或日航哩程更合適，Enrich北美哩程需求較高"
+          }
+        ]
+      },
+      "transfer_partners": [
+        "美國運通（部分地區）",
+        "馬來西亞本地銀行"
+      ],
+      "sweet_spots": [
+        "台灣→吉隆坡商務20,000哩（直飛最方便）",
+        "澳洲商務50,000哩（馬航轉KUL，PER/SYD/MEL直飛）",
+        "馬航Enrich較難在台灣累積，建議以購票方式"
+      ]
+    },
+    "qantas_ff": {
+      "name": "澳航 Qantas Frequent Flyer",
+      "airline": "澳洲航空",
+      "alliance": "寰宇一家",
+      "iata": "QF",
+      "booking_url": "https://www.qantas.com/tw/zh_TW/frequent-flyer.html",
+      "currency": "點（Qantas Points）",
+      "note": "澳航不直飛台灣，需經日本或其他城市轉機；可開寰宇一家夥伴航班",
+      "zones": {
+        "airport_map": {
+          "TPE": "origin",
+          "TSA": "origin",
+          "KHH": "origin",
+          "RMQ": "origin",
+          "NRT": "Z1",
+          "HND": "Z1",
+          "KIX": "Z1",
+          "CTS": "Z1",
+          "OKA": "Z1",
+          "FUK": "Z1",
+          "NGO": "Z1",
+          "SDJ": "Z1",
+          "ICN": "Z1",
+          "GMP": "Z1",
+          "PUS": "Z1",
+          "HKG": "Z1",
+          "MFM": "Z1",
+          "BKK": "Z2",
+          "DMK": "Z2",
+          "CNX": "Z2",
+          "HKT": "Z2",
+          "SIN": "Z2",
+          "KUL": "Z2",
+          "PEN": "Z2",
+          "MNL": "Z2",
+          "CEB": "Z2",
+          "SGN": "Z2",
+          "HAN": "Z2",
+          "DAD": "Z2",
+          "CGK": "Z2",
+          "DPS": "Z2",
+          "RGN": "Z2",
+          "PNH": "Z2",
+          "GUM": "Z2",
+          "PEK": "Z2",
+          "PVG": "Z2",
+          "CAN": "Z2",
+          "DEL": "Z3",
+          "BOM": "Z3",
+          "CMB": "Z3",
+          "KTM": "Z3",
+          "MLE": "Z3",
+          "DXB": "Z3",
+          "AUH": "Z3",
+          "DOH": "Z3",
+          "RUH": "Z3",
+          "JED": "Z3",
+          "KWI": "Z3",
+          "BAH": "Z3",
+          "MCT": "Z3",
+          "AMM": "Z3",
+          "SYD": "Z4",
+          "MEL": "Z4",
+          "BNE": "Z4",
+          "PER": "Z4",
+          "AKL": "Z4",
+          "CHC": "Z4",
+          "NAN": "Z4",
+          "LHR": "Z5",
+          "LGW": "Z5",
+          "MAN": "Z5",
+          "CDG": "Z5",
+          "FRA": "Z5",
+          "MUC": "Z5",
+          "AMS": "Z5",
+          "VIE": "Z5",
+          "ZRH": "Z5",
+          "GVA": "Z5",
+          "FCO": "Z5",
+          "MXP": "Z5",
+          "MAD": "Z5",
+          "BCN": "Z5",
+          "ARN": "Z5",
+          "CPH": "Z5",
+          "HEL": "Z5",
+          "OSL": "Z5",
+          "IST": "Z5",
+          "DUB": "Z5",
+          "LIS": "Z5",
+          "BRU": "Z5",
+          "WAW": "Z5",
+          "PRG": "Z5",
+          "BUD": "Z5",
+          "ATH": "Z5",
+          "OTP": "Z5",
+          "SOF": "Z5",
+          "BEG": "Z5",
+          "ZAG": "Z5",
+          "LJU": "Z5",
+          "TLV": "Z5",
+          "CAI": "Z5",
+          "DUS": "Z5",
+          "HAM": "Z5",
+          "RIX": "Z5",
+          "TLL": "Z5",
+          "VNO": "Z5",
+          "SKP": "Z5",
+          "KBP": "Z5",
+          "NBO": "Z5",
+          "JNB": "Z5",
+          "CPT": "Z5",
+          "CMN": "Z5",
+          "ADD": "Z5",
+          "LAX": "Z6",
+          "SFO": "Z6",
+          "SEA": "Z6",
+          "LAS": "Z6",
+          "YVR": "Z6",
+          "HNL": "Z6",
+          "JFK": "Z6",
+          "EWR": "Z6",
+          "ORD": "Z6",
+          "BOS": "Z6",
+          "IAD": "Z6",
+          "YYZ": "Z6",
+          "GRU": "Z6",
+          "BOG": "Z6",
+          "SCL": "Z6"
+        },
+        "chart": [
+          {
+            "zone": "Z1",
+            "label": "台灣 ↔ 日本/韓國/香港（夥伴航班）",
+            "eco": 15000,
+            "prem_eco": null,
+            "biz": 30000,
+            "first": 45000,
+            "airlines": [
+              {
+                "code": "JL",
+                "name": "日本航空",
+                "direct": true,
+                "routes": [
+                  "TPE-NRT",
+                  "TPE-HND",
+                  "TPE-KIX",
+                  "TPE-FUK"
+                ]
+              },
+              {
+                "code": "CX",
+                "name": "國泰航空",
+                "direct": false,
+                "routes": [
+                  "TPE-HKG-NRT",
+                  "TPE-HKG-ICN"
+                ]
+              }
+            ],
+            "connections": [],
+            "booking_tip": "Qantas點開日航JL直飛日本，30,000點商務艙"
+          },
+          {
+            "zone": "Z2",
+            "label": "台灣 ↔ 東南亞/中國",
+            "eco": 18000,
+            "prem_eco": null,
+            "biz": 36000,
+            "first": 54000,
+            "airlines": [
+              {
+                "code": "CX",
+                "name": "國泰航空",
+                "direct": false,
+                "routes": [
+                  "TPE-HKG-BKK",
+                  "TPE-HKG-SIN",
+                  "TPE-HKG-KUL"
+                ]
+              },
+              {
+                "code": "MH",
+                "name": "馬來西亞航空",
+                "direct": true,
+                "routes": [
+                  "TPE-KUL"
+                ]
+              },
+              {
+                "code": "JL",
+                "name": "日本航空",
+                "direct": false,
+                "routes": [
+                  "TPE-NRT-BKK"
+                ]
+              }
+            ],
+            "connections": [],
+            "booking_tip": "東南亞用國泰/馬航，以Qantas點開票"
+          },
+          {
+            "zone": "Z3",
+            "label": "台灣 ↔ 南亞/中東",
+            "eco": 25000,
+            "prem_eco": null,
+            "biz": 55000,
+            "first": 90000,
+            "airlines": [
+              {
+                "code": "CX",
+                "name": "國泰航空",
+                "direct": false,
+                "routes": [
+                  "TPE-HKG-DEL",
+                  "TPE-HKG-DXB",
+                  "TPE-HKG-DOH"
+                ]
+              },
+              {
+                "code": "MH",
+                "name": "馬來西亞航空",
+                "direct": false,
+                "routes": [
+                  "TPE-KUL-DEL",
+                  "TPE-KUL-DXB"
+                ]
+              }
+            ],
+            "connections": [],
+            "booking_tip": "南亞/中東建議透過香港或KUL轉機"
+          },
+          {
+            "zone": "Z4",
+            "label": "台灣 ↔ 澳洲/紐西蘭（Qantas自家航班）",
+            "eco": 18000,
+            "prem_eco": null,
+            "biz": 54000,
+            "first": 72000,
+            "airlines": [
+              {
+                "code": "QF",
+                "name": "澳洲航空",
+                "direct": false,
+                "routes": [
+                  "TPE-NRT-SYD",
+                  "TPE-HKG-SYD",
+                  "TPE-HKG-MEL",
+                  "TPE-HKG-BNE",
+                  "TPE-HKG-PER",
+                  "TPE-HKG-AKL"
+                ]
+              },
+              {
+                "code": "JL",
+                "name": "日本航空",
+                "direct": false,
+                "routes": [
+                  "TPE-NRT-SYD"
+                ]
+              },
+              {
+                "code": "CX",
+                "name": "國泰航空",
+                "direct": false,
+                "routes": [
+                  "TPE-HKG-SYD",
+                  "TPE-HKG-MEL"
+                ]
+              }
+            ],
+            "connections": [
+              {
+                "via": "NRT",
+                "tip": "澳航自家班機轉東京飛SYD/MEL/BNE"
+              },
+              {
+                "via": "HKG",
+                "tip": "國泰轉香港接澳洲，Qantas可開夥伴票"
+              }
+            ],
+            "booking_tip": "⭐甜蜜點：澳航自家54,000點商務艙，可品嚐澳航商務；但需轉NRT或HKG"
+          },
+          {
+            "zone": "Z5",
+            "label": "台灣 ↔ 歐洲/非洲",
+            "eco": 35000,
+            "prem_eco": null,
+            "biz": 70000,
+            "first": 110000,
+            "airlines": [
+              {
+                "code": "JL",
+                "name": "日本航空",
+                "direct": false,
+                "routes": [
+                  "TPE-NRT-LHR",
+                  "TPE-NRT-FRA"
+                ]
+              },
+              {
+                "code": "BA",
+                "name": "英國航空",
+                "direct": false,
+                "routes": [
+                  "TPE-HKG-LHR"
+                ]
+              },
+              {
+                "code": "CX",
+                "name": "國泰航空",
+                "direct": false,
+                "routes": [
+                  "TPE-HKG-LHR"
+                ]
+              }
+            ],
+            "connections": [
+              {
+                "via": "NRT",
+                "tip": "日航轉東京接歐洲"
+              },
+              {
+                "via": "HKG",
+                "tip": "國泰/英航轉香港接倫敦及歐洲"
+              }
+            ],
+            "booking_tip": "歐洲70,000點商務，與Asian Miles相近；首選亞洲萬里通直接開國泰"
+          },
+          {
+            "zone": "Z6",
+            "label": "台灣 ↔ 北美洲",
+            "eco": 40000,
+            "prem_eco": null,
+            "biz": 80000,
+            "first": 110000,
+            "airlines": [
+              {
+                "code": "AA",
+                "name": "美國航空",
+                "direct": false,
+                "routes": [
+                  "TPE-NRT-LAX",
+                  "TPE-NRT-JFK"
+                ]
+              },
+              {
+                "code": "CX",
+                "name": "國泰航空",
+                "direct": false,
+                "routes": [
+                  "TPE-HKG-LAX",
+                  "TPE-HKG-JFK"
+                ]
+              },
+              {
+                "code": "JL",
+                "name": "日本航空",
+                "direct": false,
+                "routes": [
+                  "TPE-NRT-LAX",
+                  "TPE-NRT-JFK"
+                ]
+              }
+            ],
+            "connections": [],
+            "booking_tip": "北美80,000點商務艙，建議用亞洲萬里通或BA Avios更划算"
+          }
+        ]
+      },
+      "transfer_partners": [
+        "美國運通Membership Rewards",
+        "ANZ銀行",
+        "澳洲本地信用卡",
+        "Woolworths Rewards"
+      ],
+      "sweet_spots": [
+        "⭐澳洲商務艙54,000點（自家QF班機最划算）",
+        "日本商務30,000點（日航JL直飛）",
+        "Qantas點在台灣較難大量累積，建議透過Amex MR轉入"
+      ]
     }
   },
   "cabins": {

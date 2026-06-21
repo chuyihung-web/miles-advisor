@@ -160,12 +160,31 @@ main{max-width:1100px;margin:0 auto;padding:0 40px 40px}
           <label>哩程計畫（可多選）</label>
           <select id="program-filter">
             <option value="all">全部計畫比較</option>
-            <option value="asia_miles">亞洲萬里通</option>
-            <option value="eva_mileage">長榮無限萬哩遊</option>
-            <option value="dynasty_flyer">華航獎勵哩程</option>
-            <option value="ana_mileage">ANA 哩程俱樂部</option>
-            <option value="krisflyer">新航 KrisFlyer</option>
-        <option value="starlux">星宇 COSMILE</option>
+            <optgroup label="🐉 寰宇一家">
+              <option value="asia_miles">亞洲萬里通（CX/KA）</option>
+              <option value="jal_mileage">JAL 哩程銀行</option>
+              <option value="ba_avios">英航 Executive Club（Avios）</option>
+              <option value="malaysia_enrich">馬航 Enrich</option>
+              <option value="qantas_ff">澳航 Qantas Frequent Flyer</option>
+            </optgroup>
+            <optgroup label="⭕ 星空聯盟">
+              <option value="eva_mileage">長榮無限萬哩遊</option>
+              <option value="ana_mileage">ANA 哩程俱樂部</option>
+              <option value="krisflyer">新航 KrisFlyer</option>
+              <option value="united_mileageplus">聯合航空 MileagePlus</option>
+              <option value="miles_more">漢莎 Miles &amp; More</option>
+              <option value="thai_rop">泰航 Royal Orchid Plus</option>
+              <option value="turkish_miles">土耳其航空 Miles&amp;Smiles</option>
+            </optgroup>
+            <optgroup label="🌐 天合聯盟">
+              <option value="dynasty_flyer">華航獎勵哩程</option>
+              <option value="flying_blue">法荷航 Flying Blue</option>
+              <option value="korean_skypass">大韓航空 SKYPASS</option>
+            </optgroup>
+            <optgroup label="✈️ 獨立航空">
+              <option value="starlux">星宇 COSMILE</option>
+              <option value="emirates_skywards">阿聯酋 Skywards</option>
+            </optgroup>
           </select>
         </div>
         <button class="calc-btn" onclick="calcRoute()">試算 →</button>
@@ -189,12 +208,31 @@ main{max-width:1100px;margin:0 auto;padding:0 40px 40px}
         <div class="field">
           <label>哩程計畫</label>
           <select id="rev-program">
-            <option value="asia_miles">亞洲萬里通</option>
-            <option value="eva_mileage">長榮無限萬哩遊</option>
-            <option value="dynasty_flyer">華航獎勵哩程</option>
-            <option value="ana_mileage">ANA 哩程俱樂部</option>
-            <option value="krisflyer">新航 KrisFlyer</option>
-        <option value="starlux">星宇 COSMILE</option>
+            <optgroup label="🐉 寰宇一家">
+              <option value="asia_miles">亞洲萬里通（CX/KA）</option>
+              <option value="jal_mileage">JAL 哩程銀行</option>
+              <option value="ba_avios">英航 Executive Club（Avios）</option>
+              <option value="malaysia_enrich">馬航 Enrich</option>
+              <option value="qantas_ff">澳航 Qantas Frequent Flyer</option>
+            </optgroup>
+            <optgroup label="⭕ 星空聯盟">
+              <option value="eva_mileage">長榮無限萬哩遊</option>
+              <option value="ana_mileage">ANA 哩程俱樂部</option>
+              <option value="krisflyer">新航 KrisFlyer</option>
+              <option value="united_mileageplus">聯合航空 MileagePlus</option>
+              <option value="miles_more">漢莎 Miles &amp; More</option>
+              <option value="thai_rop">泰航 Royal Orchid Plus</option>
+              <option value="turkish_miles">土耳其航空 Miles&amp;Smiles</option>
+            </optgroup>
+            <optgroup label="🌐 天合聯盟">
+              <option value="dynasty_flyer">華航獎勵哩程</option>
+              <option value="flying_blue">法荷航 Flying Blue</option>
+              <option value="korean_skypass">大韓航空 SKYPASS</option>
+            </optgroup>
+            <optgroup label="✈️ 獨立航空">
+              <option value="starlux">星宇 COSMILE</option>
+              <option value="emirates_skywards">阿聯酋 Skywards</option>
+            </optgroup>
           </select>
         </div>
         <div class="field">
@@ -321,7 +359,9 @@ function calcRoute(){
 
   var cabinLabels={eco:'經濟艙',prem_eco:'豪華經濟艙',biz:'商務艙',first:'頭等艙'};
   var cabinIcons={eco:'🪑',prem_eco:'🛋️',biz:'💺',first:'👑'};
-  var progIcons={asia_miles:'🐉',eva_mileage:'🟢',dynasty_flyer:'🔴',ana_mileage:'⭕',krisflyer:'🦁',starlux:'⭐'};
+  var progIcons={asia_miles:'🐉',eva_mileage:'🟢',dynasty_flyer:'🔴',ana_mileage:'⭕',krisflyer:'🦁',starlux:'⭐',
+    jal_mileage:'🔴',ba_avios:'🔵',flying_blue:'🌸',korean_skypass:'🔷',emirates_skywards:'🇦🇪',
+    united_mileageplus:'🟡',miles_more:'✈️',thai_rop:'🌸',turkish_miles:'🌙',malaysia_enrich:'🦁',qantas_ff:'🦘'};
   var allianceColors={寰宇一家:'#dc7f27',星空聯盟:'#1a3a6b',天合聯盟:'#9b1c1c','獨立（無聯盟）':'#0891b2'};
 
   // 找每個計畫的哩程需求
@@ -330,20 +370,28 @@ function calcRoute(){
     var pid=entry[0], prog=entry[1];
     if(filterProg!=='all'&&filterProg!==pid) return;
 
-    // zone 對應表（含 krisflyer 獨立 zone）
-    var zoneMap={asia_miles:'zone_asia_miles',eva_mileage:'zone_eva',dynasty_flyer:'zone_dynasty',ana_mileage:'zone_ana',krisflyer:'zone_krisflyer',starlux:'zone_starlux'};
-    var zk=zoneMap[pid];
-    // 判斷哪個是非台灣端（有實際 zone）
-    var fromIsOrigin=(fromInfo[zk]==='origin');
-    var toIsOrigin=(toInfo[zk]==='origin');
-    if(fromIsOrigin&&toIsOrigin){return;} // 台灣內線不適用
-    if(!fromIsOrigin&&!toIsOrigin){
-      // 兩端皆非台灣：資料不支援，跳過
-      return;
+    // zone 查詢：舊計畫用 airports.json 的 zone_xxx 欄位；新計畫用 prog.zones.airport_map
+    var toZone;
+    if(prog.zones&&prog.zones.airport_map){
+      var am=prog.zones.airport_map;
+      var fz=am[fromCode], tz=am[toCode];
+      if(fz==='origin'&&tz==='origin'){return;}
+      if(fz!=='origin'&&tz!=='origin'){return;}
+      var destCode=fz==='origin'?toCode:fromCode;
+      toZone=am[destCode];
+      if(!toZone||toZone==='origin') return;
+    } else {
+      var zoneMap={asia_miles:'zone_asia_miles',eva_mileage:'zone_eva',dynasty_flyer:'zone_dynasty',ana_mileage:'zone_ana',krisflyer:'zone_krisflyer',starlux:'zone_starlux'};
+      var zk=zoneMap[pid];
+      if(!zk){return;}
+      var fromIsOrigin=(fromInfo[zk]==='origin');
+      var toIsOrigin=(toInfo[zk]==='origin');
+      if(fromIsOrigin&&toIsOrigin){return;}
+      if(!fromIsOrigin&&!toIsOrigin){return;}
+      var destInfo=fromIsOrigin?toInfo:fromInfo;
+      toZone=destInfo[zk];
+      if(!toZone||toZone==='origin') return;
     }
-    var destInfo = fromIsOrigin ? toInfo : fromInfo;
-    var toZone=destInfo[zk];
-    if(!toZone||toZone==='origin') return;
 
     // 找對應 zone 的哩程數
     var zoneData=prog.zones.chart.find(function(z){return z.zone===toZone;});
@@ -448,7 +496,7 @@ function calcRoute(){
         +'<div class="result-header">'
           +'<span class="result-program">'+progIcons[r.pid]+' '+r.prog.name+'</span>'
           +'<span class="result-alliance" style="background:'+(allianceColors[r.prog.alliance]||'#30363d')+'22;color:'+(allianceColors[r.prog.alliance]||'#6e7681')+'">'+r.prog.alliance+'</span>'
-          +(r.prog.alliance==='獨立（無聯盟）'?'<span class="badge" style="background:#0c4a6e22;color:#38bdf8;border:1px solid #0891b2">台灣本土</span>':'')
+          +(r.pid==='starlux'?'<span class="badge" style="background:#0c4a6e22;color:#38bdf8;border:1px solid #0891b2">台灣本土</span>':'')
           +bestMark+valueMark
         +'</div>'
         +'<div class="result-miles">'+r.miles.toLocaleString()+'<span>哩（單程）</span></div>'
@@ -533,8 +581,12 @@ function calcReverse(){
 // ── Tab3: 計畫總覽 ────────────────────────────────────────────────
 function renderPrograms(){
   if(!CHARTS) return;
-  var progIcons={asia_miles:'🐉',eva_mileage:'🟢',dynasty_flyer:'🔴',ana_mileage:'⭕',krisflyer:'🦁',starlux:'⭐'};
-  var progColors={asia_miles:'#dc7f27',eva_mileage:'#16a34a',dynasty_flyer:'#dc2626',ana_mileage:'#6366f1',krisflyer:'#f59e0b',starlux:'#0891b2'};
+  var progIcons={asia_miles:'🐉',eva_mileage:'🟢',dynasty_flyer:'🔴',ana_mileage:'⭕',krisflyer:'🦁',starlux:'⭐',
+    jal_mileage:'🔴',ba_avios:'🔵',flying_blue:'🌸',korean_skypass:'🔷',emirates_skywards:'✈️',
+    united_mileageplus:'🟡',miles_more:'✈️',thai_rop:'🌺',turkish_miles:'🌙',malaysia_enrich:'🦁',qantas_ff:'🦘'};
+  var progColors={asia_miles:'#dc7f27',eva_mileage:'#16a34a',dynasty_flyer:'#dc2626',ana_mileage:'#6366f1',krisflyer:'#f59e0b',starlux:'#0891b2',
+    jal_mileage:'#dc2626',ba_avios:'#1d4ed8',flying_blue:'#7c3aed',korean_skypass:'#2563eb',emirates_skywards:'#c2410c',
+    united_mileageplus:'#ca8a04',miles_more:'#1a3a6b',thai_rop:'#9333ea',turkish_miles:'#dc2626',malaysia_enrich:'#b91c1c',qantas_ff:'#ea580c'};
   var html='';
   Object.entries(CHARTS.programs).forEach(function(entry){
     var pid=entry[0], prog=entry[1];
