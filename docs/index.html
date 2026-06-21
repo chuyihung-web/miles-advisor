@@ -88,6 +88,8 @@ main{max-width:1100px;margin:0 auto;padding:0 40px 40px}
 .connection-list{display:flex;flex-direction:column;gap:4px;margin-bottom:10px}
 .connection-item{font-size:12px;color:#6e7681;display:flex;gap:6px;align-items:flex-start}
 .connection-item::before{content:'🔀';flex-shrink:0;font-size:11px;margin-top:1px}
+.alliance-tip-box{background:#0d1b2a;border:1px solid #1d4ed8;border-radius:8px;padding:10px 14px;margin-top:10px;}
+.alliance-tip-box .section-label{color:#93c5fd;}
 .booking-tip-box{background:#0d1117;border:1px solid #30363d;border-radius:8px;padding:10px 12px;font-size:12px;color:#8b949e;display:flex;gap:8px;align-items:flex-start}
 .booking-tip-box::before{content:'💡';flex-shrink:0}
 .booking-link{display:inline-flex;align-items:center;gap:4px;background:linear-gradient(135deg,#1d4ed8,#7c3aed);color:#fff;border:none;border-radius:6px;padding:6px 14px;font-size:12px;font-weight:600;cursor:pointer;text-decoration:none;margin-top:10px}
@@ -400,7 +402,9 @@ function calcRoute(){
     var miles=zoneData[cabin];
     if(!miles) return; // 該計畫無此艙等
 
-    results.push({pid,prog,miles,zone:toZone,zoneData,zk,toZone});
+    // 同時收集各艙等哩程（供聯盟升等建議用）
+    var allCabins={eco:zoneData.eco,prem_eco:zoneData.prem_eco,biz:zoneData.biz,first:zoneData.first};
+    results.push({pid,prog,miles,zone:toZone,zoneData,allCabins});
   });
 
   if(!results.length){
@@ -490,6 +494,51 @@ function calcRoute(){
       +'</div>';
     }
 
+    // ── 同聯盟比較（升等 / 換計畫更划算） ──
+    var allianceHtml='';
+    if(filterProg==='all'){
+      var sameAlliance=results.filter(function(x){return x.prog.alliance===r.prog.alliance&&x.pid!==r.pid;});
+      if(sameAlliance.length){
+        var cabinOrder=['eco','prem_eco','biz','first'];
+        var cabinLabel2={eco:'經濟艙',prem_eco:'豪華經濟',biz:'商務艙',first:'頭等艙'};
+        var tips=[];
+
+        sameAlliance.forEach(function(x){
+          var savePct=Math.round((r.miles-x.miles)/r.miles*100);
+          if(x.miles<r.miles){
+            tips.push('<span style="color:#4ade80">↓ 省'+savePct+'%</span> 改用 <b>'+x.prog.name+'</b> 只需 '+x.miles.toLocaleString()+' 哩');
+          }
+          // 同計畫升等提示：目前選的艙等，同聯盟其他計畫有無更高艙等且哩程合理
+          var curIdx=cabinOrder.indexOf(cabin);
+          if(curIdx>=0){
+            var higherCabins=cabinOrder.slice(curIdx+1);
+            higherCabins.forEach(function(hc){
+              if(x.allCabins[hc]){
+                var ratio=x.allCabins[hc]/r.miles;
+                if(ratio<=2.2){
+                  tips.push('升等選項：<b>'+x.prog.name+'</b> 的 '+cabinLabel2[hc]+' 只需 '+x.allCabins[hc].toLocaleString()+' 哩（貴'+Math.round((ratio-1)*100)+'%，但升艙）');
+                }
+              }
+            });
+          }
+          // 當前選的艙等此計畫沒有，但同聯盟另一計畫有
+          if(!r.allCabins[cabin]&&x.allCabins[cabin]){
+            tips.push('<b>'+x.prog.name+'</b> 可開 '+cabinLabel2[cabin]+'（'+x.allCabins[cabin].toLocaleString()+' 哩），'+r.prog.name+' 此艙等無資料');
+          }
+        });
+
+        // 去重
+        tips=tips.filter(function(v,idx,a){return a.indexOf(v)===idx;}).slice(0,3);
+
+        if(tips.length){
+          allianceHtml='<div class="alliance-tip-box">'
+            +'<div class="section-label" style="margin-bottom:6px">🔄 同聯盟比較建議</div>'
+            +tips.map(function(t){return '<div style="font-size:12px;color:#c9d1d9;margin-bottom:4px">• '+t+'</div>';}).join('')
+            +'</div>';
+        }
+      }
+    }
+
     html+='<div class="result-card '+rankClass[i]+'">'
       +'<div class="result-rank">'+rankEmoji[i]+'</div>'
       +'<div class="result-body">'
@@ -503,6 +552,7 @@ function calcRoute(){
         +'<div style="color:#6e7681;font-size:13px;margin-bottom:6px">'+r.zoneData.label+'</div>'
         +airlinesHtml
         +partnerHtml
+        +allianceHtml
       +'</div>'
     +'</div>';
   });
