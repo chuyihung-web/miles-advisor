@@ -175,6 +175,8 @@ main{max-width:1100px;margin:0 auto;padding:0 40px 40px}
               <option value="asia_miles">亞洲萬里通（CX/KA）</option>
               <option value="jal_mileage">JAL 哩程銀行</option>
               <option value="ba_avios">英航 Executive Club（Avios）</option>
+              <option value="qatar_privilege">卡達航空 Privilege Club</option>
+              <option value="alaska_mileage">阿拉斯加航空 Mileage Plan</option>
               <option value="malaysia_enrich">馬航 Enrich</option>
               <option value="qantas_ff">澳航 Qantas Frequent Flyer</option>
             </optgroup>
@@ -183,6 +185,7 @@ main{max-width:1100px;margin:0 auto;padding:0 40px 40px}
               <option value="ana_mileage">ANA 哩程俱樂部</option>
               <option value="krisflyer">新航 KrisFlyer</option>
               <option value="united_mileageplus">聯合航空 MileagePlus</option>
+              <option value="aeroplan">加拿大航空 Aeroplan</option>
               <option value="miles_more">漢莎 Miles &amp; More</option>
               <option value="thai_rop">泰航 Royal Orchid Plus</option>
               <option value="turkish_miles">土耳其航空 Miles&amp;Smiles</option>
@@ -195,6 +198,7 @@ main{max-width:1100px;margin:0 auto;padding:0 40px 40px}
             <optgroup label="✈️ 獨立航空">
               <option value="starlux">星宇 COSMILE</option>
               <option value="emirates_skywards">阿聯酋 Skywards</option>
+              <option value="etihad_guest">阿提哈德 Etihad Guest</option>
             </optgroup>
           </select>
         </div>
@@ -223,6 +227,8 @@ main{max-width:1100px;margin:0 auto;padding:0 40px 40px}
               <option value="asia_miles">亞洲萬里通（CX/KA）</option>
               <option value="jal_mileage">JAL 哩程銀行</option>
               <option value="ba_avios">英航 Executive Club（Avios）</option>
+              <option value="qatar_privilege">卡達航空 Privilege Club</option>
+              <option value="alaska_mileage">阿拉斯加航空 Mileage Plan</option>
               <option value="malaysia_enrich">馬航 Enrich</option>
               <option value="qantas_ff">澳航 Qantas Frequent Flyer</option>
             </optgroup>
@@ -231,6 +237,7 @@ main{max-width:1100px;margin:0 auto;padding:0 40px 40px}
               <option value="ana_mileage">ANA 哩程俱樂部</option>
               <option value="krisflyer">新航 KrisFlyer</option>
               <option value="united_mileageplus">聯合航空 MileagePlus</option>
+              <option value="aeroplan">加拿大航空 Aeroplan</option>
               <option value="miles_more">漢莎 Miles &amp; More</option>
               <option value="thai_rop">泰航 Royal Orchid Plus</option>
               <option value="turkish_miles">土耳其航空 Miles&amp;Smiles</option>
@@ -243,6 +250,7 @@ main{max-width:1100px;margin:0 auto;padding:0 40px 40px}
             <optgroup label="✈️ 獨立航空">
               <option value="starlux">星宇 COSMILE</option>
               <option value="emirates_skywards">阿聯酋 Skywards</option>
+              <option value="etihad_guest">阿提哈德 Etihad Guest</option>
             </optgroup>
           </select>
         </div>
@@ -402,7 +410,8 @@ function calcRoute(){
   var cabinIcons={eco:'🪑',prem_eco:'🛋️',biz:'💺',first:'👑'};
   var progIcons={asia_miles:'🐉',eva_mileage:'🟢',dynasty_flyer:'🔴',ana_mileage:'⭕',krisflyer:'🦁',starlux:'⭐',
     jal_mileage:'🔴',ba_avios:'🔵',flying_blue:'🌸',korean_skypass:'🔷',emirates_skywards:'🇦🇪',
-    united_mileageplus:'🟡',miles_more:'✈️',thai_rop:'🌸',turkish_miles:'🌙',malaysia_enrich:'🦁',qantas_ff:'🦘'};
+    united_mileageplus:'🟡',miles_more:'✈️',thai_rop:'🌸',turkish_miles:'🌙',malaysia_enrich:'🦁',qantas_ff:'🦘',
+    qatar_privilege:'🟣',aeroplan:'🍁',etihad_guest:'💎',alaska_mileage:'🦅'};
   var allianceColors={寰宇一家:'#dc7f27',星空聯盟:'#1a3a6b',天合聯盟:'#9b1c1c','獨立（無聯盟）':'#0891b2'};
 
   // 找每個計畫的哩程需求
@@ -799,10 +808,12 @@ function renderPrograms(){
   if(!CHARTS) return;
   var progIcons={asia_miles:'🐉',eva_mileage:'🟢',dynasty_flyer:'🔴',ana_mileage:'⭕',krisflyer:'🦁',starlux:'⭐',
     jal_mileage:'🔴',ba_avios:'🔵',flying_blue:'🌸',korean_skypass:'🔷',emirates_skywards:'✈️',
-    united_mileageplus:'🟡',miles_more:'✈️',thai_rop:'🌺',turkish_miles:'🌙',malaysia_enrich:'🦁',qantas_ff:'🦘'};
+    united_mileageplus:'🟡',miles_more:'✈️',thai_rop:'🌺',turkish_miles:'🌙',malaysia_enrich:'🦁',qantas_ff:'🦘',
+    qatar_privilege:'🟣',aeroplan:'🍁',etihad_guest:'💎',alaska_mileage:'🦅'};
   var progColors={asia_miles:'#dc7f27',eva_mileage:'#16a34a',dynasty_flyer:'#dc2626',ana_mileage:'#6366f1',krisflyer:'#f59e0b',starlux:'#0891b2',
     jal_mileage:'#dc2626',ba_avios:'#1d4ed8',flying_blue:'#7c3aed',korean_skypass:'#2563eb',emirates_skywards:'#c2410c',
-    united_mileageplus:'#ca8a04',miles_more:'#1a3a6b',thai_rop:'#9333ea',turkish_miles:'#dc2626',malaysia_enrich:'#b91c1c',qantas_ff:'#ea580c'};
+    united_mileageplus:'#ca8a04',miles_more:'#1a3a6b',thai_rop:'#9333ea',turkish_miles:'#dc2626',malaysia_enrich:'#b91c1c',qantas_ff:'#ea580c',
+    qatar_privilege:'#7c3aed',aeroplan:'#dc2626',etihad_guest:'#0891b2',alaska_mileage:'#0369a1'};
   var html='';
   Object.entries(CHARTS.programs).forEach(function(entry){
     var pid=entry[0], prog=entry[1];
