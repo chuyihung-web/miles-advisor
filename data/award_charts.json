@@ -1,0 +1,220 @@
+{
+  "programs": {
+    "asia_miles": {
+      "name": "亞洲萬里通",
+      "airline": "國泰航空",
+      "alliance": "寰宇一家",
+      "currency": "哩",
+      "note": "以台灣/香港為出發點的單程哩程數（不含稅費）",
+      "zones": {
+        "chart": [
+          {
+            "zone": "Z1", "label": "台灣 ↔ 香港/澳門",
+            "eco": 7500, "prem_eco": 12500, "biz": 20000, "first": 40000
+          },
+          {
+            "zone": "Z2", "label": "台灣 ↔ 日本/韓國/中國",
+            "eco": 15000, "prem_eco": 25000, "biz": 40000, "first": 80000
+          },
+          {
+            "zone": "Z3", "label": "台灣 ↔ 東南亞（泰/越/菲/馬/新/印尼）",
+            "eco": 17500, "prem_eco": 30000, "biz": 50000, "first": 100000
+          },
+          {
+            "zone": "Z4", "label": "台灣 ↔ 南亞/澳洲/紐西蘭/中東",
+            "eco": 25000, "prem_eco": 45000, "biz": 65000, "first": 130000
+          },
+          {
+            "zone": "Z5", "label": "台灣 ↔ 歐洲/非洲",
+            "eco": 35000, "prem_eco": 60000, "biz": 85000, "first": 170000
+          },
+          {
+            "zone": "Z6", "label": "台灣 ↔ 北美洲西岸",
+            "eco": 35000, "prem_eco": 60000, "biz": 85000, "first": 170000
+          },
+          {
+            "zone": "Z7", "label": "台灣 ↔ 北美洲東岸/中美洲",
+            "eco": 40000, "prem_eco": 70000, "biz": 100000, "first": 200000
+          },
+          {
+            "zone": "Z8", "label": "台灣 ↔ 南美洲",
+            "eco": 50000, "prem_eco": 90000, "biz": 120000, "first": 240000
+          }
+        ]
+      },
+      "transfer_partners": ["OPENPOINT", "HappyGo", "LINE Points", "中信點數", "玉山e-point"],
+      "sweet_spots": [
+        "日本/韓國商務艙 40,000哩（性價比高）",
+        "歐洲商務艙 85,000哩（國泰直飛）",
+        "香港經濟艙 7,500哩（短途最划算）"
+      ]
+    },
+
+    "eva_mileage": {
+      "name": "長榮無限萬哩遊",
+      "airline": "長榮航空",
+      "alliance": "星空聯盟",
+      "currency": "哩",
+      "note": "以台灣為出發點的單程哩程數",
+      "zones": {
+        "chart": [
+          {
+            "zone": "Z1", "label": "台灣 ↔ 日本/韓國",
+            "eco": 12500, "prem_eco": 20000, "biz": 27500, "first": null
+          },
+          {
+            "zone": "Z2", "label": "台灣 ↔ 東南亞/香港/中國",
+            "eco": 15000, "prem_eco": 25000, "biz": 35000, "first": null
+          },
+          {
+            "zone": "Z3", "label": "台灣 ↔ 澳洲/南亞",
+            "eco": 20000, "prem_eco": 35000, "biz": 55000, "first": null
+          },
+          {
+            "zone": "Z4", "label": "台灣 ↔ 歐洲",
+            "eco": 35000, "prem_eco": 55000, "biz": 75000, "first": null
+          },
+          {
+            "zone": "Z5", "label": "台灣 ↔ 北美洲",
+            "eco": 35000, "prem_eco": 55000, "biz": 75000, "first": null
+          },
+          {
+            "zone": "Z6", "label": "台灣 ↔ 中東/非洲",
+            "eco": 30000, "prem_eco": 50000, "biz": 70000, "first": null
+          }
+        ]
+      },
+      "transfer_partners": ["OPENPOINT", "玉山e-point", "HappyGo"],
+      "sweet_spots": [
+        "日本商務艙 27,500哩（星空聯盟夥伴可開）",
+        "北美商務艙 75,000哩（長榮直飛洛杉磯/紐約）",
+        "歐洲商務艙 75,000哩（長榮直飛阿姆斯特丹/倫敦）"
+      ]
+    },
+
+    "dynasty_flyer": {
+      "name": "華航獎勵哩程",
+      "airline": "中華航空",
+      "alliance": "天合聯盟",
+      "currency": "哩",
+      "note": "以台灣為出發點的單程哩程數",
+      "zones": {
+        "chart": [
+          {
+            "zone": "Z1", "label": "台灣 ↔ 日本/韓國/香港",
+            "eco": 12000, "prem_eco": 20000, "biz": 30000, "first": 60000
+          },
+          {
+            "zone": "Z2", "label": "台灣 ↔ 東南亞/中國",
+            "eco": 15000, "prem_eco": 25000, "biz": 35000, "first": 70000
+          },
+          {
+            "zone": "Z3", "label": "台灣 ↔ 澳洲/南亞/中東",
+            "eco": 25000, "prem_eco": 40000, "biz": 60000, "first": 120000
+          },
+          {
+            "zone": "Z4", "label": "台灣 ↔ 歐洲",
+            "eco": 35000, "prem_eco": 55000, "biz": 80000, "first": 160000
+          },
+          {
+            "zone": "Z5", "label": "台灣 ↔ 北美洲",
+            "eco": 35000, "prem_eco": 55000, "biz": 80000, "first": 160000
+          }
+        ]
+      },
+      "transfer_partners": ["中信點數", "國泰小樹點"],
+      "sweet_spots": [
+        "日本商務艙 30,000哩（天合聯盟夥伴）",
+        "歐洲商務艙 80,000哩（華航直飛法蘭克福/阿姆斯特丹）",
+        "北美商務艙 80,000哩（華航直飛洛杉磯/紐約）"
+      ]
+    },
+
+    "ana_mileage": {
+      "name": "ANA 哩程俱樂部",
+      "airline": "全日空",
+      "alliance": "星空聯盟",
+      "currency": "哩",
+      "note": "從台灣/日本出發，含夥伴航空開票，以單程計",
+      "zones": {
+        "chart": [
+          {
+            "zone": "Z1", "label": "台灣 ↔ 日本",
+            "eco": 10000, "prem_eco": 15000, "biz": 21000, "first": 35000
+          },
+          {
+            "zone": "Z2", "label": "台灣 ↔ 韓國/中國/香港",
+            "eco": 12000, "prem_eco": 17000, "biz": 23000, "first": 40000
+          },
+          {
+            "zone": "Z3", "label": "台灣 ↔ 東南亞",
+            "eco": 17000, "prem_eco": 25000, "biz": 37000, "first": 60000
+          },
+          {
+            "zone": "Z4", "label": "台灣/日本 ↔ 澳洲/南亞",
+            "eco": 25000, "prem_eco": 40000, "biz": 55000, "first": 75000
+          },
+          {
+            "zone": "Z5", "label": "日本 ↔ 北美（星空聯盟夥伴）",
+            "eco": 35000, "prem_eco": null, "biz": 45000, "first": 60000
+          },
+          {
+            "zone": "Z6", "label": "日本 ↔ 歐洲（星空聯盟夥伴）",
+            "eco": 45000, "prem_eco": null, "biz": 55000, "first": 80000
+          }
+        ]
+      },
+      "transfer_partners": ["Hami Point"],
+      "sweet_spots": [
+        "日本↔北美商務艙 45,000哩（全球最划算之一）",
+        "日本↔歐洲商務艙 55,000哩",
+        "台灣↔日本商務艙 21,000哩（長榮/全日空開票）"
+      ]
+    },
+
+    "krisflyer": {
+      "name": "新航 KrisFlyer",
+      "airline": "新加坡航空",
+      "alliance": "星空聯盟",
+      "currency": "哩",
+      "note": "以新加坡為出發點的單程哩程（夥伴航空可從台灣出發）",
+      "zones": {
+        "chart": [
+          {
+            "zone": "Z1", "label": "台灣/新加坡 ↔ 東南亞",
+            "eco": 15000, "prem_eco": 25000, "biz": 35000, "first": null
+          },
+          {
+            "zone": "Z2", "label": "台灣/新加坡 ↔ 日本/韓國",
+            "eco": 17500, "prem_eco": 30000, "biz": 42000, "first": null
+          },
+          {
+            "zone": "Z3", "label": "新加坡 ↔ 澳洲",
+            "eco": 25000, "prem_eco": 40000, "biz": 55000, "first": 75000
+          },
+          {
+            "zone": "Z4", "label": "新加坡 ↔ 歐洲",
+            "eco": 40000, "prem_eco": 60000, "biz": 88000, "first": 114000
+          },
+          {
+            "zone": "Z5", "label": "新加坡 ↔ 北美洲",
+            "eco": 50000, "prem_eco": 75000, "biz": 99000, "first": null
+          }
+        ]
+      },
+      "transfer_partners": [],
+      "sweet_spots": [
+        "新加坡↔歐洲商務艙 88,000哩（新航A380商務套艙）",
+        "台灣↔日本商務艙 42,000哩（長榮/全日空）",
+        "頭等艙開票難度高，需直接查詢新航官網"
+      ]
+    }
+  },
+
+  "cabins": {
+    "eco": {"label": "經濟艙", "icon": "🪑"},
+    "prem_eco": {"label": "豪華經濟艙", "icon": "🛋️"},
+    "biz": {"label": "商務艙", "icon": "💺"},
+    "first": {"label": "頭等艙", "icon": "👑"}
+  }
+}
