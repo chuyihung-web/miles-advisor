@@ -1,0 +1,55 @@
+name: Daily mileage intelligence
+on:
+  schedule:
+    - cron: '0 1 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+concurrency:
+  group: mileage-data
+  cancel-in-progress: false
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    outputs:
+      collection_outcome: ${{ steps.collect.outcome }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify collection behavior
+        run: python -m unittest discover -s tests -v
+      - name: Collect RSS metadata
+        id: collect
+        continue-on-error: true
+        env:
+          SOURCE_REGISTRY_URL: ${{ vars.SOURCE_REGISTRY_URL }}
+        run: python scripts/collect.py
+      - name: Persist records including failures
+        run: |
+          git config user.name 'miles-intelligence[bot]'
+          git config user.email 'miles-intelligence[bot]@users.noreply.github.com'
+          git add docs/data/intelligence.json docs/data/run-history.json docs/data/source-status.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'data: refresh mileage intelligence and run status'
+            git push
+          fi
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+  deploy:
+    needs: collect
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/deploy-pages@v4
+        id: deployment
+      - name: Mark collection failure after publishing diagnostic state
+        if: needs.collect.outputs.collection_outcome == 'failure'
+        run: exit 1

@@ -1,0 +1,23 @@
+{
+  "generated_at": "2026-11-17T15:20:17+00:00",
+  "period_start": "2026-11-10T15:20:17.279171+00:00",
+  "method": "依蒐集紀錄產生的規則式週檢查；尚未接入使用者行為分析或 AI 語意核實。",
+  "proposals": [
+    {
+      "id": "weekly-verification-2026-11-17",
+      "evidence_type": "情報影響",
+      "problem": "本週蒐集 45 筆情報，尚需核實及判斷對查詢流程的影響。",
+      "proposal": "核對官方依據，補齊生效/截止日期；確認後才更新規則資料。",
+      "evidence_urls": [
+        "https://frequentmiler.com/hyatt-resorts-amex-offer-get-100-back-when-spending-500/",
+        "https://frequentmiler.com/capital-one-shopping-offers-earn-25-15x-at-stubhub/",
+        "https://frequentmiler.com/awesome-credit-card-combos/",
+        "https://frequentmiler.com/link-dashpass-to-get-free-lyft-go-membership-8-back-in-lyft-credits/",
+        "https://frequentmiler.com/are-you-due-compensation-when-the-airline-changes-your-aircraft-type-question-of-the-week-ep22-11-16-26/"
+      ],
+      "acceptance": "每項正式規則具有官方連結、查核日期與適用條件。",
+      "status": "待評估"
+    }
+  ],
+  "release_policy": "介面先預覽，使用者確認指定版本後才發布；本流程只更新建議資料。"
+}

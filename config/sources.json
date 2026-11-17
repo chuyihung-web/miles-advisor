@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "sources": [
+    {"id":"frequent-miler","name":"Frequent Miler","url":"https://frequentmiler.com/","feed_url":"https://frequentmiler.com/feed/","type":"國際哩程網站","program":"多計畫","language":"英文／美國","priority":"高","enabled":true,"method":"官方 RSS/Atom","identity":"非官方（已確認）","checked_at":"2026-11-17","evidence":"https://frequentmiler.com/subscribe/","scope":"僅標題、日期與原文連結；不轉載全文；情報待官方核實"},
+    {"id":"one-mile-at-a-time","name":"One Mile at a Time","url":"https://onemileatatime.com/","feed_url":"https://onemileatatime.com/feed/","type":"國際哩程網站","program":"多計畫","language":"英文／國際","priority":"高","enabled":true,"method":"官方 RSS/Atom","identity":"非官方（已確認）","checked_at":"2026-11-17","evidence":"https://onemileatatime.com/feed/","scope":"網站提供的 RSS 已實測；僅標題、日期與連結；情報待官方核實"},
+    {"id":"finnair-rules","name":"Finnair Plus 官方規則","url":"https://www.finnair.com/en/finnair-plus/finnair-plus-rules","type":"哩程計畫官方","program":"Finnair Plus／Avios","language":"英文／芬蘭","priority":"中","enabled":false,"method":"人工閱讀/提供連結","identity":"已驗證官方","checked_at":"2026-11-17","evidence":"https://www.finnair.com/en/finnair-plus/finnair-plus-rules","scope":"核實依據；未授權自動擷取，不自動抓頁面"},
+    {"id":"eva-awards","name":"長榮航空 Infinity MileageLands 獎勵機票","url":"https://www.evaair.com/en-global/infinity-mileagelands/mileage-award-program/mileage-redemption/award-ticket/eva-uni-air/","type":"航空公司官方","program":"Infinity MileageLands","language":"英文／台灣","priority":"中","enabled":false,"method":"人工閱讀/提供連結","identity":"已驗證官方","checked_at":"2026-11-17","evidence":"https://www.evaair.com/en-global/infinity-mileagelands/mileage-award-program/mileage-redemption/award-ticket/eva-uni-air/","scope":"核實依據；未授權自動擷取，不自動抓頁面"}
+  ]
+}

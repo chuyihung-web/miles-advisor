@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>哩程情報｜功能預覽</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f4f6fa;color:#1e2a3a;font:16px/1.7 system-ui,-apple-system,sans-serif}main{max-width:1080px;margin:auto;padding:32px 24px}a{color:#2754b4}header{display:flex;gap:18px;align-items:center;justify-content:space-between;flex-wrap:wrap}h1{font-size:28px;margin:14px 0}h2{font-size:20px}.muted{color:#5e6c80}.notice,.panel,article{background:white;border:1px solid #dce3ed;border-radius:14px;padding:20px;margin:16px 0}.notice{border-left:4px solid #6985c7}.controls{display:flex;gap:12px;flex-wrap:wrap}input,select,button{font:inherit;padding:10px;border:1px solid #b8c4d7;border-radius:8px;background:white}input{flex:1;min-width:180px}article h3{font-size:18px;margin:8px 0}article a{overflow-wrap:anywhere}.tag{display:inline-block;font-size:12px;background:#fff1cf;color:#754a00;padding:2px 9px;border-radius:30px}#health p{margin:6px 0}details{margin:14px 0}summary{cursor:pointer}.error{color:#a32626}footer{margin-top:36px;font-size:14px}button{cursor:pointer}:focus-visible{outline:3px solid #688fd4;outline-offset:3px}@media(max-width:600px){main{padding:20px 16px}h1{font-size:24px}.controls>*{width:100%}}
+</style></head><body><main>
+<header><a href="./">← 回到哩程試算</a><span class="muted">情報功能預覽・介面待確認</span></header>
+<h1>讓每次兌換，都有來源可查</h1><p class="muted">每日追蹤公開 RSS，保留原文與更新紀錄。社群情報先核實，再影響兌換規則。</p>
+<div class="notice">此頁為新增功能預覽。原有試算介面與兌換數據尚未因情報自動調整。情報「待核實」代表尚不能作為兌換依據，也不代表有可訂機位。</div>
+<section class="panel" aria-labelledby="health-title"><h2 id="health-title">雲端蒐集狀態</h2><div id="health" aria-live="polite">載入中…</div><button id="refresh" type="button">重新讀取</button></section>
+<section aria-labelledby="news-title"><h2 id="news-title">最新情報</h2><div class="controls"><input id="search" type="search" aria-label="搜尋情報標題" placeholder="搜尋航空公司、哩程或主題"><select id="source" aria-label="篩選情報來源"><option value="">全部來源</option></select></div><p id="count" class="muted" role="status"></p><div id="articles"></div></section>
+<section class="panel"><h2>本週改善提案</h2><p class="muted">提案依蒐集紀錄整理，尚未接入使用者行為分析；介面調整需先預覽並確認。</p><div id="weekly">尚未讀取</div></section>
+<footer>來源以發布者 RSS 為準；不轉載全文。網站文章與來源資料公開，請勿在來源網址中填入個人資料或存取金鑰。</footer>
+</main><script src="intelligence.js" defer></script></body></html>
