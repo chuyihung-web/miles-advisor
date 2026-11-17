@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-17T15:22:11+00:00",
-  "last_success_at": "2026-11-17T15:22:11+00:00",
+  "updated_at": "2026-11-17T15:24:11+00:00",
+  "last_success_at": "2026-11-17T15:24:11+00:00",
   "articles": [
     {
       "id": "05a08bd42ca9ab686cc3cb8e",
@@ -14,7 +14,7 @@
       "verification": "待核實",
       "official_evidence": null,
       "fingerprint": "5a194a4f93db0102fd6581496b2382706ad85ecd24199512ee02f06a3fdb316a",
-      "category": "哩程情報（待分類）"
+      "category": "限時優惠"
     },
     {
       "id": "3434eb8d7bc7323d4e0eede8",
@@ -27,7 +27,7 @@
       "verification": "待核實",
       "official_evidence": null,
       "fingerprint": "d02471f3109a10ab5d6fefa39cdebadbdc34293020af807fa1dfb237bcc169e4",
-      "category": "哩程情報（待分類）"
+      "category": "限時優惠"
     },
     {
       "id": "12bf40df8c899fb4a184fbf4",
@@ -40,7 +40,7 @@
       "verification": "待核實",
       "official_evidence": null,
       "fingerprint": "2233134fc3cac57e943842df686ef601272f10492181a750a9dec3cc164ba597",
-      "category": "哩程情報（待分類）"
+      "category": "轉點資訊"
     },
     {
       "id": "ad7ae0fe931b69f7dd6e255d",
@@ -53,7 +53,7 @@
       "verification": "待核實",
       "official_evidence": null,
       "fingerprint": "2bae5a19932d4cbdfff5ea4d6aa9d4de68a2795e6a46590f1d274e735466996b",
-      "category": "哩程情報（待分類）"
+      "category": "其他"
     },
     {
       "id": "6c97ce057607cf91d5dd7600",
@@ -66,7 +66,7 @@
       "verification": "待核實",
       "official_evidence": null,
       "fingerprint": "a2a9fd1bfb23ec4856d25d05e55fef6add9a2fc136448ccafb582eb5721c08d5",
-      "category": "哩程情報（待分類）"
+      "category": "其他"
     },
     {
       "id": "6f5767c61ce0fe62d0a88380",
@@ -79,7 +79,7 @@
       "verification": "待核實",
       "official_evidence": null,
       "fingerprint": "d95cde97ce3b6e89534caf38f5247de0be7807c58e02b4c29a9acddb8681b539",
-      "category": "哩程情報（待分類）"
+      "category": "其他"
     },
     {
       "id": "e064dafcea63874d374738f6",
@@ -92,7 +92,7 @@
       "verification": "待核實",
       "official_evidence": null,
       "fingerprint": "b41de9f07d6cc030f8a996f5263261c5b9e93c4a5b677b39db6753ec28f8caec",
-      "category": "哩程情報（待分類）"
+      "category": "轉點資訊"
     },
     {
       "id": "6851ecca430e002af697a2c4",
@@ -105,7 +105,7 @@
       "verification": "待核實",
       "official_evidence": null,
       "fingerprint": "975d48e628bdd448d951975667128163228b5ea979df9b9a24d11b970e03273a",
-      "category": "哩程情報（待分類）"
+      "category": "其他"
     },
     {
       "id": "448f5f1cc93eed4a6ba4cc2e",
@@ -118,7 +118,7 @@
       "verification": "待核實",
       "official_evidence": null,
       "fingerprint": "8d6ac10d3c1eb0d5565d74c02dcdf8a1710d3ad27a3f5a83b72f975b4907425b",
-      "category": "哩程情報（待分類）"
+      "category": "限時優惠"
     },
     {
       "id": "6297b1b13d0f80e8f46b4019",
@@ -131,7 +131,7 @@
       "verification": "待核實",
       "official_evidence": null,
       "fingerprint": "c136aacee52a9c6379770037bdf768977ba3ecaffc736497ea0ca950771713fd",
-      "category": "哩程情報（待分類）"
+      "category": "限時優惠"
     },
     {
       "id": "528e8f1138aa5ba911722fb6",
@@ -144,7 +144,7 @@
       "verification": "待核實",
       "official_evidence": null,
       "fingerprint": "d59844aea5da373c1a3f89f601c780b55a8b58f43e788b96abc32eb255a6cbd0",
-      "category": "哩程情報（待分類）"
+      "category": "轉點資訊"
     },
     {
       "id": "6792bc831d6a060b10a688ae",
@@ -157,7 +157,7 @@
       "verification": "待核實",
       "official_evidence": null,
       "fingerprint": "3f0ab5f0cd42c20638b21123f4077c693a2ca8e27046ea59dc066b9005e36b8d",
-      "category": "哩程情報（待分類）"
+      "category": "兌換教學"
     },
     {
       "id": "0fdfedb3050b44332b4e33a6",
@@ -170,7 +170,7 @@
       "verification": "待核實",
       "official_evidence": null,
       "fingerprint": "535a1a1b4567cf93de57b073bfa5c9a5f448dae1ebff2e6a70b56d1efc260da8",
-      "category": "哩程情報（待分類）"
+      "category": "限時優惠"
     },
     {
       "id": "63a7eefe1be191a07d84df19",
@@ -183,7 +183,7 @@
       "verification": "待核實",
       "official_evidence": null,
       "fingerprint": "c8b79703e754433bcbc5e9304a09d7f202efb57c8ae4d81a373fc29d80ae7257",
-      "category": "哩程情報（待分類）"
+      "category": "其他"
     },
     {
       "id": "61c3db17efc93d9529367c82",
@@ -196,7 +196,7 @@
       "verification": "待核實",
       "official_evidence": null,
       "fingerprint": "16e6bc09306854bd9ba477664a4ef0e3ea3b2e47b378c7e0312870da65c73d25",
-      "category": "哩程情報（待分類）"
+      "category": "其他"
     },
     {
       "id": "e2b9922ceacd2c1d90619514",
@@ -209,7 +209,7 @@
       "verification": "待核實",
       "official_evidence": null,
       "fingerprint": "ca75b35a623e47f0778fbd4c49b054478559bf064678151133ff8df92dd6ba10",
-      "category": "哩程情報（待分類）"
+      "category": "其他"
     },
     {
       "id": "3ce580e599ea326e240dba1a",
@@ -222,7 +222,7 @@
       "verification": "待核實",
       "official_evidence": null,
       "fingerprint": "f6c91b1aa213c918eae3b367146bdf668520fe1c73a6b088fc97997d4f0bdad9",
-      "category": "哩程情報（待分類）"
+      "category": "轉點資訊"
     },
     {
       "id": "559ca97821d5c8d2ad89e26e",
@@ -235,7 +235,7 @@
       "verification": "待核實",
       "official_evidence": null,
       "fingerprint": "04b65e3dcf00f5b2084c7bc0ba9103845f4f7494c23b3a2e7bc34159212d0e29",
-      "category": "哩程情報（待分類）"
+      "category": "兌換教學"
     },
     {
       "id": "c18b5ad42dd491c631556f58",
@@ -248,7 +248,7 @@
       "verification": "待核實",
       "official_evidence": null,
       "fingerprint": "4061415af4ac361f51a74eea008e9c8c57f2399de0f4a0b97b79ee08f31bb2c0",
-      "category": "哩程情報（待分類）"
+      "category": "其他"
     },
     {
       "id": "c4b1537df9c782f7b78d080e",
@@ -261,7 +261,7 @@
       "verification": "待核實",
       "official_evidence": null,
       "fingerprint": "0bb04a09456445ff11d42f45a1c4851a9488c1e18e2b898565c8fd75acf8286f",
-      "category": "哩程情報（待分類）"
+      "category": "其他"
     },
     {
       "id": "0836f542988b0213d1e86fdd",
@@ -274,7 +274,7 @@
       "verification": "待核實",
       "official_evidence": null,
       "fingerprint": "158078ae7d5d5965c6c8ef47b600f7a5c6fe0fea5d1857addcf984e60ebc2662",
-      "category": "哩程情報（待分類）"
+      "category": "限時優惠"
     },
     {
       "id": "2fe1653f4c537d8e6d1732b1",
@@ -287,7 +287,7 @@
       "verification": "待核實",
       "official_evidence": null,
       "fingerprint": "f156e37993009758942523557f987fb6108aff3656f6d4505a20c406ad26d68f",
-      "category": "哩程情報（待分類）"
+      "category": "其他"
     },
     {
       "id": "9818d6a4c3a0a278419e4fe9",
@@ -300,7 +300,7 @@
       "verification": "待核實",
       "official_evidence": null,
       "fingerprint": "4681c165e5d605f9c028d442142c9a2d497e4f4f2dec495d1644de3038f93293",
-      "category": "哩程情報（待分類）"
+      "category": "兌換教學"
     },
     {
       "id": "7c7d73c0586e581c146a108f",
@@ -313,7 +313,7 @@
       "verification": "待核實",
       "official_evidence": null,
       "fingerprint": "ea4cf2d50fa7e420b3ac9b0911d9d20b11cc9674331e66959f99b577bb603624",
-      "category": "哩程情報（待分類）"
+      "category": "轉點資訊"
     },
     {
       "id": "9e5e77830a7f4792647fe568",
@@ -326,7 +326,7 @@
       "verification": "待核實",
       "official_evidence": null,
       "fingerprint": "f894a2f60a8190f0e3244ffbe83ddc53d725e9853fcd9f6e8b2f5538ddd743ec",
-      "category": "哩程情報（待分類）"
+      "category": "限時優惠"
     },
     {
       "id": "dca5e47c7e78a49e80205a84",
@@ -339,7 +339,7 @@
       "verification": "待核實",
       "official_evidence": null,
       "fingerprint": "1cff3f94ae1a8056a82d6e2cba945c78fbccc6bd80f9a73ea78eea48552846f7",
-      "category": "哩程情報（待分類）"
+      "category": "其他"
     },
     {
       "id": "4b9910da8a455b0c8babe5fc",
@@ -352,7 +352,7 @@
       "verification": "待核實",
       "official_evidence": null,
       "fingerprint": "d2e29d5e4f98e7187ca5c7e603c35a8dba2072f4ea59492f62351ff491b0e5a1",
-      "category": "哩程情報（待分類）"
+      "category": "兌換教學"
     },
     {
       "id": "f84219bd7878cf0c08575970",
@@ -365,7 +365,7 @@
       "verification": "待核實",
       "official_evidence": null,
       "fingerprint": "f1be507127ede255f05c8310f566421151965c18943d3c10edca60ed268372d6",
-      "category": "哩程情報（待分類）"
+      "category": "轉點資訊"
     },
     {
       "id": "cf4ad10c0bfe2d40a26cfb8a",
@@ -378,7 +378,7 @@
       "verification": "待核實",
       "official_evidence": null,
       "fingerprint": "7c0b10b9cb07b4dd1eee6a978fa7aafec2903988e75d6bfefc7fddca875bbf8b",
-      "category": "哩程情報（待分類）"
+      "category": "轉點資訊"
     },
     {
       "id": "09e82a41048fd713fc56d3bc",
@@ -391,7 +391,7 @@
       "verification": "待核實",
       "official_evidence": null,
       "fingerprint": "d5ad1b29669bee2dd9c64f991e04fe2d4323a985fd99624f6fa519fae5d19088",
-      "category": "哩程情報（待分類）"
+      "category": "其他"
     },
     {
       "id": "3fd7484fb30407572a9c7614",
@@ -404,7 +404,7 @@
       "verification": "待核實",
       "official_evidence": null,
       "fingerprint": "62285e9f4d6f2d52b856700b4142420c02f4cc8fa2233f08054a3fdab5b1087c",
-      "category": "哩程情報（待分類）"
+      "category": "兌換教學"
     },
     {
       "id": "7dd002c3a89a11cce1c7d1b7",
@@ -417,7 +417,7 @@
       "verification": "待核實",
       "official_evidence": null,
       "fingerprint": "e795b65502b82f5d8d59d2a665b608dfce64981d45dea3cd11d6dad1996cbb28",
-      "category": "哩程情報（待分類）"
+      "category": "其他"
     },
     {
       "id": "7a26ef23c94e2b08a76c7f74",
@@ -430,7 +430,7 @@
       "verification": "待核實",
       "official_evidence": null,
       "fingerprint": "ec863f53419736fff2e1faca06fec903bedf908d3a5e6f36187048c6d82447ac",
-      "category": "哩程情報（待分類）"
+      "category": "其他"
     },
     {
       "id": "3170e6d0d4a4e2fbc76894fe",
@@ -443,7 +443,7 @@
       "verification": "待核實",
       "official_evidence": null,
       "fingerprint": "ab0e309e093624e7e10cf7443e8e7834f00a84d3900ead1e731fb7a00d19e8de",
-      "category": "哩程情報（待分類）"
+      "category": "其他"
     },
     {
       "id": "f4bec38faf21f3504f416dd8",
@@ -456,7 +456,7 @@
       "verification": "待核實",
       "official_evidence": null,
       "fingerprint": "4046c7bc6790a22b7028f078514b363ae482ed3071e966cc8f1c870f5e55d000",
-      "category": "哩程情報（待分類）"
+      "category": "限時優惠"
     },
     {
       "id": "5f19ad959c822be213015ac4",
@@ -469,7 +469,7 @@
       "verification": "待核實",
       "official_evidence": null,
       "fingerprint": "1cf51cf6e615cbf7e71de4857fb6eb434f46bf7d8ec4a90db16c929561a625f5",
-      "category": "哩程情報（待分類）"
+      "category": "限時優惠"
     },
     {
       "id": "06c489cd19da31bf679f73ca",
@@ -482,7 +482,7 @@
       "verification": "待核實",
       "official_evidence": null,
       "fingerprint": "ecca69bc29fbc1e488005b5ba6454b1a10b05f478913c340f947c5238518c423",
-      "category": "哩程情報（待分類）"
+      "category": "限時優惠"
     },
     {
       "id": "186a442c0303d8a34668f1d7",
@@ -495,7 +495,7 @@
       "verification": "待核實",
       "official_evidence": null,
       "fingerprint": "e836383da595765585bd41cd4ebfe8fcae9e6912c2ff813e0e79a49f5e572abd",
-      "category": "哩程情報（待分類）"
+      "category": "其他"
     },
     {
       "id": "c2d8728af8bb2062fe29e44b",
@@ -508,7 +508,7 @@
       "verification": "待核實",
       "official_evidence": null,
       "fingerprint": "96e35bd3fc884b6a6780b488adf860cfb19dd4453b89a2d5c98a5e651fd4acc1",
-      "category": "哩程情報（待分類）"
+      "category": "其他"
     },
     {
       "id": "4dc4bc20f28d01026e0831f5",
@@ -521,7 +521,7 @@
       "verification": "待核實",
       "official_evidence": null,
       "fingerprint": "cd3cf95bb656d1ae6b4012add109f7f42fe08a5cf0a75a3d9576efbab8f51b51",
-      "category": "哩程情報（待分類）"
+      "category": "限時優惠"
     },
     {
       "id": "cc6ac624e86cb6a04c830e56",
@@ -534,7 +534,7 @@
       "verification": "待核實",
       "official_evidence": null,
       "fingerprint": "dd970fdf4ca56e8905256ca9125e97e66791ceeabba242e3093b28eabb966af4",
-      "category": "哩程情報（待分類）"
+      "category": "其他"
     },
     {
       "id": "b758e8278ec3e5f1c0cf0689",
@@ -547,7 +547,7 @@
       "verification": "待核實",
       "official_evidence": null,
       "fingerprint": "52d41c3a9cfd019decfdc4d76f707124f903250d2470ac795a5bc2c1292c87ea",
-      "category": "哩程情報（待分類）"
+      "category": "其他"
     },
     {
       "id": "586d967c64b918df034ae271",
@@ -560,7 +560,7 @@
       "verification": "待核實",
       "official_evidence": null,
       "fingerprint": "07fe0c15ea34e530fafb3fd99bafe87e44ac7af968d57cadd4f00c64e250636e",
-      "category": "哩程情報（待分類）"
+      "category": "其他"
     },
     {
       "id": "224ba1f2ead30a2dc5051173",
@@ -573,7 +573,7 @@
       "verification": "待核實",
       "official_evidence": null,
       "fingerprint": "f401fd4fda17a747ae5e3130f2a7ec54019b075f8c241889124e8332fac05152",
-      "category": "哩程情報（待分類）"
+      "category": "其他"
     },
     {
       "id": "f1d80848525cc41c3f02da49",
@@ -586,13 +586,13 @@
       "verification": "待核實",
       "official_evidence": null,
       "fingerprint": "d49ee9ca787f2441fd1a4a986ab42f3dbe637e1fb764daed8e45e41401c31da9",
-      "category": "哩程情報（待分類）"
+      "category": "兌換教學"
     }
   ],
   "latest_run": {
-    "run_id": "44113502508",
-    "started_at": "2026-11-17T15:22:11+00:00",
-    "finished_at": "2026-11-17T15:22:12+00:00",
+    "run_id": "44113852450",
+    "started_at": "2026-11-17T15:24:11+00:00",
+    "finished_at": "2026-11-17T15:24:11+00:00",
     "status": "success",
     "registry": "repository_config",
     "registry_error": null,
@@ -600,7 +600,7 @@
       {
         "source_id": "frequent-miler",
         "source": "Frequent Miler",
-        "checked_at": "2026-11-17T15:22:11+00:00",
+        "checked_at": "2026-11-17T15:24:11+00:00",
         "new": 0,
         "changed": 0,
         "status": "success_no_new",
@@ -609,7 +609,7 @@
       {
         "source_id": "one-mile-at-a-time",
         "source": "One Mile at a Time",
-        "checked_at": "2026-11-17T15:22:11+00:00",
+        "checked_at": "2026-11-17T15:24:11+00:00",
         "new": 0,
         "changed": 0,
         "status": "success_no_new",
@@ -618,7 +618,7 @@
       {
         "source_id": "finnair-rules",
         "source": "Finnair Plus 官方規則",
-        "checked_at": "2026-11-17T15:22:11+00:00",
+        "checked_at": "2026-11-17T15:24:11+00:00",
         "new": 0,
         "changed": 0,
         "status": "skipped",
@@ -627,7 +627,7 @@
       {
         "source_id": "eva-awards",
         "source": "長榮航空 Infinity MileageLands 獎勵機票",
-        "checked_at": "2026-11-17T15:22:11+00:00",
+        "checked_at": "2026-11-17T15:24:11+00:00",
         "new": 0,
         "changed": 0,
         "status": "skipped",
