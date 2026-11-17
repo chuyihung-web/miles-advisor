@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-17T15:24:11+00:00",
-  "last_success_at": "2026-11-17T15:24:11+00:00",
+  "updated_at": "2026-11-17T15:45:59+00:00",
+  "last_success_at": "2026-11-17T15:45:59+00:00",
   "articles": [
     {
       "id": "05a08bd42ca9ab686cc3cb8e",
@@ -590,17 +590,17 @@
     }
   ],
   "latest_run": {
-    "run_id": "44113852450",
-    "started_at": "2026-11-17T15:24:11+00:00",
-    "finished_at": "2026-11-17T15:24:11+00:00",
+    "run_id": "44118050090",
+    "started_at": "2026-11-17T15:45:59+00:00",
+    "finished_at": "2026-11-17T15:46:02+00:00",
     "status": "success",
-    "registry": "repository_config",
+    "registry": "google_sheets",
     "registry_error": null,
     "checks": [
       {
         "source_id": "frequent-miler",
         "source": "Frequent Miler",
-        "checked_at": "2026-11-17T15:24:11+00:00",
+        "checked_at": "2026-11-17T15:45:59+00:00",
         "new": 0,
         "changed": 0,
         "status": "success_no_new",
@@ -609,7 +609,7 @@
       {
         "source_id": "one-mile-at-a-time",
         "source": "One Mile at a Time",
-        "checked_at": "2026-11-17T15:24:11+00:00",
+        "checked_at": "2026-11-17T15:45:59+00:00",
         "new": 0,
         "changed": 0,
         "status": "success_no_new",
@@ -618,7 +618,7 @@
       {
         "source_id": "finnair-rules",
         "source": "Finnair Plus 官方規則",
-        "checked_at": "2026-11-17T15:24:11+00:00",
+        "checked_at": "2026-11-17T15:45:59+00:00",
         "new": 0,
         "changed": 0,
         "status": "skipped",
@@ -627,7 +627,7 @@
       {
         "source_id": "eva-awards",
         "source": "長榮航空 Infinity MileageLands 獎勵機票",
-        "checked_at": "2026-11-17T15:24:11+00:00",
+        "checked_at": "2026-11-17T15:45:59+00:00",
         "new": 0,
         "changed": 0,
         "status": "skipped",

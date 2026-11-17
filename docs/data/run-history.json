@@ -1,6 +1,55 @@
 {
   "runs": [
     {
+      "run_id": "44118050090",
+      "started_at": "2026-11-17T15:45:59+00:00",
+      "finished_at": "2026-11-17T15:46:02+00:00",
+      "status": "success",
+      "registry": "google_sheets",
+      "registry_error": null,
+      "checks": [
+        {
+          "source_id": "frequent-miler",
+          "source": "Frequent Miler",
+          "checked_at": "2026-11-17T15:45:59+00:00",
+          "new": 0,
+          "changed": 0,
+          "status": "success_no_new",
+          "fetched": 20
+        },
+        {
+          "source_id": "one-mile-at-a-time",
+          "source": "One Mile at a Time",
+          "checked_at": "2026-11-17T15:45:59+00:00",
+          "new": 0,
+          "changed": 0,
+          "status": "success_no_new",
+          "fetched": 25
+        },
+        {
+          "source_id": "finnair-rules",
+          "source": "Finnair Plus 官方規則",
+          "checked_at": "2026-11-17T15:45:59+00:00",
+          "new": 0,
+          "changed": 0,
+          "status": "skipped",
+          "detail": "人工核實來源／暫停／尚未確認 RSS"
+        },
+        {
+          "source_id": "eva-awards",
+          "source": "長榮航空 Infinity MileageLands 獎勵機票",
+          "checked_at": "2026-11-17T15:45:59+00:00",
+          "new": 0,
+          "changed": 0,
+          "status": "skipped",
+          "detail": "人工核實來源／暫停／尚未確認 RSS"
+        }
+      ],
+      "facebook": "未啟用：未提供已驗證粉專與可用授權",
+      "schedule_timezone": "Asia/Taipei",
+      "schedule_target": "09:00"
+    },
+    {
       "run_id": "44113852450",
       "started_at": "2026-11-17T15:24:11+00:00",
       "finished_at": "2026-11-17T15:24:11+00:00",
