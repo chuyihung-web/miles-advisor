@@ -88,6 +88,17 @@ def date_value(raw):
     return value.astimezone(dt.timezone.utc).isoformat()
 
 
+def category(title):
+    text = title.lower()
+    if "transfer" in text:
+        return "轉點資訊"
+    if any(word in text for word in ("bonus", "offer", "deal", "% off")):
+        return "限時優惠"
+    if any(word in text for word in ("guide", "how ", "award", "redeem")):
+        return "兌換教學"
+    return "其他"
+
+
 def parse_feed(body, source, timestamp):
     if b"<!DOCTYPE" in body.upper() or b"<!ENTITY" in body.upper():
         raise ValueError("不支援含外部實體的 XML")
@@ -120,7 +131,7 @@ def parse_feed(body, source, timestamp):
                        "source": source["name"], "url": url, "title": title,
                        "published_at": date_value(raw_date), "collected_at": timestamp,
                        "verification": "待核實", "official_evidence": None,
-                       "fingerprint": fingerprint, "category": "哩程情報（待分類）"})
+                       "fingerprint": fingerprint, "category": category(title)})
     return result
 
 
@@ -137,6 +148,8 @@ def merge(existing, incoming):
             article["changed_at"] = now()
             records[article["id"]] = article  # Changed claims must be rechecked.
             changed += 1
+        else:
+            records[article["id"]]["category"] = article["category"]
     return sorted(records.values(), key=lambda a: a["collected_at"], reverse=True)[:1000], new, changed
 
 
