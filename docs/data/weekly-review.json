@@ -1,19 +1,19 @@
 {
-  "generated_at": "2026-11-17T15:23:15+00:00",
-  "period_start": "2026-11-10T15:23:15.048123+00:00",
+  "generated_at": "2026-11-23T09:36:54+00:00",
+  "period_start": "2026-11-16T09:36:54.042231+00:00",
   "method": "依蒐集紀錄產生的規則式週檢查；尚未接入使用者行為分析或 AI 語意核實。",
   "proposals": [
     {
-      "id": "weekly-verification-2026-11-17",
+      "id": "weekly-verification-2026-11-23",
       "evidence_type": "情報影響",
-      "problem": "本週蒐集 45 筆情報，尚需核實及判斷對查詢流程的影響。",
+      "problem": "本週蒐集 141 筆情報，尚需核實及判斷對查詢流程的影響。",
       "proposal": "核對官方依據，補齊生效/截止日期；確認後才更新規則資料。",
       "evidence_urls": [
-        "https://frequentmiler.com/hyatt-resorts-amex-offer-get-100-back-when-spending-500/",
-        "https://frequentmiler.com/capital-one-shopping-offers-earn-25-15x-at-stubhub/",
-        "https://frequentmiler.com/awesome-credit-card-combos/",
-        "https://frequentmiler.com/link-dashpass-to-get-free-lyft-go-membership-8-back-in-lyft-credits/",
-        "https://frequentmiler.com/are-you-due-compensation-when-the-airline-changes-your-aircraft-type-question-of-the-week-ep22-11-16-26/"
+        "https://frequentmiler.com/office-depot-officemax-buy-300-mastercard-gift-cards-save-15/",
+        "https://frequentmiler.com/valid-365-days-claim-a-free-5gb-15-day-esim-with-u-s-bank-altitude-connect-now/",
+        "https://onemileatatime.com/guides/american-aadvantage-business-program/",
+        "https://onemileatatime.com/insights/worlds-tallest-highest-hotels/",
+        "https://onemileatatime.com/news/american-dies-picking-fight-mma-fighter-bangkok-hotel/"
       ],
       "acceptance": "每項正式規則具有官方連結、查核日期與適用條件。",
       "status": "待評估"
