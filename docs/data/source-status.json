@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-25T09:28:57+00:00",
+  "updated_at": "2026-11-26T09:06:31+00:00",
   "registry": "google_sheets",
   "sources": [
     {
@@ -69,17 +69,17 @@
     {
       "source_id": "frequent-miler",
       "source": "Frequent Miler",
-      "checked_at": "2026-11-25T09:28:57+00:00",
-      "new": 13,
-      "changed": 1,
+      "checked_at": "2026-11-26T09:06:31+00:00",
+      "new": 8,
+      "changed": 0,
       "status": "success_new",
       "fetched": 20
     },
     {
       "source_id": "one-mile-at-a-time",
       "source": "One Mile at a Time",
-      "checked_at": "2026-11-25T09:28:57+00:00",
-      "new": 7,
+      "checked_at": "2026-11-26T09:06:31+00:00",
+      "new": 10,
       "changed": 0,
       "status": "success_new",
       "fetched": 25
@@ -87,7 +87,7 @@
     {
       "source_id": "finnair-rules",
       "source": "Finnair Plus 官方規則",
-      "checked_at": "2026-11-25T09:28:57+00:00",
+      "checked_at": "2026-11-26T09:06:31+00:00",
       "new": 0,
       "changed": 0,
       "status": "skipped",
@@ -96,7 +96,7 @@
     {
       "source_id": "eva-awards",
       "source": "長榮航空 Infinity MileageLands 獎勵機票",
-      "checked_at": "2026-11-25T09:28:57+00:00",
+      "checked_at": "2026-11-26T09:06:31+00:00",
       "new": 0,
       "changed": 0,
       "status": "skipped",
